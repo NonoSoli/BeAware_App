@@ -6,65 +6,10 @@
     <title>Medic - levels</title>
     <link rel="stylesheet" href="../../assets/styles/css/main.css">
 </head>
-<script src="../../js/jquery-3.7.1.min.js"></script>
-<script src="../../js/back-to-buttons.js"></script>
-<script src="../../js/medic-level-buttons.js"></script>
-<script>
-    $(document).ready(function () {
-    $.getJSON('../../assets/json/exercices_demo.json', function (data) {
-        var $template = $('#level-template');
-        
-        $.each(data, function (index, level) {
-            var $clone = $template.clone().removeAttr('id').show();
-
-            var levelNumber = index + 1;
-
-            // Modifier les classes dynamiques
-            $clone.find('.grid-level-buttons')
-                .removeClass()
-                .addClass('grid-level-buttons button-level-' + toWord(levelNumber));
-
-            $clone.find('.rectangular-box-levels')
-                .removeClass()
-                .addClass('rectangular-box-levels player-level-' + toWord(levelNumber))
-                .hide(); // Masqué par défaut
-
-            // Mise à jour du contenu
-            $clone.find('.diamond-button span').text(levelNumber);
-            $clone.find('h2').text(level.titre);
-
-            var $spans = $clone.find('.grid-rectangular-box-level span');
-            $spans.eq(0).text(level.temps);
-            $spans.eq(1).text(level.difficulte);
-
-            // Ajouter après le template pour garder ordre 1 → 2 → 3
-            $template.after($clone);
-        });
-    });
-
-    // Gestion du clic sur un niveau
-    $(document).on('click', '.grid-level-buttons', function () {
-        var $levelBlock = $(this).closest('.template-level');
-        var $playerBox = $levelBlock.find('.rectangular-box-levels');
-
-        // Fermer les autres boîtes et toggle la bonne
-        $('.rectangular-box-levels').not($playerBox).slideUp();
-        $playerBox.slideToggle();
-    });
-});
-
-// Convertit 1 => "one", 2 => "two", etc.
-function toWord(n) {
-    var words = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
-    return words[n - 1] || n;
-}
-</script>
 <body class="page-levels">
     <!--HEADER-->
     <div class="header medic-header">
-        <div class="top-header">
-            
-        </div>
+        <div class="top-header"></div>
         <div class="bottom-header">
             <div class="grid-header-levels">
                 <div class="title-subtitle">
@@ -77,9 +22,10 @@ function toWord(n) {
             </div>
         </div>
     </div>
-    <!--LEVELS-->
+
+    <!--LEVEL TEMPLATE-->
     <div class="template-level" id="level-template" style="display: none;">
-        <div class="grid-level-buttons button-level-one">
+        <div class="grid-level-buttons">
             <div class="diamond-button medic-level-button">
                 <span>1</span>
             </div>
@@ -87,18 +33,77 @@ function toWord(n) {
                 <h2>La RCP</h2>
             </div>
         </div>
-    
+
         <!--PLAYER-->
-        <div class="rectangular-box-levels player-level-one">
+        <div class="rectangular-box-levels">
             <div class="grid-rectangular-box-level">
                 <img src="../../assets/img/icons/levels-medic/chrono-1-3.png">
                 <img src="../../assets/img/icons/levels-medic/diff-1-amu.png">
-                <img src="../../assets/img/icons/levels-medic/play-amu.png">
+                <img src="../../assets/img/icons/levels-medic/play-amu.png" class="play-button" data-level="1">
                 <span>5 min</span>
                 <span>facile</span>
             </div>
         </div>
     </div>
-    
+
+    <!-- SCRIPTS -->
+    <script src="../../js/jquery-3.7.1.min.js"></script>
+    <script src="../../js/back-to-buttons.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Charger les niveaux depuis le JSON
+            $.getJSON('../../assets/json/exercices_demo.json', function (data) {
+                var $template = $('#level-template');
+
+                $.each(data, function (index, level) {
+                    var $clone = $template.clone().removeAttr('id').show();
+                    var levelNumber = index + 1;
+
+                    // Mise à jour du contenu
+                    $clone.find('.diamond-button span').text(levelNumber);
+                    $clone.find('h2').text(level.titre);
+                    var $spans = $clone.find('.grid-rectangular-box-level span');
+                    $spans.eq(0).text(level.temps);
+                    $spans.eq(1).text(level.difficulte);
+
+                    // Cacher le player au départ
+                    $clone.find('.rectangular-box-levels').hide();
+
+                    // Mettre à jour le bouton play
+                    $clone.find('.play-button').attr('data-level', levelNumber);
+
+                    $template.after($clone);
+                });
+
+            });
+
+            // Gérer le clic sur le bouton niveau
+            $(document).on('click', '.grid-level-buttons', function () {
+                var $levelBlock = $(this).closest('.template-level');
+                var $playerBox = $levelBlock.find('.rectangular-box-levels');
+
+                $('.rectangular-box-levels').not($playerBox).slideUp();
+                $playerBox.stop(true, true).slideToggle();
+            });
+
+            // Gérer les clics sur les boutons play
+            $(document).on('click', '.play-button', function () {
+                var level = parseInt($(this).data('level'), 10);
+
+                if (level === 1) {
+                    window.location.href = 'exercice.html';
+                } else {
+                    window.location.href = '../../home.html';
+                }
+            });
+
+        });
+
+        // Convertit 1 => "one", 2 => "two", etc.
+        function toWord(n) {
+            var words = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+            return words[n - 1] || n;
+        }
+    </script>
 </body>
 </html>
