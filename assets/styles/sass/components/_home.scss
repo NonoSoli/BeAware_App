@@ -1,0 +1,22 @@
+@use '../base/variables' as *;
+
+.grid-home-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+  align-items: center;
+
+  .grid-item {
+    text-align: center;
+  }
+
+  .description {
+    font-size: 5vw;
+    color: $color-text;
+    max-width: 80%;
+    margin: 50px 0 80px;
+  }
+}

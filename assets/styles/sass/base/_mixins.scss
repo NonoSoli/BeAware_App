@@ -1,0 +1,283 @@
+@use "variables" as *;
+@use "sass:color";
+
+// ==========================
+// Mixin bouton losange
+// ==========================
+@mixin diamond-button(
+  $size: $diamond-button-size,
+  $color: $color-primary,
+  $radius: $button-radius
+) {
+  $shadow: color.scale($color, $lightness: -20%);
+
+  position: relative;
+  width: $size;
+  height: $size;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: $radius;
+    transform: rotate(45deg);
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    background-color: $color;
+    z-index: 1;
+  }
+
+  &::after {
+    background-color: $shadow;
+    top: 10%;
+    z-index: 0;
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: calc(#{$size} * 1);
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    width: $diamond-button-size-mobile;
+    height: $diamond-button-size-mobile;
+
+    img {
+      width: 70%;
+    }
+
+    span {
+      font-size: calc(#{$diamond-button-size-mobile} * 0.7);
+    }
+
+    .button-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: none;
+      gap: 1.5rem;
+    }
+  }
+}
+
+// ==========================
+// Mixin bouton rectangle
+// ==========================
+@mixin rectangular-button(
+  $width: $rectangular-button-width,
+  $height: $rectangular-button-height,
+  $color: $color-primary,
+  $radius: $button-radius
+) {
+  $shadow: color.scale($color, $lightness: -20%);
+
+  position: relative;
+  width: $width;
+  height: $height;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: $radius;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    background-color: $color;
+    z-index: 1;
+  }
+
+  &::after {
+    z-index: 0;
+    background-color: $shadow;
+    border-radius: $radius;
+    top: -2px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    justify-content: center;
+  }
+}
+
+@mixin rectangular-box-levels(
+  $width: 90vh,
+  $height: 10vh,
+  $size: $width,
+  $color: white,
+  $radius: 5vh
+) {
+  $shadow: color.scale($color, $lightness: -20%);
+
+  position: relative;
+  margin: auto;
+  margin-bottom: 3vh;
+  width: $width;
+  height: $height;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: $radius;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    background-color: $color;
+    z-index: 1;
+  }
+
+  &::after {
+    z-index: 0;
+    background-color: $shadow;
+    border-radius: $radius;
+    top: -2px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: 5vh;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a8a8a8;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: calc(#{$size} * 0.05);
+  }
+}
+
+@mixin qcm4-rectangular-box-choice(
+  $width: 90vh,
+  $height: 10vh,
+  $size: $width,
+  $color: white,
+  $radius: 5vh
+) {
+  $shadow: color.scale($color, $lightness: -20%);
+
+  position: relative;
+  margin: auto;
+  width: $width;
+  height: $height;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: $radius;
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    background-color: $color;
+    z-index: 1;
+  }
+
+  &::after {
+    z-index: 0;
+    background-color: $shadow;
+    border-radius: $radius;
+    top: -2px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: 5vh;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #a8a8a8;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: calc(#{$size} * 0.05);
+  }
+}

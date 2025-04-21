@@ -1,0 +1,14 @@
+@use 'variables' as medic;
+
+.medic-header {
+  background-color: medic.$medic-primary-color;
+}
+
+.medic-button {
+  background-color: medic.$medic-primary-color;
+  color: white;
+
+  &:hover {
+    background-color: medic.$medic-accent-color;
+  }
+}

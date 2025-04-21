@@ -1,0 +1,94 @@
+@use "../base/variables" as *;
+@use "../base/mixins" as *;
+
+// Pour les variables spécifiques au domaine (ex : medic)
+@use "../medic/variables" as medic;
+
+.page-levels {
+  .top-header {
+    padding: 3vh;
+  }
+  .bottom-header {
+    margin-top: 0px; // ou la valeur que tu veux uniquement pour cette page
+    padding-top: 3vh;
+  }
+}
+
+.grid-level-buttons {
+  display: grid;
+  grid-template-columns: auto 1fr; // bouton à gauche, description à droite
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin-left: 3vh;
+
+  .diamond-button {
+    justify-self: center;
+    width: clamp(150px, 10vw, 250px); // ajustement de la taille du bouton
+    height: clamp(150px, 10vw, 250px); // ajustement de la taille du bouton
+    font-size: clamp(
+      1rem,
+      4vw,
+      2rem
+    ); // ajustement de la taille de la police du bouton
+    margin-bottom: 2vh;
+  }
+
+  .description {
+    font-size: clamp(1.25rem, 4vw, 2rem); // taille du texte description ajustée
+    color: $color-text;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-left: 2vh;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    grid-template-columns: 1fr; // empilement sur mobile
+    text-align: center;
+
+    .diamond-button {
+      margin: 0 auto;
+      width: 70%; // réduit un peu la taille sur mobile
+      height: auto;
+    }
+
+    .description {
+      margin-top: 1rem;
+      align-items: center;
+    }
+  }
+}
+
+.grid-header-levels {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: auto;
+  margin-left: 4vh;
+
+  .title-subtitle {
+    justify-items: left;
+  }
+
+  .back-to-home,
+  .back-to-levels {
+    margin-left: auto;
+    margin-right: 3vh;
+  }
+}
+
+.grid-rectangular-box-level {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: auto;
+  margin: auto;
+  padding-top: 1.5vh;
+}
+
+.grid-qcm4-rectangular-box-choice {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3vh;
+  margin: auto;
+}

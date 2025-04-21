@@ -1,0 +1,38 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.medic-home-button {
+  @include diamond-button($color: $color-primary);
+}
+
+.fire-home-button {
+  @include diamond-button($color: $color-danger);
+}
+
+.one-seven-two-two-home-button {
+  @include diamond-button($color: $color-dark);
+}
+
+.prevent-home-button {
+  @include diamond-button($color: $color-warning);
+}
+
+.rectangular-button {
+  @include rectangular-button();
+}
+
+.non-activ-level-button {
+  @include diamond-button($size: 8vw, $color: $color-disabled, $radius: $button-small-radius);
+}
+
+.medic-level-button {
+  @include diamond-button($size: 8vw, $color: $color-primary, $radius: $button-small-radius);
+}
+
+.rectangular-box-levels {
+  @include rectangular-box-levels($width: 90vw, $height: 12vh, $radius: 2vh);
+}
+
+.qcm4-rectangular-box-choice {
+  @include qcm4-rectangular-box-choice($width: 40vw, $height: 12vh, $radius: 2vh);
+}
