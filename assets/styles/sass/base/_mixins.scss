@@ -281,3 +281,51 @@
     font-size: calc(#{$size} * 0.05);
   }
 }
+
+// Barre de progression
+@mixin progress-bar-container {
+  background-color: #d9d9d9;
+  border-radius: 100px;
+  height: 20px;
+  width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+@mixin progress-bar-fill($width: 0%) {
+  background-color: #ffffff;
+  height: 100%;
+  width: $width;
+  border-radius: 100px;
+  transition: width 0.3s ease-in-out;
+}
+
+// Bouton "Suivant" arrondi
+@mixin next-button {
+  background-color: #0082ff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+// Réponses validées
+@mixin bonne-reponse {
+  border: 2px solid #3cb371;
+}
+
+@mixin mauvaise-reponse {
+  border: 2px solid #e74c3c;
+}
+
+// Zone de feedback
+@mixin feedback {
+  margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+}

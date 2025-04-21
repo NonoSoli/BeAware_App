@@ -36,3 +36,28 @@
 .qcm4-rectangular-box-choice {
   @include qcm4-rectangular-box-choice($width: 40vw, $height: 12vh, $radius: 2vh);
 }
+
+.next-button {
+  @include next-button;
+}
+
+.bonne-reponse {
+  @include bonne-reponse;
+}
+
+.mauvaise-reponse {
+  @include mauvaise-reponse;
+}
+
+.feedback {
+  @include feedback;
+}
+
+.progress-bar-container {
+  @include progress-bar-container;
+}
+
+.progress-bar-fill {
+  @include progress-bar-fill(60%);
+}
+
