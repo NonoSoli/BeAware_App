@@ -21,7 +21,7 @@ $(document).ready(function () {
     });
 
     $('.player-level-one').on('click', function () {
-        window.location.href = 'template-qcm4.html';
+        window.location.href = 'exercice.html';
     });
 
     $('.player-level-two').on('click', function () {

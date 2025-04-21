@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice-medic</title>
+    <link rel="stylesheet" href="../../assets/styles/css/main.css">
+</head>
+<script src="../../js/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+    $.getJSON('../../assets/json/exercices/exercice-1.json', function (data) {
+        // Injecte le contenu dynamiquement dans la page
+        $('.exercice-title').text(data.titre);
+        $('.exercice-description').text(data.description);
+        $('.temps-estime').text(data.temps_estime);
+
+        // Consignes (si tu veux les afficher)
+        if (data.consignes) {
+            $.each(data.consignes, function (i, consigne) {
+                $('.consignes-list').append('<li>' + consigne + '</li>');
+            });
+        }
+
+        // Affichage des options
+        $.each(data.options, function (i, option) {
+            var btn = $('<button class="option-button">')
+                .text(option.texte)
+                .on('click', function () {
+                    alert(option.feedback); // ou autre affichage sympa
+                    if (option.correcte) {
+                        $(this).addClass('bonne-reponse');
+                    } else {
+                        $(this).addClass('mauvaise-reponse');
+                    }
+                });
+
+            $('.exercice-options').append(btn);
+        });
+    });
+});
+
+</script>
+<body>
+    <h1 class="exercice-title"></h1>
+<p class="exercice-description"></p>
+<p><strong>Temps estimé :</strong> <span class="temps-estime"></span></p>
+
+<ul class="consignes-list"></ul>
+
+<div class="exercice-options"></div>
+
+</body>
+</html>

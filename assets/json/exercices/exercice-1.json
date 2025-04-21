@@ -1,0 +1,29 @@
+{
+    "titre": "La RCP",
+    "description": "Vous trouvez une personne inconsciente qui ne respire plus. Que faites-vous ?",
+    "consignes": [
+      "Vérifier la sécurité des lieux",
+      "Appeler les secours",
+      "Commencer la réanimation"
+    ],
+    "options": [
+      {
+        "texte": "Je secoue la victime et je lui demande si elle m'entend.",
+        "correcte": true,
+        "feedback": "Bonne réaction, c'est la première étape pour vérifier la conscience."
+      },
+      {
+        "texte": "Je pars chercher de l’aide sans rien faire.",
+        "correcte": false,
+        "feedback": "Il est essentiel de vérifier l’état de la victime avant tout."
+      },
+      {
+        "texte": "Je lui donne immédiatement à boire.",
+        "correcte": false,
+        "feedback": "Attention, il ne faut jamais faire boire une personne inconsciente."
+      }
+    ],
+    "temps_estime": "5 min",
+    "niveau": 1
+  }
+  

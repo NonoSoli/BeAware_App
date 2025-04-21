@@ -726,7 +726,8 @@ html, body {
 .grid-header-levels .title-subtitle {
   justify-items: left;
 }
-.grid-header-levels .back-to-home, .grid-header-levels .back-to-levels {
+.grid-header-levels .back-to-home,
+.grid-header-levels .back-to-levels {
   margin-left: auto;
   margin-right: 3vh;
 }
