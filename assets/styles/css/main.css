@@ -337,6 +337,138 @@ html, body {
   margin: 0;
 }
 
+.rectangular-button-fire {
+  position: relative;
+  width: 16vw;
+  height: 16vw;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangular-button-fire::before, .rectangular-button-fire::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+}
+.rectangular-button-fire::before {
+  background-color: #ff0f00;
+  z-index: 1;
+}
+.rectangular-button-fire::after {
+  z-index: 0;
+  background-color: #cc0c00;
+  border-radius: 20px;
+  top: -2px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+}
+.rectangular-button-fire img {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.rectangular-button-prevent {
+  position: relative;
+  width: 16vw;
+  height: 16vw;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangular-button-prevent::before, .rectangular-button-prevent::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+}
+.rectangular-button-prevent::before {
+  background-color: #ff8c00;
+  z-index: 1;
+}
+.rectangular-button-prevent::after {
+  z-index: 0;
+  background-color: #cc7000;
+  border-radius: 20px;
+  top: -2px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+}
+.rectangular-button-prevent img {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+.rectangular-button-one-seven-two-two {
+  position: relative;
+  width: 16vw;
+  height: 16vw;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rectangular-button-one-seven-two-two::before, .rectangular-button-one-seven-two-two::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+}
+.rectangular-button-one-seven-two-two::before {
+  background-color: #484848;
+  z-index: 1;
+}
+.rectangular-button-one-seven-two-two::after {
+  z-index: 0;
+  background-color: rgb(57.6, 57.6, 57.6);
+  border-radius: 20px;
+  top: -2px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+}
+.rectangular-button-one-seven-two-two img {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
 .non-activ-level-button {
   position: relative;
   width: 8vw;
@@ -467,6 +599,210 @@ html, body {
     font-size: calc(20vw * 0.7);
   }
   .medic-level-button .button-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 1.5rem;
+  }
+}
+
+.fire-level-button {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+.fire-level-button::before, .fire-level-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3vw;
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+}
+.fire-level-button::before {
+  background-color: #ff0f00;
+  z-index: 1;
+}
+.fire-level-button::after {
+  background-color: #cc0c00;
+  top: 10%;
+  z-index: 0;
+}
+.fire-level-button img {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.fire-level-button span {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: calc(8vw * 1);
+}
+@media (max-width: 600px) {
+  .fire-level-button {
+    width: 20vw;
+    height: 20vw;
+  }
+  .fire-level-button img {
+    width: 70%;
+  }
+  .fire-level-button span {
+    font-size: calc(20vw * 0.7);
+  }
+  .fire-level-button .button-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 1.5rem;
+  }
+}
+
+.prevent-level-button {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+.prevent-level-button::before, .prevent-level-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3vw;
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+}
+.prevent-level-button::before {
+  background-color: #ff8c00;
+  z-index: 1;
+}
+.prevent-level-button::after {
+  background-color: #cc7000;
+  top: 10%;
+  z-index: 0;
+}
+.prevent-level-button img {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.prevent-level-button span {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: calc(8vw * 1);
+}
+@media (max-width: 600px) {
+  .prevent-level-button {
+    width: 20vw;
+    height: 20vw;
+  }
+  .prevent-level-button img {
+    width: 70%;
+  }
+  .prevent-level-button span {
+    font-size: calc(20vw * 0.7);
+  }
+  .prevent-level-button .button-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 1.5rem;
+  }
+}
+
+.one-seven-two-two-level-button {
+  position: relative;
+  width: 8vw;
+  height: 8vw;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+.one-seven-two-two-level-button::before, .one-seven-two-two-level-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3vw;
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+}
+.one-seven-two-two-level-button::before {
+  background-color: #484848;
+  z-index: 1;
+}
+.one-seven-two-two-level-button::after {
+  background-color: rgb(57.6, 57.6, 57.6);
+  top: 10%;
+  z-index: 0;
+}
+.one-seven-two-two-level-button img {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.one-seven-two-two-level-button span {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: calc(8vw * 1);
+}
+@media (max-width: 600px) {
+  .one-seven-two-two-level-button {
+    width: 20vw;
+    height: 20vw;
+  }
+  .one-seven-two-two-level-button img {
+    width: 70%;
+  }
+  .one-seven-two-two-level-button span {
+    font-size: calc(20vw * 0.7);
+  }
+  .one-seven-two-two-level-button .button-grid {
     grid-template-columns: 1fr;
     grid-template-rows: none;
     gap: 1.5rem;
@@ -649,6 +985,24 @@ html, body {
 }
 .header.medic-header .bottom-header {
   background-color: #0082ff;
+}
+.header.fire-header {
+  background-color: #ff0f00;
+}
+.header.fire-header .bottom-header {
+  background-color: #ff0f00;
+}
+.header.prevent-header {
+  background-color: #ff8c00;
+}
+.header.prevent-header .bottom-header {
+  background-color: #ff8c00;
+}
+.header.one-seven-two-two-header {
+  background-color: #484848;
+}
+.header.one-seven-two-two-header .bottom-header {
+  background-color: #484848;
 }
 .header .top-header {
   display: flex;

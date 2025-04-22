@@ -6,19 +6,31 @@
 }
 
 .fire-home-button {
-  @include diamond-button($color: $color-danger);
+  @include diamond-button($color: $color-fire);
 }
 
 .one-seven-two-two-home-button {
-  @include diamond-button($color: $color-dark);
+  @include diamond-button($color: $color-one-seven-two-two);
 }
 
 .prevent-home-button {
-  @include diamond-button($color: $color-warning);
+  @include diamond-button($color: $color-prevent);
 }
 
 .rectangular-button {
   @include rectangular-button();
+}
+
+.rectangular-button-fire {
+  @include rectangular-button($color: $color-fire);
+}
+
+.rectangular-button-prevent {
+  @include rectangular-button($color: $color-prevent);
+}
+
+.rectangular-button-one-seven-two-two {
+  @include rectangular-button($color: $color-one-seven-two-two);
 }
 
 .non-activ-level-button {
@@ -27,6 +39,18 @@
 
 .medic-level-button {
   @include diamond-button($size: 8vw, $color: $color-primary, $radius: $button-small-radius);
+}
+
+.fire-level-button {
+  @include diamond-button($size: 8vw, $color: $color-fire, $radius: $button-small-radius);
+}
+
+.prevent-level-button {
+  @include diamond-button($size: 8vw, $color: $color-prevent, $radius: $button-small-radius);
+}
+
+.one-seven-two-two-level-button {
+  @include diamond-button($size: 8vw, $color: $color-one-seven-two-two, $radius: $button-small-radius);
 }
 
 .rectangular-box-levels {
