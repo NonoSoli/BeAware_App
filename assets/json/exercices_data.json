@@ -1,0 +1,473 @@
+{
+    "medic": {
+      "niveau_1": {
+        "titre": "Bases des premiers secours",
+        "temps": "5 min",
+        "difficulte": "facile",
+        "exercices": [
+          {
+            "titre": "La RCP",
+            "description": "Vous trouvez une personne inconsciente qui ne respire plus. Que faites-vous ?",
+            "options": [
+              {
+                "texte": "Je secoue la victime et je lui demande si elle m'entend.",
+                "correcte": true,
+                "feedback": "Bonne réaction, c'est la première étape pour vérifier la conscience."
+              },
+              {
+                "texte": "Je pars chercher de l’aide sans rien faire.",
+                "correcte": false,
+                "feedback": "Il est essentiel de vérifier l’état de la victime avant tout."
+              },
+              {
+                "texte": "Je lui donne immédiatement à boire.",
+                "correcte": false,
+                "feedback": "Attention, il ne faut jamais faire boire une personne inconsciente."
+              }
+            ]
+          },
+          {
+            "titre": "Position latérale de sécurité",
+            "description": "La victime est inconsciente mais respire. Quelle est la première chose à faire ?",
+            "options": [
+              {
+                "texte": "Je la mets en position latérale de sécurité.",
+                "correcte": true,
+                "feedback": "C'est la bonne réaction pour libérer les voies respiratoires."
+              },
+              {
+                "texte": "Je tente de la réveiller en la secouant.",
+                "correcte": false,
+                "feedback": "Secouer une victime peut aggraver sa condition."
+              },
+              {
+                "texte": "Je la laisse telle quelle, en attendant les secours.",
+                "correcte": false,
+                "feedback": "Il est crucial de sécuriser la victime en attendant l'arrivée des secours."
+              }
+            ]
+          },
+          {
+            "titre": "Arrêt cardiaque",
+            "description": "Que faire si une personne s'effondre et ne respire plus ?",
+            "options": [
+              {
+                "texte": "Je commence immédiatement la RCP.",
+                "correcte": true,
+                "feedback": "Commencer la RCP est essentiel pour maintenir la circulation sanguine."
+              },
+              {
+                "texte": "Je contacte les secours avant tout.",
+                "correcte": false,
+                "feedback": "Bien sûr, vous devez appeler les secours, mais commencez d'abord la RCP."
+              },
+              {
+                "texte": "Je lui mets un bandeau pour tenter de contrôler la situation.",
+                "correcte": false,
+                "feedback": "Un bandeau ne résout pas un arrêt cardiaque. La RCP est nécessaire."
+              }
+            ]
+          },
+          {
+            "titre": "Hémorragie grave",
+            "description": "Une personne perd beaucoup de sang. Que faire ?",
+            "options": [
+              {
+                "texte": "Je presse la plaie avec un linge propre.",
+                "correcte": true,
+                "feedback": "C'est la meilleure manière de stopper l'hémorragie."
+              },
+              {
+                "texte": "Je fais un garrot à l'endroit de la plaie.",
+                "correcte": false,
+                "feedback": "Le garrot est une méthode extrême, il est préférable de presser la plaie."
+              },
+              {
+                "texte": "Je couvre la victime pour lui éviter un choc.",
+                "correcte": false,
+                "feedback": "Il faut d'abord stopper le saignement avant de la couvrir."
+              }
+            ]
+          },
+          {
+            "titre": "Brûlure thermique",
+            "description": "Une personne a une brûlure au troisième degré. Quelle est la première chose à faire ?",
+            "options": [
+              {
+                "texte": "Je place la brûlure sous l'eau froide pendant 10 minutes.",
+                "correcte": true,
+                "feedback": "C'est la bonne méthode pour soulager la douleur et refroidir la zone brûlée."
+              },
+              {
+                "texte": "Je place un pansement sec sur la brûlure.",
+                "correcte": false,
+                "feedback": "Il est préférable de refroidir d'abord la brûlure."
+              },
+              {
+                "texte": "Je laisse la brûlure à l'air libre.",
+                "correcte": false,
+                "feedback": "Il est important de refroidir la brûlure avec de l'eau pour éviter des complications."
+              }
+            ]
+          },
+          {
+            "titre": "Fracture",
+            "description": "Une personne a une fracture ouverte. Que dois-je faire ?",
+            "options": [
+              {
+                "texte": "Je fixe la fracture avec une attelle et j'appelle les secours.",
+                "correcte": true,
+                "feedback": "Stabiliser la fracture est important pour éviter toute aggravation."
+              },
+              {
+                "texte": "Je tente de réaligner les os moi-même.",
+                "correcte": false,
+                "feedback": "Cela peut entraîner des complications. Il faut laisser les secours intervenir."
+              },
+              {
+                "texte": "Je masse la zone de la fracture pour soulager la douleur.",
+                "correcte": false,
+                "feedback": "Il est préférable de ne pas toucher la fracture avant l'arrivée des secours."
+              }
+            ]
+          },
+          {
+            "titre": "Asphyxie par étranglement",
+            "description": "Une personne est étranglée. Que faire ?",
+            "options": [
+              {
+                "texte": "Je fais des claques dans le dos pour dégager les voies respiratoires.",
+                "correcte": true,
+                "feedback": "Les claques dans le dos sont efficaces pour expulser un objet obstruant les voies respiratoires."
+              },
+              {
+                "texte": "Je tente de pratiquer la RCP immédiatement.",
+                "correcte": false,
+                "feedback": "Il est plus pertinent de donner des claques dans le dos avant de commencer la RCP."
+              },
+              {
+                "texte": "Je demande à la victime de se calmer.",
+                "correcte": false,
+                "feedback": "Calmer la victime ne suffira pas. Vous devez aider à dégager les voies respiratoires."
+              }
+            ]
+          },
+          {
+            "titre": "Choc électrique",
+            "description": "Une victime a subi un choc électrique. Que faire ?",
+            "options": [
+              {
+                "texte": "Je coupe immédiatement l'électricité avant d'approcher la victime.",
+                "correcte": true,
+                "feedback": "Il est crucial de couper l'alimentation électrique pour éviter un nouveau choc."
+              },
+              {
+                "texte": "Je tente de la secouer pour la réveiller.",
+                "correcte": false,
+                "feedback": "Il faut d'abord couper l'alimentation, puis contacter les secours."
+              },
+              {
+                "texte": "Je la mouille avec de l'eau froide.",
+                "correcte": false,
+                "feedback": "Cela pourrait aggraver la situation. Il faut appeler les secours immédiatement."
+              }
+            ]
+          },
+          {
+            "titre": "Saignement nasal",
+            "description": "Une personne a un saignement nasal important. Que faire ?",
+            "options": [
+              {
+                "texte": "Je lui fais incliner la tête en avant et je presse les narines.",
+                "correcte": true,
+                "feedback": "C'est la meilleure méthode pour stopper un saignement nasal."
+              },
+              {
+                "texte": "Je lui fais pencher la tête en arrière.",
+                "correcte": false,
+                "feedback": "Pencher la tête en arrière pourrait entraîner l'ingestion de sang."
+              },
+              {
+                "texte": "Je lui mets un tampon dans le nez.",
+                "correcte": false,
+                "feedback": "Il est préférable de simplement presser les narines et incliner la tête en avant."
+              }
+            ]
+          }
+        ]
+      },
+      "niveau_2": {
+        "titre": "Interventions avancées",
+        "temps": "10 min",
+        "difficulte": "moyen",
+        "exercices": [
+          {
+            "titre": "Réanimation cardio-pulmonaire avancée",
+            "description": "Vous devez intervenir sur une victime en arrêt cardiaque avec un défibrillateur. Quelle est la première chose à faire ?",
+            "options": [
+              {
+                "texte": "Je place le défibrillateur et suis les instructions.",
+                "correcte": true,
+                "feedback": "Il faut toujours suivre les instructions du défibrillateur."
+              },
+              {
+                "texte": "Je commence la RCP avant d'utiliser le défibrillateur.",
+                "correcte": false,
+                "feedback": "Utiliser le défibrillateur dès que possible est essentiel."
+              },
+              {
+                "texte": "Je vérifie la victime pendant 5 minutes avant d'agir.",
+                "correcte": false,
+                "feedback": "Il est important d'agir rapidement en cas d'arrêt cardiaque."
+              }
+            ]
+          },
+          {
+            "titre": "Utilisation du défibrillateur",
+            "description": "Le défibrillateur ne se déclenche pas. Que faire ?",
+            "options": [
+              {
+                "texte": "Je vérifie les électrodes et m'assure qu'elles sont bien placées.",
+                "correcte": true,
+                "feedback": "Assurez-vous que les électrodes sont correctement placées pour que le défibrillateur fonctionne."
+              },
+              {
+                "texte": "Je tente d'utiliser un autre appareil.",
+                "correcte": false,
+                "feedback": "Cela pourrait retarder les secours. Vérifiez d'abord le bon fonctionnement de l'appareil."
+              },
+              {
+                "texte": "Je remplace les électrodes et attends les secours.",
+                "correcte": false,
+                "feedback": "Les actions doivent être rapides. Essayez d'abord de vérifier le matériel."
+              }
+            ]
+          },
+          {
+            "titre": "Choc anaphylactique",
+            "description": "Une personne présente une réaction allergique grave. Quelle est la première chose à faire ?",
+            "options": [
+              {
+                "texte": "Je lui administre de l'adrénaline si elle en a.",
+                "correcte": true,
+                "feedback": "L'adrénaline est le traitement de première intention en cas de choc anaphylactique."
+              },
+              {
+                "texte": "Je lui fais boire de l'eau.",
+                "correcte": false,
+                "feedback": "Cela peut aggraver la situation. L'adrénaline est nécessaire immédiatement."
+              },
+              {
+                "texte": "Je l'allonge et attends les secours.",
+                "correcte": false,
+                "feedback": "L'adrénaline est plus importante que l'attente des secours."
+              }
+            ]
+          },
+          {
+            "titre": "Brûlures chimiques",
+            "description": "Une personne a des brûlures chimiques sur la peau. Que faire ?",
+            "options": [
+              {
+                "texte": "Je rince immédiatement la peau à l'eau claire pendant 20 minutes.",
+                "correcte": true,
+                "feedback": "L'eau claire est le meilleur moyen de neutraliser les produits chimiques."
+              },
+              {
+                "texte": "Je mets une pommade pour soulager la douleur.",
+                "correcte": false,
+                "feedback": "Cela pourrait aggraver la brûlure. Il est important de rincer immédiatement."
+              },
+              {
+                "texte": "Je demande à la victime de se déshabiller.",
+                "correcte": false,
+                "feedback": "Il est important de rincer d'abord la zone brûlée avant d'agir."
+              }
+            ]
+          },
+          {
+            "titre": "Traumatisme crânien",
+            "description": "Une personne présente un traumatisme crânien grave. Que faire ?",
+            "options": [
+              {
+                "texte": "Je la maintiens immobile et j'appelle les secours.",
+                "correcte": true,
+                "feedback": "Éviter de bouger la victime est essentiel pour ne pas aggraver la situation."
+              },
+              {
+                "texte": "Je tente de la réveiller en la secouant.",
+                "correcte": false,
+                "feedback": "Cela pourrait causer de graves dommages supplémentaires. Ne la bougez pas."
+              },
+              {
+                "texte": "Je l'installe confortablement pour attendre les secours.",
+                "correcte": false,
+                "feedback": "Ne bougez pas la victime sauf en cas de danger immédiat."
+              }
+            ]
+          },
+          {
+            "titre": "Secours aux enfants",
+            "description": "Un enfant est en arrêt respiratoire. Que faire ?",
+            "options": [
+              {
+                "texte": "Je fais des compressions thoraciques adaptées à l'âge de l'enfant.",
+                "correcte": true,
+                "feedback": "Les compressions doivent être adaptées à l'âge et à la taille de l'enfant."
+              },
+              {
+                "texte": "Je lui fais souffler dans la bouche.",
+                "correcte": false,
+                "feedback": "La respiration bouche-à-bouche est à adapter en fonction de la taille de l'enfant."
+              },
+              {
+                "texte": "Je le réchauffe avec une couverture.",
+                "correcte": false,
+                "feedback": "Cela n'est pas suffisant. Des actions immédiates comme la RCP sont nécessaires."
+              }
+            ]
+          },
+          {
+            "titre": "Accident de plongée",
+            "description": "Une personne présente des signes d'accident de plongée. Que faire ?",
+            "options": [
+              {
+                "texte": "Je la fais remonter lentement et je l'installe en position latérale.",
+                "correcte": true,
+                "feedback": "Il faut la faire remonter lentement et la stabiliser avant l'arrivée des secours."
+              },
+              {
+                "texte": "Je la fais respirer profondément.",
+                "correcte": false,
+                "feedback": "Cela peut aggraver la situation. La stabilisation est plus importante."
+              },
+              {
+                "texte": "Je la laisse tranquille en attendant qu'elle se rétablisse.",
+                "correcte": false,
+                "feedback": "Il faut absolument l'emmener à l'hôpital pour une évaluation."
+              }
+            ]
+          },
+          {
+            "titre": "Hyperthermie",
+            "description": "Une personne présente des signes de coup de chaleur. Que faire ?",
+            "options": [
+              {
+                "texte": "Je la fais boire et la refroidis immédiatement.",
+                "correcte": true,
+                "feedback": "Refroidir la victime est essentiel pour prévenir un choc thermique."
+              },
+              {
+                "texte": "Je la couvre pour la protéger du froid.",
+                "correcte": false,
+                "feedback": "Cela pourrait aggraver la situation. Il faut refroidir la victime."
+              },
+              {
+                "texte": "Je l'appelle immédiatement pour qu'elle parte se reposer.",
+                "correcte": false,
+                "feedback": "Il est urgent de refroidir la victime avant tout."
+              }
+            ]
+          },
+          {
+            "titre": "Accident de voiture",
+            "description": "Une victime est bloquée dans une voiture après un accident. Que faire ?",
+            "options": [
+              {
+                "texte": "Je contacte les secours et attends leur arrivée.",
+                "correcte": true,
+                "feedback": "Restez calme et attendez les secours. Ne déplacez pas la victime."
+              },
+              {
+                "texte": "Je tente de sortir la victime du véhicule.",
+                "correcte": false,
+                "feedback": "Cela peut aggraver ses blessures. Attendez l'arrivée des secours."
+              },
+              {
+                "texte": "Je commence à la soigner moi-même.",
+                "correcte": false,
+                "feedback": "Ne tentez rien sans les secours, cela pourrait causer plus de tort que de bien."
+              }
+            ]
+          }
+        ]
+      }
+    },
+  
+    "fire": {
+      "niveau_1": {
+        "titre": "Réagir face au feu",
+        "temps": "8 min",
+        "difficulte": "difficile",
+        "exercices": [
+          {
+            "titre": "Départ de feu",
+            "description": "Vous remarquez un feu de friteuse, que faites-vous ?",
+            "options": [
+              {
+                "texte": "Je couvre avec un couvercle ou une couverture anti-feu.",
+                "correcte": true,
+                "feedback": "Bonne action, cela prive le feu d'oxygène."
+              },
+              {
+                "texte": "Je couvre avec un linge humide.",
+                "correcte": false,
+                "feedback": "C'est dangereux, cela peut aggraver l'incendie."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "prevent": {
+      "niveau_1": {
+        "titre": "Prévention des accidents",
+        "temps": "4 min",
+        "difficulte": "moyen",
+        "exercices": [
+          {
+            "titre": "Prévention des chutes",
+            "description": "Quel conseil donnez-vous pour éviter les chutes à la maison ?",
+            "options": [
+              {
+                "texte": "Installer des tapis glissants partout.",
+                "correcte": false,
+                "feedback": "C'est à éviter !"
+              },
+              {
+                "texte": "Bien éclairer les escaliers et enlever les obstacles.",
+                "correcte": true,
+                "feedback": "Bonne réponse, c'est une mesure essentielle de prévention."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "one-seven-two-two": {
+      "niveau_1": {
+        "titre": "Connaître le 1722",
+        "temps": "2 min",
+        "difficulte": "facile",
+        "exercices": [
+          {
+            "titre": "Appel au 1722",
+            "description": "Quand faut-il appeler le 1722 ?",
+            "options": [
+              {
+                "texte": "En cas de tempête ou d'inondation sans danger de mort.",
+                "correcte": true,
+                "feedback": "Exact, c'est un numéro pour les situations non urgentes."
+              },
+              {
+                "texte": "En cas de feu avec des victimes.",
+                "correcte": false,
+                "feedback": "Dans ce cas, il faut appeler le 112."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+      

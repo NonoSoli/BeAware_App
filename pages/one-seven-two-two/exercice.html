@@ -42,22 +42,19 @@
     <script>
       let currentIndex = 0;
       let exercicesData = [];
-
-      // Fonction pour récupérer le paramètre "niveau" de l'URL
-      function getNiveauFromURL() {
-        const params = new URLSearchParams(window.location.search);
-        return params.get('niveau') || '1'; // Si pas de niveau spécifié, on charge le niveau 1 par défaut
+    
+      function getParam(name) {
+        return new URLSearchParams(window.location.search).get(name);
       }
-
+    
       function updateProgress() {
         const percentage = ((currentIndex + 1) / exercicesData.length) * 100;
         $('.progress-bar-fill').css('width', percentage + '%');
       }
-
+    
       function afficherExercice(index) {
         const exercice = exercicesData[index];
-
-        // Réinitialisation du contenu
+    
         $('.exercice-title').text(exercice.titre);
         $('.exercice-description').text(exercice.description);
         $('.temps-estime').text(exercice.temps_estime);
@@ -65,60 +62,47 @@
         $('.exercice-options').empty();
         $('.feedback').empty();
         $('.next-button').hide();
-
+    
         exercice.options.forEach(option => {
           const btn = $('<button class="option-button">')
             .append(
-              $('<div class="rectangular-choice">')
-                .append($('<span>').text(option.texte))
+              $('<div class="rectangular-choice">').append($('<span>').text(option.texte))
             )
             .on('click', function () {
-              // Empêcher les clics répétés sur le même bouton
               if ($(this).hasClass('clicked')) return;
-
               $(this).addClass('clicked');
-
-              // Marquer la bonne ou mauvaise réponse
               $(this).find('.rectangular-choice').addClass(option.correcte ? 'bonne-reponse' : 'mauvaise-reponse');
-
-              // Afficher le feedback
               $('.feedback').text(option.feedback);
-
-              // Si bonne réponse : bloquer tous les autres boutons et afficher "Suivant"
               if (option.correcte) {
                 $('.option-button').prop('disabled', true);
                 $('.next-button').fadeIn();
               }
             });
-
+    
           $('.exercice-options').append(btn);
         });
-
+    
         updateProgress();
       }
-
+    
       $(document).ready(function () {
-        // Récupérer le niveau depuis l'URL
-        const niveau = getNiveauFromURL();
-        const fichier = `../../assets/json/exercices/medic_level_${niveau}.json`; // Charger le fichier dynamique en fonction du niveau
-
-        // Charger les exercices
-        $.getJSON(fichier, function (data) {
-          exercicesData = data.exercices;
+        const domaine = getParam('domaine') || 'medic';
+        const niveau = getParam('niveau') || 'niveau_1';
+    
+        $.getJSON('../../assets/json/exercices_data.json', function (data) {
+          exercicesData = data[domaine][niveau].exercices;
           afficherExercice(currentIndex);
         });
-
-        // Gérer l'action du bouton "Suivant"
+    
         $('.next-button').on('click', function () {
           currentIndex++;
           if (currentIndex < exercicesData.length) {
             afficherExercice(currentIndex);
           } else {
-            window.location.href = '../../../home.html'; // Rediriger vers la page des niveaux une fois l'exercice terminé
+            window.location.href = '../../../home.html'; // Redirection après le dernier exercice
           }
         });
       });
-
     </script>
   </body>
 </html>
