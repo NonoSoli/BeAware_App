@@ -10,11 +10,6 @@
             "description": "Vous trouvez une personne inconsciente qui ne respire plus. Que faites-vous ?",
             "options": [
               {
-                "texte": "Je secoue la victime et je lui demande si elle m'entend.",
-                "correcte": true,
-                "feedback": "Bonne réaction, c'est la première étape pour vérifier la conscience."
-              },
-              {
                 "texte": "Je pars chercher de l’aide sans rien faire.",
                 "correcte": false,
                 "feedback": "Il est essentiel de vérifier l’état de la victime avant tout."
@@ -23,6 +18,11 @@
                 "texte": "Je lui donne immédiatement à boire.",
                 "correcte": false,
                 "feedback": "Attention, il ne faut jamais faire boire une personne inconsciente."
+              },
+              {
+                "texte": "Je secoue la victime et je lui demande si elle m'entend.",
+                "correcte": true,
+                "feedback": "Bonne réaction, c'est la première étape pour vérifier la conscience."
               }
             ]
           },
@@ -31,14 +31,14 @@
             "description": "La victime est inconsciente mais respire. Quelle est la première chose à faire ?",
             "options": [
               {
-                "texte": "Je la mets en position latérale de sécurité.",
-                "correcte": true,
-                "feedback": "C'est la bonne réaction pour libérer les voies respiratoires."
-              },
-              {
                 "texte": "Je tente de la réveiller en la secouant.",
                 "correcte": false,
                 "feedback": "Secouer une victime peut aggraver sa condition."
+              },
+              {
+                "texte": "Je la mets en position latérale de sécurité.",
+                "correcte": true,
+                "feedback": "C'est la bonne réaction pour libérer les voies respiratoires."
               },
               {
                 "texte": "Je la laisse telle quelle, en attendant les secours.",
@@ -72,20 +72,16 @@
             "titre": "Hémorragie grave",
             "description": "Une personne perd beaucoup de sang. Que faire ?",
             "options": [
-              {
-                "texte": "Je presse la plaie avec un linge propre.",
-                "correcte": true,
-                "feedback": "C'est la meilleure manière de stopper l'hémorragie."
-              },
+              
               {
                 "texte": "Je fais un garrot à l'endroit de la plaie.",
                 "correcte": false,
                 "feedback": "Le garrot est une méthode extrême, il est préférable de presser la plaie."
               },
               {
-                "texte": "Je couvre la victime pour lui éviter un choc.",
-                "correcte": false,
-                "feedback": "Il faut d'abord stopper le saignement avant de la couvrir."
+                "texte": "Je presse la plaie avec un linge propre.",
+                "correcte": true,
+                "feedback": "C'est la meilleure manière de stopper l'hémorragie."
               }
             ]
           },
@@ -115,14 +111,14 @@
             "description": "Une personne a une fracture ouverte. Que dois-je faire ?",
             "options": [
               {
-                "texte": "Je fixe la fracture avec une attelle et j'appelle les secours.",
-                "correcte": true,
-                "feedback": "Stabiliser la fracture est important pour éviter toute aggravation."
-              },
-              {
                 "texte": "Je tente de réaligner les os moi-même.",
                 "correcte": false,
                 "feedback": "Cela peut entraîner des complications. Il faut laisser les secours intervenir."
+              },
+              {
+                "texte": "Je fixe la fracture avec une attelle et j'appelle les secours.",
+                "correcte": true,
+                "feedback": "Stabiliser la fracture est important pour éviter toute aggravation."
               },
               {
                 "texte": "Je masse la zone de la fracture pour soulager la douleur.",
@@ -136,11 +132,6 @@
             "description": "Une personne est étranglée. Que faire ?",
             "options": [
               {
-                "texte": "Je fais des claques dans le dos pour dégager les voies respiratoires.",
-                "correcte": true,
-                "feedback": "Les claques dans le dos sont efficaces pour expulser un objet obstruant les voies respiratoires."
-              },
-              {
                 "texte": "Je tente de pratiquer la RCP immédiatement.",
                 "correcte": false,
                 "feedback": "Il est plus pertinent de donner des claques dans le dos avant de commencer la RCP."
@@ -149,6 +140,11 @@
                 "texte": "Je demande à la victime de se calmer.",
                 "correcte": false,
                 "feedback": "Calmer la victime ne suffira pas. Vous devez aider à dégager les voies respiratoires."
+              },
+              {
+                "texte": "Je fais des claques dans le dos pour dégager les voies respiratoires.",
+                "correcte": true,
+                "feedback": "Les claques dans le dos sont efficaces pour expulser un objet obstruant les voies respiratoires."
               }
             ]
           },
@@ -178,11 +174,6 @@
             "description": "Une personne a un saignement nasal important. Que faire ?",
             "options": [
               {
-                "texte": "Je lui fais incliner la tête en avant et je presse les narines.",
-                "correcte": true,
-                "feedback": "C'est la meilleure méthode pour stopper un saignement nasal."
-              },
-              {
                 "texte": "Je lui fais pencher la tête en arrière.",
                 "correcte": false,
                 "feedback": "Pencher la tête en arrière pourrait entraîner l'ingestion de sang."
@@ -191,6 +182,11 @@
                 "texte": "Je lui mets un tampon dans le nez.",
                 "correcte": false,
                 "feedback": "Il est préférable de simplement presser les narines et incliner la tête en avant."
+              },
+              {
+                "texte": "Je lui fais incliner la tête en avant et je presse les narines.",
+                "correcte": true,
+                "feedback": "C'est la meilleure méthode pour stopper un saignement nasal."
               }
             ]
           }
@@ -206,14 +202,14 @@
             "description": "Vous devez intervenir sur une victime en arrêt cardiaque avec un défibrillateur. Quelle est la première chose à faire ?",
             "options": [
               {
-                "texte": "Je place le défibrillateur et suis les instructions.",
-                "correcte": true,
-                "feedback": "Il faut toujours suivre les instructions du défibrillateur."
-              },
-              {
                 "texte": "Je commence la RCP avant d'utiliser le défibrillateur.",
                 "correcte": false,
                 "feedback": "Utiliser le défibrillateur dès que possible est essentiel."
+              },
+              {
+                "texte": "Je place le défibrillateur et suis les instructions.",
+                "correcte": true,
+                "feedback": "Il faut toujours suivre les instructions du défibrillateur."
               },
               {
                 "texte": "Je vérifie la victime pendant 5 minutes avant d'agir.",
@@ -227,11 +223,6 @@
             "description": "Le défibrillateur ne se déclenche pas. Que faire ?",
             "options": [
               {
-                "texte": "Je vérifie les électrodes et m'assure qu'elles sont bien placées.",
-                "correcte": true,
-                "feedback": "Assurez-vous que les électrodes sont correctement placées pour que le défibrillateur fonctionne."
-              },
-              {
                 "texte": "Je tente d'utiliser un autre appareil.",
                 "correcte": false,
                 "feedback": "Cela pourrait retarder les secours. Vérifiez d'abord le bon fonctionnement de l'appareil."
@@ -240,6 +231,11 @@
                 "texte": "Je remplace les électrodes et attends les secours.",
                 "correcte": false,
                 "feedback": "Les actions doivent être rapides. Essayez d'abord de vérifier le matériel."
+              },
+              {
+                "texte": "Je vérifie les électrodes et m'assure qu'elles sont bien placées.",
+                "correcte": true,
+                "feedback": "Assurez-vous que les électrodes sont correctement placées pour que le défibrillateur fonctionne."
               }
             ]
           },
@@ -269,14 +265,14 @@
             "description": "Une personne a des brûlures chimiques sur la peau. Que faire ?",
             "options": [
               {
-                "texte": "Je rince immédiatement la peau à l'eau claire pendant 20 minutes.",
-                "correcte": true,
-                "feedback": "L'eau claire est le meilleur moyen de neutraliser les produits chimiques."
-              },
-              {
                 "texte": "Je mets une pommade pour soulager la douleur.",
                 "correcte": false,
                 "feedback": "Cela pourrait aggraver la brûlure. Il est important de rincer immédiatement."
+              },
+              {
+                "texte": "Je rince immédiatement la peau à l'eau claire pendant 20 minutes.",
+                "correcte": true,
+                "feedback": "L'eau claire est le meilleur moyen de neutraliser les produits chimiques."
               },
               {
                 "texte": "Je demande à la victime de se déshabiller.",
@@ -290,11 +286,6 @@
             "description": "Une personne présente un traumatisme crânien grave. Que faire ?",
             "options": [
               {
-                "texte": "Je la maintiens immobile et j'appelle les secours.",
-                "correcte": true,
-                "feedback": "Éviter de bouger la victime est essentiel pour ne pas aggraver la situation."
-              },
-              {
                 "texte": "Je tente de la réveiller en la secouant.",
                 "correcte": false,
                 "feedback": "Cela pourrait causer de graves dommages supplémentaires. Ne la bougez pas."
@@ -303,6 +294,11 @@
                 "texte": "Je l'installe confortablement pour attendre les secours.",
                 "correcte": false,
                 "feedback": "Ne bougez pas la victime sauf en cas de danger immédiat."
+              },
+              {
+                "texte": "Je la maintiens immobile et j'appelle les secours.",
+                "correcte": true,
+                "feedback": "Éviter de bouger la victime est essentiel pour ne pas aggraver la situation."
               }
             ]
           },
@@ -332,11 +328,6 @@
             "description": "Une personne présente des signes d'accident de plongée. Que faire ?",
             "options": [
               {
-                "texte": "Je la fais remonter lentement et je l'installe en position latérale.",
-                "correcte": true,
-                "feedback": "Il faut la faire remonter lentement et la stabiliser avant l'arrivée des secours."
-              },
-              {
                 "texte": "Je la fais respirer profondément.",
                 "correcte": false,
                 "feedback": "Cela peut aggraver la situation. La stabilisation est plus importante."
@@ -345,6 +336,11 @@
                 "texte": "Je la laisse tranquille en attendant qu'elle se rétablisse.",
                 "correcte": false,
                 "feedback": "Il faut absolument l'emmener à l'hôpital pour une évaluation."
+              },
+              {
+                "texte": "Je la fais remonter lentement et je l'installe en position latérale.",
+                "correcte": true,
+                "feedback": "Il faut la faire remonter lentement et la stabiliser avant l'arrivée des secours."
               }
             ]
           },
@@ -353,14 +349,14 @@
             "description": "Une personne présente des signes de coup de chaleur. Que faire ?",
             "options": [
               {
-                "texte": "Je la fais boire et la refroidis immédiatement.",
-                "correcte": true,
-                "feedback": "Refroidir la victime est essentiel pour prévenir un choc thermique."
-              },
-              {
                 "texte": "Je la couvre pour la protéger du froid.",
                 "correcte": false,
                 "feedback": "Cela pourrait aggraver la situation. Il faut refroidir la victime."
+              },
+              {
+                "texte": "Je la fais boire et la refroidis immédiatement.",
+                "correcte": true,
+                "feedback": "Refroidir la victime est essentiel pour prévenir un choc thermique."
               },
               {
                 "texte": "Je l'appelle immédiatement pour qu'elle parte se reposer.",
@@ -374,11 +370,6 @@
             "description": "Une victime est bloquée dans une voiture après un accident. Que faire ?",
             "options": [
               {
-                "texte": "Je contacte les secours et attends leur arrivée.",
-                "correcte": true,
-                "feedback": "Restez calme et attendez les secours. Ne déplacez pas la victime."
-              },
-              {
                 "texte": "Je tente de sortir la victime du véhicule.",
                 "correcte": false,
                 "feedback": "Cela peut aggraver ses blessures. Attendez l'arrivée des secours."
@@ -387,6 +378,11 @@
                 "texte": "Je commence à la soigner moi-même.",
                 "correcte": false,
                 "feedback": "Ne tentez rien sans les secours, cela pourrait causer plus de tort que de bien."
+              },
+              {
+                "texte": "Je contacte les secours et attends leur arrivée.",
+                "correcte": true,
+                "feedback": "Restez calme et attendez les secours. Ne déplacez pas la victime."
               }
             ]
           }
@@ -415,10 +411,504 @@
                 "feedback": "C'est dangereux, cela peut aggraver l'incendie."
               }
             ]
+          },
+          {
+            "titre": "Feu dans une poubelle",
+            "description": "Vous voyez des flammes sortir d'une poubelle publique.",
+            "options": [
+              {
+                "texte": "Je m'éloigne et j'appelle les pompiers.",
+                "correcte": true,
+                "feedback": "Bonne réaction, la sécurité d'abord."
+              },
+              {
+                "texte": "J'essaie d'éteindre avec mes pieds.",
+                "correcte": false,
+                "feedback": "C'est risqué, le feu peut se propager."
+              },
+              {
+                "texte": "Je filme pour avoir une preuve.",
+                "correcte": false,
+                "feedback": "La priorité est d’appeler les secours, pas de filmer."
+              }
+            ]
+          },
+          {
+            "titre": "Extincteur approprié",
+            "description": "Quel extincteur utiliser sur un feu électrique ?",
+            "options": [
+              {
+                "texte": "Extincteur à eau.",
+                "correcte": false,
+                "feedback": "Dangereux, risque d'électrocution."
+              },
+              {
+                "texte": "Extincteur à mousse.",
+                "correcte": false,
+                "feedback": "Pas recommandé pour ce type de feu."
+              },
+              {
+                "texte": "Extincteur à CO2.",
+                "correcte": true,
+                "feedback": "Parfait, le CO2 est adapté aux feux électriques."
+              }
+            ]
+          },
+          {
+            "titre": "Signalement de feu",
+            "description": "Vous êtes le témoin d’un feu dans un bâtiment vide.",
+            "options": [
+              {
+                "texte": "Je préviens les occupants.",
+                "correcte": false,
+                "feedback": "Le bâtiment est vide, inutile."
+              },
+              {
+                "texte": "J'appelle le 112 immédiatement.",
+                "correcte": true,
+                "feedback": "Bonne réaction, l'intervention rapide est essentielle."
+              }
+            ]
+          },
+          {
+            "titre": "Feu de voiture",
+            "description": "Une voiture commence à fumer sur un parking.",
+            "options": [
+              {
+                "texte": "Je m’éloigne et j’appelle les secours.",
+                "correcte": true,
+                "feedback": "Très bien, sécurité avant tout."
+              },
+              {
+                "texte": "J'ouvre le capot pour voir ce qu'il se passe.",
+                "correcte": false,
+                "feedback": "C'est dangereux, risque d'explosion ou de brûlures."
+              }
+            ]
+          },
+          {
+            "titre": "Sortie en cas d'incendie",
+            "description": "Un incendie se déclare dans un immeuble, quelle sortie utiliser ?",
+            "options": [
+              {
+                "texte": "L'ascenseur.",
+                "correcte": false,
+                "feedback": "À éviter absolument en cas d'incendie."
+              },
+              {
+                "texte": "Les escaliers.",
+                "correcte": true,
+                "feedback": "Bonne décision, les escaliers sont sûrs."
+              }
+            ]
+          },
+          {
+            "titre": "Type de feu",
+            "description": "Quel est le type de feu provoqué par de l’huile en combustion ?",
+            "options": [
+              {
+                "texte": "Feu de classe A.",
+                "correcte": false,
+                "feedback": "Non, ce sont les matériaux solides comme le bois."
+              },
+              {
+                "texte": "Feu de classe F.",
+                "correcte": true,
+                "feedback": "Exact, la classe F concerne les huiles de cuisson."
+              }
+            ]
+          },
+          {
+            "titre": "Réaction en cas de fumée",
+            "description": "Que faire en présence de fumée dans une pièce ?",
+            "options": [
+              {
+                "texte": "Me baisser pour ramper jusqu'à la sortie.",
+                "correcte": true,
+                "feedback": "Excellente réaction, l'air est plus respirable au sol."
+              },
+              {
+                "texte": "Courir vers la sortie en criant.",
+                "correcte": false,
+                "feedback": "Non, il faut garder son calme et éviter d'inhaler la fumée."
+              }
+            ]
+          },
+          {
+            "titre": "Extinction d’un petit feu",
+            "description": "Vous voyez un petit feu de papier dans une corbeille.",
+            "options": [
+              {
+                "texte": "Je verse de l’eau dessus si j’en ai à disposition.",
+                "correcte": true,
+                "feedback": "Bonne réaction si c’est sans risque électrique autour."
+              },
+              {
+                "texte": "Je jette la corbeille par la fenêtre.",
+                "correcte": false,
+                "feedback": "C’est dangereux pour les autres."
+              }
+            ]
+          },
+          {
+            "titre": "Réaction face à un feu de forêt",
+            "description": "Un feu de forêt est proche de votre position.",
+            "options": [
+              {
+                "texte": "Je pars en voiture immédiatement.",
+                "correcte": true,
+                "feedback": "Bonne décision si la route est dégagée."
+              },
+              {
+                "texte": "Je monte sur le toit pour surveiller.",
+                "correcte": false,
+                "feedback": "Non, vous vous exposez inutilement au danger."
+              },
+              {
+                "texte": "Je tente de l’éteindre seul avec un seau.",
+                "correcte": false,
+                "feedback": "Trop risqué, il faut contacter les pompiers immédiatement."
+              }
+            ]
+          }
+        ]
+      },
+      "niveau_2": {
+        "titre": "Prévention et matériel",
+        "temps": "10 min",
+        "difficulte": "moyen",
+        "exercices": [
+          {
+            "titre": "Emplacement d’un extincteur",
+            "description": "Où placer un extincteur dans une maison ?",
+            "options": [
+              {
+                "texte": "Proche des sources de chaleur.",
+                "correcte": false,
+                "feedback": "Non, il doit être facilement accessible mais à distance du danger."
+              },
+              {
+                "texte": "Dans un lieu visible et facile d’accès.",
+                "correcte": true,
+                "feedback": "Exact, l'accès rapide est crucial."
+              }
+            ]
+          },
+          {
+            "titre": "Matériaux inflammables",
+            "description": "Quels objets sont inflammables ?",
+            "options": [
+              {
+                "texte": "Produits ménagers, tissus, papiers.",
+                "correcte": true,
+                "feedback": "Oui, ils peuvent s'enflammer facilement."
+              },
+              {
+                "texte": "Verre, céramique, acier.",
+                "correcte": false,
+                "feedback": "Ces matériaux ne brûlent pas facilement."
+              }
+            ]
+          },
+          {
+            "titre": "Installation électrique",
+            "description": "Quel comportement est dangereux ?",
+            "options": [
+              {
+                "texte": "Débrancher les appareils inutilisés.",
+                "correcte": false,
+                "feedback": "C’est justement une bonne pratique."
+              },
+              {
+                "texte": "Surcharger une prise multiple.",
+                "correcte": true,
+                "feedback": "C’est un risque d’échauffement et d’incendie."
+              }
+            ]
+          },
+          {
+            "titre": "Détecteur de fumée",
+            "description": "Pourquoi installer un détecteur de fumée ?",
+            "options": [
+              {
+                "texte": "Pour éviter que les voisins se plaignent.",
+                "correcte": false,
+                "feedback": "Ce n’est pas sa fonction."
+              },
+              {
+                "texte": "Pour être alerté dès le début d’un feu.",
+                "correcte": true,
+                "feedback": "Oui, il alerte dès les premières fumées."
+              }
+            ]
+          },
+          {
+            "titre": "Utilisation du four",
+            "description": "Quel comportement est sûr ?",
+            "options": [
+              {
+                "texte": "Laisser des objets en plastique à proximité.",
+                "correcte": false,
+                "feedback": "Non, ils peuvent fondre ou brûler."
+              },
+              {
+                "texte": "Toujours vérifier avant d’allumer.",
+                "correcte": true,
+                "feedback": "C’est une bonne habitude de sécurité."
+              }
+            ]
+          },
+          {
+            "titre": "Stockage des produits chimiques",
+            "description": "Où ranger les produits inflammables ?",
+            "options": [
+              {
+                "texte": "Dans un endroit chaud et bien éclairé.",
+                "correcte": false,
+                "feedback": "Mauvaise idée, la chaleur augmente le risque."
+              },
+              {
+                "texte": "Dans un local ventilé et frais.",
+                "correcte": true,
+                "feedback": "Parfait, c’est plus sûr."
+              }
+            ]
+          },
+          {
+            "titre": "Allumettes et briquets",
+            "description": "Quelle précaution prendre avec les enfants ?",
+            "options": [
+              {
+                "texte": "Les laisser jouer sous surveillance.",
+                "correcte": false,
+                "feedback": "C’est trop risqué, même surveillés."
+              },
+              {
+                "texte": "Les ranger hors de portée.",
+                "correcte": true,
+                "feedback": "Bonne pratique pour éviter les accidents."
+              }
+            ]
+          },
+          {
+            "titre": "Prévention en cuisine",
+            "description": "Que faut-il éviter ?",
+            "options": [
+              {
+                "texte": "Laisser une casserole sur le feu sans surveillance.",
+                "correcte": true,
+                "feedback": "Cela cause de nombreux départs de feu domestiques."
+              },
+              {
+                "texte": "Utiliser une hotte aspirante.",
+                "correcte": false,
+                "feedback": "C’est recommandé pour la ventilation."
+              }
+            ]
+          },
+          {
+            "titre": "Barbecue",
+            "description": "Comment sécuriser un barbecue ?",
+            "options": [
+              {
+                "texte": "Utiliser de l’essence pour démarrer.",
+                "correcte": false,
+                "feedback": "Très dangereux, à éviter absolument."
+              },
+              {
+                "texte": "L’installer loin des arbres et bâtiments.",
+                "correcte": true,
+                "feedback": "Bonne précaution contre les incendies."
+              }
+            ]
+          },
+          {
+            "titre": "Rangements des extincteurs",
+            "description": "À quelle fréquence vérifier un extincteur ?",
+            "options": [
+              {
+                "texte": "Tous les 5 ans.",
+                "correcte": false,
+                "feedback": "C’est trop espacé."
+              },
+              {
+                "texte": "Une fois par an.",
+                "correcte": true,
+                "feedback": "Oui, c’est le minimum recommandé."
+              }
+            ]
+          }
+        ]
+      },
+      "niveau_3": {
+        "titre": "Réactions en situation d’urgence",
+        "temps": "12 min",
+        "difficulte": "facile",
+        "exercices": [
+          {
+            "titre": "Feu au travail",
+            "description": "Un feu se déclenche dans votre bureau, que faites-vous ?",
+            "options": [
+              {
+                "texte": "Je me cache sous le bureau.",
+                "correcte": false,
+                "feedback": "Mauvaise idée, il faut évacuer."
+              },
+              {
+                "texte": "Je quitte le bâtiment calmement.",
+                "correcte": true,
+                "feedback": "Bonne réaction."
+              }
+            ]
+          },
+          {
+            "titre": "Coupure d’électricité",
+            "description": "Suite à un feu, l'électricité est coupée.",
+            "options": [
+              {
+                "texte": "J’utilise une bougie.",
+                "correcte": false,
+                "feedback": "Dangereux, risque de nouveau feu."
+              },
+              {
+                "texte": "J’utilise une lampe torche.",
+                "correcte": true,
+                "feedback": "Parfait, sans risque."
+              }
+            ]
+          },
+          {
+            "titre": "Panique dans la foule",
+            "description": "Un feu éclate dans un lieu public bondé.",
+            "options": [
+              {
+                "texte": "Je pousse les autres pour sortir.",
+                "correcte": false,
+                "feedback": "Cela aggrave la situation."
+              },
+              {
+                "texte": "Je garde mon calme et suis les consignes.",
+                "correcte": true,
+                "feedback": "C’est la bonne attitude."
+              }
+            ]
+          },
+          {
+            "titre": "Gaz en fuite",
+            "description": "Vous sentez une forte odeur de gaz.",
+            "options": [
+              {
+                "texte": "Allumer la lumière pour mieux voir.",
+                "correcte": false,
+                "feedback": "Cela peut provoquer une explosion."
+              },
+              {
+                "texte": "Ouvrir les fenêtres et sortir.",
+                "correcte": true,
+                "feedback": "Bonne décision."
+              }
+            ]
+          },
+          {
+            "titre": "Fausse alerte",
+            "description": "L’alarme incendie sonne, mais vous ne voyez rien.",
+            "options": [
+              {
+                "texte": "Je reste à mon poste en attendant.",
+                "correcte": false,
+                "feedback": "On évacue toujours par précaution."
+              },
+              {
+                "texte": "Je suis la procédure d’évacuation.",
+                "correcte": true,
+                "feedback": "C’est le bon réflexe."
+              }
+            ]
+          },
+          {
+            "titre": "Coup de chaleur",
+            "description": "Une personne s'effondre lors d’un feu.",
+            "options": [
+              {
+                "texte": "Je l’évacue immédiatement si possible.",
+                "correcte": true,
+                "feedback": "Priorité à la mise en sécurité."
+              },
+              {
+                "texte": "Je lui donne à boire.",
+                "correcte": false,
+                "feedback": "Pas prioritaire dans cette situation."
+              }
+            ]
+          },
+          {
+            "titre": "Ascenseur bloqué",
+            "description": "Un feu bloque un ascenseur avec des personnes à l’intérieur.",
+            "options": [
+              {
+                "texte": "J'essaie de forcer la porte.",
+                "correcte": false,
+                "feedback": "C’est risqué et inefficace."
+              },
+              {
+                "texte": "J'appelle les secours immédiatement.",
+                "correcte": true,
+                "feedback": "C’est la meilleure chose à faire."
+              }
+            ]
+          },
+          {
+            "titre": "Feu en forêt (à distance)",
+            "description": "Vous voyez de la fumée au loin en forêt.",
+            "options": [
+              {
+                "texte": "J'appelle les secours.",
+                "correcte": true,
+                "feedback": "Bonne initiative, mieux vaut prévenir rapidement."
+              },
+              {
+                "texte": "Je vais voir de plus près.",
+                "correcte": false,
+                "feedback": "Non, cela peut être très dangereux."
+              }
+            ]
+          },
+          {
+            "titre": "Aide aux personnes",
+            "description": "Une personne âgée a besoin d’aide pour évacuer.",
+            "options": [
+              {
+                "texte": "Je la prends avec moi si cela ne me met pas en danger.",
+                "correcte": true,
+                "feedback": "Bravo, la solidarité compte."
+              },
+              {
+                "texte": "Je cours seul pour aller plus vite.",
+                "correcte": false,
+                "feedback": "L’entraide est prioritaire si possible."
+              }
+            ]
+          },
+          {
+            "titre": "Fin d’alerte",
+            "description": "Le feu est éteint, que faire avant de rentrer ?",
+            "options": [
+              {
+                "texte": "Attendre les consignes des autorités.",
+                "correcte": true,
+                "feedback": "C’est essentiel pour la sécurité."
+              },
+              {
+                "texte": "Rentrer rapidement pour vérifier mes affaires.",
+                "correcte": false,
+                "feedback": "Trop dangereux sans autorisation."
+              }
+            ]
           }
         ]
       }
     },
+
     "prevent": {
       "niveau_1": {
         "titre": "Prévention des accidents",
@@ -444,8 +934,55 @@
         ]
       }
     },
+    
     "one-seven-two-two": {
       "niveau_1": {
+        "titre": "Connaître le 1722",
+        "temps": "2 min",
+        "difficulte": "facile",
+        "exercices": [
+          {
+            "titre": "Appel au 1722",
+            "description": "Quand faut-il appeler le 1722 ?",
+            "options": [
+              {
+                "texte": "En cas de tempête ou d'inondation sans danger de mort.",
+                "correcte": true,
+                "feedback": "Exact, c'est un numéro pour les situations non urgentes."
+              },
+              {
+                "texte": "En cas de feu avec des victimes.",
+                "correcte": false,
+                "feedback": "Dans ce cas, il faut appeler le 112."
+              }
+            ]
+          }
+        ]
+      },
+      "niveau_2": {
+        "titre": "Connaître le 1722",
+        "temps": "2 min",
+        "difficulte": "facile",
+        "exercices": [
+          {
+            "titre": "Appel au 1722",
+            "description": "Quand faut-il appeler le 1722 ?",
+            "options": [
+              {
+                "texte": "En cas de tempête ou d'inondation sans danger de mort.",
+                "correcte": true,
+                "feedback": "Exact, c'est un numéro pour les situations non urgentes."
+              },
+              {
+                "texte": "En cas de feu avec des victimes.",
+                "correcte": false,
+                "feedback": "Dans ce cas, il faut appeler le 112."
+              }
+            ]
+          }
+        ]
+      },
+      "niveau_3": {
         "titre": "Connaître le 1722",
         "temps": "2 min",
         "difficulte": "facile",

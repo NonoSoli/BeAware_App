@@ -17,7 +17,11 @@ $color-text: #333;
 // ==========================
 // BREAKPOINTS
 // ==========================
-$breakpoint-mobile: 600px;
+$breakpoint-small-mobile: 360px;    // Très petits téléphones (anciens ou compacts)
+$breakpoint-mobile: 600px;          // Téléphones classiques (ton actuel)
+$breakpoint-large-mobile: 768px;    // Grands téléphones / petits tablettes en mode portrait
+$breakpoint-tablet: 1024px;         // Tablettes standards en mode portrait
+$breakpoint-small-desktop: 1280px;  // Pour cas exceptionnel d'affichage desktop en vertical
 
 // ==========================
 // BOUTONS
