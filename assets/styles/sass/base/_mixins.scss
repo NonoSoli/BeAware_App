@@ -39,7 +39,10 @@
 
   &::after {
     background-color: $shadow;
-    top: 10%;
+    top: 10px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
     z-index: 0;
   }
 
@@ -95,7 +98,6 @@
   $color: $color-primary,
   $radius: $button-radius
 ) {
-  // Définir la couleur de base
   $shadow: color.scale($color, $lightness: -20%);
 
   position: relative;
@@ -108,8 +110,8 @@
   cursor: pointer;
 
   display: flex;
-  align-items: center;   // Centre verticalement le contenu
-  justify-content: center; // Centre horizontalement le contenu
+  align-items: center;
+  justify-content: center;
 
   &::before,
   &::after {
@@ -123,7 +125,7 @@
   }
 
   &::before {
-    background-color: $color; // Utilisation de la couleur déterminée
+    background-color: $color;
     z-index: 1;
   }
 
@@ -146,9 +148,6 @@
     margin: 0;
   }
 }
-
-
-
 
 @mixin rectangular-box-levels(
   $width: 90vh,
@@ -310,9 +309,9 @@
 @mixin progress-bar-container {
   background-color: #d9d9d9;
   border-radius: 100px;
-  height: 20px;
+  height: 2vh;
   width: 100%;
-  margin: 20px auto;
+  margin: 2vh auto;
   overflow: hidden;
 }
 
@@ -328,7 +327,7 @@
   background-color: #0082ff;
   color: white;
   border: none;
-  padding: 12px 30px;
+  padding: 1.2vh 3vh;
   border-radius: 100px;
   cursor: pointer;
   font-size: 2vh;
@@ -337,10 +336,9 @@
   bottom: 3vh;
   left: 50%;
   transform: translateX(-50%);
-  width: 90vh; // petite marge latérale
-  max-width: 600px; // limite sur grand écran
-
-  z-index: 1000; // s’assurer qu’il soit au-dessus du contenu
+  width: 90vh;
+  max-width: 600px;
+  z-index: 1000;
 }
 
 // Zone de feedback

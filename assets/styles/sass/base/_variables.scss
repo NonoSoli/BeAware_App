@@ -22,11 +22,15 @@ $breakpoint-mobile: 600px;
 // ==========================
 // BOUTONS
 // ==========================
-$button-radius: 20px;
+
+// Rayon fixe pour garder des coins nets
+$button-radius: 2.5vh;
 $button-small-radius: 3vw;
 
+// Taille responsive des boutons losange
 $diamond-button-size: 25vw;
 $diamond-button-size-mobile: 20vw;
 
-$rectangular-button-width: 16vw;
-$rectangular-button-height: 16vw;
+// Taille responsive des boutons rectangulaires
+$rectangular-button-width: 20vw;
+$rectangular-button-height: 10vh;

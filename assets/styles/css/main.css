@@ -36,7 +36,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   transform: rotate(45deg);
   top: 0;
   left: 0;
@@ -47,7 +47,10 @@ html, body {
 }
 .medic-home-button::after {
   background-color: #0068cc;
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .medic-home-button img {
@@ -104,7 +107,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   transform: rotate(45deg);
   top: 0;
   left: 0;
@@ -115,7 +118,10 @@ html, body {
 }
 .fire-home-button::after {
   background-color: #cc0c00;
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .fire-home-button img {
@@ -172,7 +178,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   transform: rotate(45deg);
   top: 0;
   left: 0;
@@ -183,7 +189,10 @@ html, body {
 }
 .one-seven-two-two-home-button::after {
   background-color: rgb(57.6, 57.6, 57.6);
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .one-seven-two-two-home-button img {
@@ -240,7 +249,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   transform: rotate(45deg);
   top: 0;
   left: 0;
@@ -251,7 +260,10 @@ html, body {
 }
 .prevent-home-button::after {
   background-color: #cc7000;
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .prevent-home-button img {
@@ -295,8 +307,8 @@ html, body {
 
 .rectangular-button {
   position: relative;
-  width: 16vw;
-  height: 16vw;
+  width: 20vw;
+  height: 10vh;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -311,7 +323,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   top: 0;
   left: 0;
 }
@@ -322,7 +334,7 @@ html, body {
 .rectangular-button::after {
   z-index: 0;
   background-color: #0068cc;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   top: -2px;
   left: -4px;
   width: calc(100% + 8px);
@@ -339,8 +351,8 @@ html, body {
 
 .rectangular-button-fire {
   position: relative;
-  width: 16vw;
-  height: 16vw;
+  width: 20vw;
+  height: 10vh;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -355,7 +367,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   top: 0;
   left: 0;
 }
@@ -366,7 +378,7 @@ html, body {
 .rectangular-button-fire::after {
   z-index: 0;
   background-color: #cc0c00;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   top: -2px;
   left: -4px;
   width: calc(100% + 8px);
@@ -383,8 +395,8 @@ html, body {
 
 .rectangular-button-prevent {
   position: relative;
-  width: 16vw;
-  height: 16vw;
+  width: 20vw;
+  height: 10vh;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -399,7 +411,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   top: 0;
   left: 0;
 }
@@ -410,7 +422,7 @@ html, body {
 .rectangular-button-prevent::after {
   z-index: 0;
   background-color: #cc7000;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   top: -2px;
   left: -4px;
   width: calc(100% + 8px);
@@ -427,8 +439,8 @@ html, body {
 
 .rectangular-button-one-seven-two-two {
   position: relative;
-  width: 16vw;
-  height: 16vw;
+  width: 20vw;
+  height: 10vh;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -443,7 +455,7 @@ html, body {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 2.5vh;
   top: 0;
   left: 0;
 }
@@ -454,7 +466,7 @@ html, body {
 .rectangular-button-one-seven-two-two::after {
   z-index: 0;
   background-color: rgb(57.6, 57.6, 57.6);
-  border-radius: 20px;
+  border-radius: 2.5vh;
   top: -2px;
   left: -4px;
   width: calc(100% + 8px);
@@ -495,7 +507,10 @@ html, body {
 }
 .non-activ-level-button::after {
   background-color: rgb(173.6, 173.6, 173.6);
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .non-activ-level-button img {
@@ -563,7 +578,10 @@ html, body {
 }
 .medic-level-button::after {
   background-color: #0068cc;
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .medic-level-button img {
@@ -631,7 +649,10 @@ html, body {
 }
 .fire-level-button::after {
   background-color: #cc0c00;
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .fire-level-button img {
@@ -699,7 +720,10 @@ html, body {
 }
 .prevent-level-button::after {
   background-color: #cc7000;
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .prevent-level-button img {
@@ -767,7 +791,10 @@ html, body {
 }
 .one-seven-two-two-level-button::after {
   background-color: rgb(57.6, 57.6, 57.6);
-  top: 10%;
+  top: 10px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
   z-index: 0;
 }
 .one-seven-two-two-level-button img {
@@ -869,7 +896,7 @@ html, body {
   position: relative;
   margin-left: 2vh;
   margin-right: 2vh;
-  width: auto;
+  width: 90vw;
   height: 9vh;
   background-color: transparent;
   border: none;
@@ -937,7 +964,7 @@ html, body {
   background-color: #0082ff;
   color: white;
   border: none;
-  padding: 12px 30px;
+  padding: 1.2vh 3vh;
   border-radius: 100px;
   cursor: pointer;
   font-size: 2vh;
@@ -960,9 +987,9 @@ html, body {
 .progress-bar-container {
   background-color: #d9d9d9;
   border-radius: 100px;
-  height: 20px;
+  height: 2vh;
   width: 100%;
-  margin: 20px auto;
+  margin: 2vh auto;
   overflow: hidden;
 }
 
@@ -985,24 +1012,28 @@ html, body {
 }
 .header.medic-header .bottom-header {
   background-color: #0082ff;
+  text-align: left;
 }
 .header.fire-header {
   background-color: #ff0f00;
 }
 .header.fire-header .bottom-header {
   background-color: #ff0f00;
+  text-align: left;
 }
 .header.prevent-header {
   background-color: #ff8c00;
 }
 .header.prevent-header .bottom-header {
   background-color: #ff8c00;
+  text-align: left;
 }
 .header.one-seven-two-two-header {
   background-color: #484848;
 }
 .header.one-seven-two-two-header .bottom-header {
   background-color: #484848;
+  text-align: left;
 }
 .header .top-header {
   display: flex;
@@ -1163,6 +1194,8 @@ html, body {
   font-size: 3vh;
   text-align: center;
   margin-bottom: 5vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
 
 .exercice-options {

@@ -1,6 +1,9 @@
 @use '../base/variables' as *;
 @use '../base/mixins' as *;
 
+// ==========================
+// BOUTONS DIAMANT
+// ==========================
 .medic-home-button {
   @include diamond-button($color: $color-primary);
 }
@@ -17,6 +20,9 @@
   @include diamond-button($color: $color-prevent);
 }
 
+// ==========================
+// BOUTONS RECTANGLES
+// ==========================
 .rectangular-button {
   @include rectangular-button();
 }
@@ -33,6 +39,9 @@
   @include rectangular-button($color: $color-one-seven-two-two);
 }
 
+// ==========================
+// BOUTONS DE NIVEAU
+// ==========================
 .non-activ-level-button {
   @include diamond-button($size: 8vw, $color: $color-disabled, $radius: $button-small-radius);
 }
@@ -53,18 +62,35 @@
   @include diamond-button($size: 8vw, $color: $color-one-seven-two-two, $radius: $button-small-radius);
 }
 
+// ==========================
+// BOÎTES RECTANGULAIRES
+// ==========================
 .rectangular-box-levels {
-  @include rectangular-box-levels($width: 90vw, $height: 12vh, $radius: 2vh);
+  @include rectangular-box-levels(
+    $width: 90vw,
+    $height: 12vh,
+    $radius: 2vh
+  );
 }
 
 .rectangular-choice {
-  @include rectangular-choice($width: auto, $height: 9vh, $radius: 2vh);
+  @include rectangular-choice(
+    $width: 90vw,
+    $height: 9vh,
+    $radius: 2vh
+  );
 }
 
+// ==========================
+// BOUTON SUIVANT
+// ==========================
 .next-button {
   @include next-button;
 }
 
+// ==========================
+// FEEDBACK ET PROGRESSION
+// ==========================
 .feedback {
   @include feedback;
 }
@@ -76,4 +102,3 @@
 .progress-bar-fill {
   @include progress-bar-fill(60%);
 }
-
