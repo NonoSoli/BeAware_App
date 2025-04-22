@@ -42,15 +42,16 @@
     <script>
       let currentIndex = 0;
       let exercicesData = [];
-  
+
       function updateProgress() {
         const percentage = ((currentIndex + 1) / exercicesData.length) * 100;
         $('.progress-bar-fill').css('width', percentage + '%');
       }
-  
+
       function afficherExercice(index) {
         const exercice = exercicesData[index];
-  
+
+        // Réinitialisation du contenu
         $('.exercice-title').text(exercice.titre);
         $('.exercice-description').text(exercice.description);
         $('.temps-estime').text(exercice.temps_estime);
@@ -58,32 +59,44 @@
         $('.exercice-options').empty();
         $('.feedback').empty();
         $('.next-button').hide();
-  
+
         exercice.options.forEach(option => {
           const btn = $('<button class="option-button">')
             .append(
-              $('<div class="rectangular-button">')
+              $('<div class="rectangular-choice">')
                 .append($('<span>').text(option.texte))
             )
             .on('click', function () {
-              $('.option-button').prop('disabled', true);
-              $(this).find('.rectangular-button').addClass(option.correcte ? 'bonne-reponse' : 'mauvaise-reponse');
+              // Empêcher les clics répétés sur le même bouton
+              if ($(this).hasClass('clicked')) return;
+
+              $(this).addClass('clicked');
+
+              // Marquer la bonne ou mauvaise réponse
+              $(this).find('.rectangular-choice').addClass(option.correcte ? 'bonne-reponse' : 'mauvaise-reponse');
+
+              // Afficher le feedback
               $('.feedback').text(option.feedback);
-              $('.next-button').show();
+
+              // Si bonne réponse : bloquer tous les autres boutons et afficher "Suivant"
+              if (option.correcte) {
+                $('.option-button').prop('disabled', true);
+                $('.next-button').fadeIn();
+              }
             });
-  
+
           $('.exercice-options').append(btn);
         });
-  
+
         updateProgress();
       }
-  
+
       $(document).ready(function () {
         $.getJSON('../../assets/json/exercices/exercice-1.json', function (data) {
           exercicesData = data.exercices;
           afficherExercice(currentIndex);
         });
-  
+
         $('.next-button').on('click', function () {
           currentIndex++;
           if (currentIndex < exercicesData.length) {

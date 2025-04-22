@@ -33,20 +33,12 @@
   @include rectangular-box-levels($width: 90vw, $height: 12vh, $radius: 2vh);
 }
 
-.qcm4-rectangular-box-choice {
-  @include qcm4-rectangular-box-choice($width: 40vw, $height: 12vh, $radius: 2vh);
+.rectangular-choice {
+  @include rectangular-choice($width: auto, $height: 9vh, $radius: 2vh);
 }
 
 .next-button {
   @include next-button;
-}
-
-.bonne-reponse {
-  @include bonne-reponse;
-}
-
-.mauvaise-reponse {
-  @include mauvaise-reponse;
 }
 
 .feedback {

@@ -106,6 +106,10 @@
   outline: none;
   cursor: pointer;
 
+  display: flex;
+  align-items: center;   // centre verticalement le contenu
+  justify-content: center; // centre horizontalement le contenu
+
   &::before,
   &::after {
     content: "";
@@ -138,10 +142,11 @@
     width: 70%;
     height: auto;
     display: block;
-    margin: auto;
-    justify-content: center;
+    // les marges ne sont plus nécessaires car flexbox gère l'alignement
+    margin: 0;
   }
 }
+
 
 @mixin rectangular-box-levels(
   $width: 90vh,
@@ -213,7 +218,7 @@
   }
 }
 
-@mixin qcm4-rectangular-box-choice(
+@mixin rectangular-choice(
   $width: 90vh,
   $height: 10vh,
   $size: $width,
@@ -223,7 +228,8 @@
   $shadow: color.scale($color, $lightness: -20%);
 
   position: relative;
-  margin: auto;
+  margin-left: 2vh;
+  margin-right: 2vh;
   width: $width;
   height: $height;
   background-color: transparent;
@@ -274,11 +280,27 @@
     justify-content: center;
     align-items: center;
     color: #a8a8a8;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
     width: 100%;
     height: 100%;
-    font-size: calc(#{$size} * 0.05);
+    font-size: 2vh;
+  }
+
+  &.bonne-reponse::before {
+    background-color: #0082ff;
+  }
+
+  &.bonne-reponse span {
+    color: white;
+  }
+
+  &.mauvaise-reponse::before {
+    background-color: #ff0f00;
+  }
+
+  &.mauvaise-reponse span {
+    color: white;
   }
 }
 
@@ -300,7 +322,6 @@
   transition: width 0.3s ease-in-out;
 }
 
-// Bouton "Suivant" arrondi
 @mixin next-button {
   background-color: #0082ff;
   color: white;
@@ -308,24 +329,22 @@
   padding: 12px 30px;
   border-radius: 100px;
   cursor: pointer;
-  font-size: 1rem;
-  display: block;
-  margin: 20px auto 0 auto;
-}
+  font-size: 2vh;
 
-// Réponses validées
-@mixin bonne-reponse {
-  border: 2px solid #3cb371;
-}
+  position: fixed;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vh; // petite marge latérale
+  max-width: 600px; // limite sur grand écran
 
-@mixin mauvaise-reponse {
-  border: 2px solid #e74c3c;
+  z-index: 1000; // s’assurer qu’il soit au-dessus du contenu
 }
 
 // Zone de feedback
 @mixin feedback {
-  margin-top: 15px;
-  font-size: 1rem;
+  margin-top: 4vh;
+  font-size: 2vh;
   text-align: center;
   color: #333;
 }
