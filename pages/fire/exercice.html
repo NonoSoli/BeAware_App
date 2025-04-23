@@ -21,7 +21,7 @@
             </div>
             <div class="grid-header-levels">
                 <div class="title-subtitle">
-                    <h1 class="header-title" style="margin-top: 0px">Incendie</h1>
+                    <h1 class="header-title" style="margin-top: 0px">Pompier</h1>
                     <h4 class="header-subtitle exercice-title"></h4>
                 </div>
                 <div class="rectangular-button-fire back-to-home">
@@ -52,6 +52,14 @@
         $('.progress-bar-fill').css('width', percentage + '%');
       }
     
+      // Fonction pour mélanger un tableau de manière aléatoire
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]]; // Échanger les éléments
+        }
+      }
+    
       function afficherExercice(index) {
         const exercice = exercicesData[index];
     
@@ -62,6 +70,9 @@
         $('.exercice-options').empty();
         $('.feedback').empty();
         $('.next-button').hide();
+    
+        // Mélanger les options avant de les afficher
+        shuffleArray(exercice.options);
     
         exercice.options.forEach(option => {
           const btn = $('<button class="option-button">')
@@ -103,6 +114,7 @@
           }
         });
       });
-    </script>    
+    </script>
+       
   </body>
 </html>

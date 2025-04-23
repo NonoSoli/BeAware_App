@@ -1,555 +1,802 @@
 {
   "medic": {
     "niveau_1": {
-      "titre": "Bases des premiers secours",
+      "titre": "Accident de voiture",
       "temps": "5 min",
       "difficulte": "facile",
       "exercices": [
         {
-          "titre": "La RCP",
-          "description": "Vous trouvez une personne inconsciente qui ne respire plus. Que faites-vous ?",
+          "titre": "Premiers réflexes",
+          "description": "Vous arrivez juste après un accident : une voiture a percuté un arbre, une personne est à l’intérieur. Que faites-vous en premier ?",
           "options": [
             {
-              "texte": "Je pars chercher de l’aide sans rien faire.",
+              "texte": "Je m’approche pour extraire la victime.",
               "correcte": false,
-              "feedback": "Il est essentiel de vérifier l’état de la victime avant tout."
+              "feedback": "Non, sauf danger imminent, il ne faut jamais déplacer une victime. Cela pourrait aggraver ses blessures."
             },
             {
-              "texte": "Je lui donne immédiatement à boire.",
-              "correcte": false,
-              "feedback": "Attention, il ne faut jamais faire boire une personne inconsciente."
-            },
-            {
-              "texte": "Je secoue la victime et je lui demande si elle m'entend.",
+              "texte": "Je mets mon gilet fluo, place le triangle et me mets à l’abri.",
               "correcte": true,
-              "feedback": "Bonne réaction, c'est la première étape pour vérifier la conscience."
+              "feedback": "Exact ! Votre sécurité passe en premier. Signalez l’accident et éloignez-vous du danger avant tout."
+            },
+            {
+              "texte": "J’appelle le 112 tout de suite, sans m’arrêter.",
+              "correcte": false,
+              "feedback": "Non, vous devez d’abord sécuriser les lieux et recueillir des infos utiles avant d’appeler les secours."
             }
           ]
         },
         {
-          "titre": "Position latérale de sécurité",
-          "description": "La victime est inconsciente mais respire. Quelle est la première chose à faire ?",
+          "titre": "Appel au 112",
+          "description": "Vous êtes prêt à appeler le 112 pour signaler un accident de la route. Que devez-vous absolument faire avant d’appeler ?",
           "options": [
             {
-              "texte": "Je tente de la réveiller en la secouant.",
-              "correcte": false,
-              "feedback": "Secouer une victime peut aggraver sa condition."
-            },
-            {
-              "texte": "Je la mets en position latérale de sécurité.",
+              "texte": "Recueillir un maximum d’infos sur l'accident.",
               "correcte": true,
-              "feedback": "C'est la bonne réaction pour libérer les voies respiratoires."
+              "feedback": "Oui ! Plus vous donnez de détails (nombre de blessés, type de véhicule, danger visible…), plus les secours seront efficaces."
             },
             {
-              "texte": "Je la laisse telle quelle, en attendant les secours.",
+              "texte": "Appeler tout de suite, même si je n’ai pas encore regardé la scène.",
               "correcte": false,
-              "feedback": "Il est crucial de sécuriser la victime en attendant l'arrivée des secours."
+              "feedback": "Non, il vaut mieux observer d’abord pour transmettre des infos utiles : état des victimes, véhicules, risques éventuels."
             }
           ]
         },
         {
-          "titre": "Arrêt cardiaque",
-          "description": "Que faire si une personne s'effondre et ne respire plus ?",
+          "titre": "Victime coincée",
+          "description": "Une personne semble coincée dans sa voiture après un choc. Elle est consciente mais paniquée. Que faire ?",
           "options": [
             {
-              "texte": "Je commence immédiatement la RCP.",
+              "texte": "Essayer de l’aider à sortir calmement.",
+              "correcte": false,
+              "feedback": "Non, ne bougez jamais une victime sauf en cas de danger immédiat. Cela peut aggraver des blessures internes ou vertébrales."
+            },
+            {
+              "texte": "Rester proche, la rassurer sans la bouger, et attendre les secours.",
               "correcte": true,
-              "feedback": "Commencer la RCP est essentiel pour maintenir la circulation sanguine."
+              "feedback": "Bonne réaction ! Rassurez-la et attendez les secours. Le calme peut aider à éviter un choc ou une panique."
             },
             {
-              "texte": "Je contacte les secours avant tout.",
+              "texte": "Ignorer la victime et rester à distance.",
               "correcte": false,
-              "feedback": "Bien sûr, vous devez appeler les secours, mais commencez d'abord la RCP."
-            },
-            {
-              "texte": "Je lui mets un bandeau pour tenter de contrôler la situation.",
-              "correcte": false,
-              "feedback": "Un bandeau ne résout pas un arrêt cardiaque. La RCP est nécessaire."
+              "feedback": "Mauvais réflexe. Même si vous ne devez pas la déplacer, votre présence rassurante est précieuse jusqu’à l’arrivée des secours."
             }
           ]
         },
         {
-          "titre": "Hémorragie grave",
-          "description": "Une personne perd beaucoup de sang. Que faire ?",
+          "titre": "Fumée ou feu",
+          "description": "Après un accident, vous voyez de la fumée sortir du capot d’une voiture. Que faites-vous ?",
           "options": [
-            
             {
-              "texte": "Je fais un garrot à l'endroit de la plaie.",
-              "correcte": false,
-              "feedback": "Le garrot est une méthode extrême, il est préférable de presser la plaie."
+              "texte": "Je tente d’éteindre le feu si c’est possible et sans danger.",
+              "correcte": true,
+              "feedback": "Bonne réaction ! Si vous avez un extincteur et que c’est sûr, une première tentative peut éviter le pire."
             },
             {
-              "texte": "Je presse la plaie avec un linge propre.",
-              "correcte": true,
-              "feedback": "C'est la meilleure manière de stopper l'hémorragie."
+              "texte": "Je m’approche pour regarder de plus près.",
+              "correcte": false,
+              "feedback": "Non, c’est risqué. Il pourrait y avoir un incendie, une explosion ou des vapeurs toxiques."
+            },
+            {
+              "texte": "J’attends à côté pour voir ce qu’il se passe.",
+              "correcte": false,
+              "feedback": "Non, éloignez-vous immédiatement du véhicule. La fumée peut être dangereuse, voire annonciatrice d’un incendie."
             }
           ]
         },
         {
-          "titre": "Brûlure thermique",
-          "description": "Une personne a une brûlure au troisième degré. Quelle est la première chose à faire ?",
+          "titre": "Marchandises dangereuses",
+          "description": "Une camionnette accidentée affiche un panneau orange avec un code sur fond noir. Que signifie ce panneau ?",
           "options": [
             {
-              "texte": "Je place la brûlure sous l'eau froide pendant 10 minutes.",
+              "texte": "Le véhicule transporte des matières dangereuses.",
               "correcte": true,
-              "feedback": "C'est la bonne méthode pour soulager la douleur et refroidir la zone brûlée."
+              "feedback": "Exact ! Ces panneaux signalent des produits potentiellement toxiques, inflammables ou explosifs."
             },
             {
-              "texte": "Je place un pansement sec sur la brûlure.",
+              "texte": "C’est juste une plaque de signalisation ordinaire.",
               "correcte": false,
-              "feedback": "Il est préférable de refroidir d'abord la brûlure."
-            },
-            {
-              "texte": "Je laisse la brûlure à l'air libre.",
-              "correcte": false,
-              "feedback": "Il est important de refroidir la brûlure avec de l'eau pour éviter des complications."
+              "feedback": "Non. Ce panneau orange indique la présence de matières dangereuses. Ne vous approchez pas."
             }
           ]
         },
         {
-          "titre": "Fracture",
-          "description": "Une personne a une fracture ouverte. Que dois-je faire ?",
+          "titre": "Victime inconsciente",
+          "description": "Vous trouvez un blessé inconscient dans sa voiture après l’impact. Il ne répond pas. Quelle est votre priorité ?",
           "options": [
             {
-              "texte": "Je tente de réaligner les os moi-même.",
-              "correcte": false,
-              "feedback": "Cela peut entraîner des complications. Il faut laisser les secours intervenir."
-            },
-            {
-              "texte": "Je fixe la fracture avec une attelle et j'appelle les secours.",
+              "texte": "Vérifier sa respiration et alerter immédiatement les secours.",
               "correcte": true,
-              "feedback": "Stabiliser la fracture est important pour éviter toute aggravation."
+              "feedback": "Parfait. La priorité est de vérifier s’il respire. En cas d’arrêt, le 112 vous guidera pour commencer une réanimation."
             },
             {
-              "texte": "Je masse la zone de la fracture pour soulager la douleur.",
+              "texte": "Essayer de le réveiller en le secouant légèrement.",
               "correcte": false,
-              "feedback": "Il est préférable de ne pas toucher la fracture avant l'arrivée des secours."
+              "feedback": "Non, cela peut aggraver d’éventuelles blessures. Il faut vérifier s’il respire et appeler les secours sans délai."
             }
           ]
         },
         {
-          "titre": "Asphyxie par étranglement",
-          "description": "Une personne est étranglée. Que faire ?",
+          "titre": "Airbags déclenchés",
+          "description": "Vous remarquez que les airbags se sont déclenchés après un accident. Que devez-vous en conclure ?",
           "options": [
             {
-              "texte": "Je tente de pratiquer la RCP immédiatement.",
-              "correcte": false,
-              "feedback": "Il est plus pertinent de donner des claques dans le dos avant de commencer la RCP."
-            },
-            {
-              "texte": "Je demande à la victime de se calmer.",
-              "correcte": false,
-              "feedback": "Calmer la victime ne suffira pas. Vous devez aider à dégager les voies respiratoires."
-            },
-            {
-              "texte": "Je fais des claques dans le dos pour dégager les voies respiratoires.",
+              "texte": "Il y a eu un choc important, potentiellement traumatique.",
               "correcte": true,
-              "feedback": "Les claques dans le dos sont efficaces pour expulser un objet obstruant les voies respiratoires."
+              "feedback": "Exact ! Le déclenchement des airbags indique un impact violent. Mentionnez-le aux secours."
+            },
+            {
+              "texte": "C’est bon signe, cela veut dire que tout le monde va bien.",
+              "correcte": false,
+              "feedback": "Non, même si les airbags protègent, leur déclenchement signale un choc sérieux."
             }
           ]
         },
         {
-          "titre": "Choc électrique",
-          "description": "Une victime a subi un choc électrique. Que faire ?",
+          "titre": "Passager vulnérable",
+          "description": "Une passagère enceinte se plaint de douleurs après un accident. Que faut-il faire ?",
           "options": [
             {
-              "texte": "Je coupe immédiatement l'électricité avant d'approcher la victime.",
+              "texte": "Le signaler immédiatement au 112.",
               "correcte": true,
-              "feedback": "Il est crucial de couper l'alimentation électrique pour éviter un nouveau choc."
+              "feedback": "Bonne réaction ! Une femme enceinte est considérée comme vulnérable : les secours doivent en être informés dès le début."
             },
             {
-              "texte": "Je tente de la secouer pour la réveiller.",
+              "texte": "Attendre de voir si elle va mieux avant d’agir.",
               "correcte": false,
-              "feedback": "Il faut d'abord couper l'alimentation, puis contacter les secours."
-            },
-            {
-              "texte": "Je la mouille avec de l'eau froide.",
-              "correcte": false,
-              "feedback": "Cela pourrait aggraver la situation. Il faut appeler les secours immédiatement."
+              "feedback": "Non, toute douleur après un accident chez une personne vulnérable doit être prise très au sérieux."
             }
           ]
         },
         {
-          "titre": "Saignement nasal",
-          "description": "Une personne a un saignement nasal important. Que faire ?",
+          "titre": "Plusieurs témoins",
+          "description": "Vous êtes plusieurs témoins d’un accident. L’un d’eux commence à appeler le 112. Que devez-vous faire ?",
           "options": [
             {
-              "texte": "Je lui fais pencher la tête en arrière.",
-              "correcte": false,
-              "feedback": "Pencher la tête en arrière pourrait entraîner l'ingestion de sang."
-            },
-            {
-              "texte": "Je lui mets un tampon dans le nez.",
-              "correcte": false,
-              "feedback": "Il est préférable de simplement presser les narines et incliner la tête en avant."
-            },
-            {
-              "texte": "Je lui fais incliner la tête en avant et je presse les narines.",
+              "texte": "Lui laisser la ligne libre et observer la scène pour lui transmettre des infos utiles.",
               "correcte": true,
-              "feedback": "C'est la meilleure méthode pour stopper un saignement nasal."
+              "feedback": "Oui, une seule personne doit appeler. Les autres doivent aider à sécuriser les lieux ou collecter les infos."
+            },
+            {
+              "texte": "Appeler aussi, pour être sûr que les secours soient informés.",
+              "correcte": false,
+              "feedback": "Non, cela surcharge la ligne. Il vaut mieux se répartir les rôles : un appel, les autres assistent."
             }
           ]
-        }
+        },
+        {
+          "titre": "Analyser la scène",
+          "description": "Avant de vous approcher, que devez-vous regarder pour évaluer les dangers ?",
+          "options": [
+            {
+              "texte": "Fumée, véhicules en feu, fils électriques, fuites.",
+              "correcte": true,
+              "feedback": "Très bien ! Il faut repérer les risques immédiats avant toute intervention."
+            },
+            {
+              "texte": "La couleur de la voiture et le nombre de passagers.",
+              "correcte": false,
+              "feedback": "Non, l’analyse initiale vise à repérer les dangers (feu, explosion, liquide, électricité) pour rester en sécurité."
+            }
+          ]
+        }                                                        
       ]
     },
     "niveau_2": {
-      "titre": "Interventions avancées",
-      "temps": "10 min",
+    "titre": "Accident Vasculaire Cérébral (AVC)",
+    "temps": "5 min",
+    "difficulte": "moyen",
+    "exercices": [
+      {
+        "titre": "Reconnaître un AVC",
+        "description": "Une personne commence à parler de manière inintelligible après un vertige. Que devez-vous faire ?",
+        "options": [
+          {
+            "texte": "Vérifier ses symptômes en utilisant le test BEFAST.",
+            "correcte": true,
+            "feedback": "Exact ! Utiliser le test BEFAST permet de vérifier rapidement les symptômes d'un AVC."
+          },
+          {
+            "texte": "Lui donner un verre d'eau et attendre.",
+            "correcte": false,
+            "feedback": "Non, un AVC est une urgence. Il faut agir rapidement et contacter les secours."
+          }
+        ]
+      },
+      {
+        "titre": "Symptôme BEFAST - Vision",
+        "description": "Une personne se plaint de vision double et de vertiges. Que devez-vous suspecter ?",
+        "options": [
+          {
+            "texte": "Un AVC, avec un symptôme lié à la vision.",
+            "correcte": true,
+            "feedback": "Bien joué ! Les problèmes de vision sont un signe d'AVC et doivent être pris en charge immédiatement."
+          },
+          {
+            "texte": "Elle est probablement fatiguée et a besoin de repos.",
+            "correcte": false,
+            "feedback": "Non, des troubles visuels soudains peuvent indiquer un AVC, qui nécessite une attention immédiate."
+          }
+        ]
+      },
+      {
+        "titre": "Symptôme BEFAST - Bras",
+        "description": "Lors d'un test rapide, vous demandez à une personne de lever ses bras. L'un des bras tombe. Que cela peut-il signifier ?",
+        "options": [
+          {
+            "texte": "Cela peut indiquer un AVC, avec une faiblesse d’un bras.",
+            "correcte": true,
+            "feedback": "Exact ! Un bras qui tombe ou qui dévie est un signe classique d’un AVC."
+          },
+          {
+            "texte": "Cela indique simplement de la fatigue, rien d'inquiétant.",
+            "correcte": false,
+            "feedback": "Non, un bras qui tombe ou dévie pendant cet exercice est un signe d'AVC."
+          }
+        ]
+      },
+      {
+        "titre": "Symptôme BEFAST - Visage",
+        "description": "Vous remarquez qu'un coin de la bouche de la personne est dirigé vers le bas. Que doit-on suspecter ?",
+        "options": [
+          {
+            "texte": "Un AVC, signe de faiblesse faciale.",
+            "correcte": true,
+            "feedback": "Bien joué ! Un affaissement du visage est un signe d’AVC, à prendre immédiatement en compte."
+          },
+          {
+            "texte": "Un simple stress, cela passera bientôt.",
+            "correcte": false,
+            "feedback": "Non, un affaissement du visage est un signe spécifique d'AVC et doit être pris en charge d'urgence."
+          }
+        ]
+      },
+      {
+        "titre": "Symptôme BEFAST - Speech (Élocution)",
+        "description": "Une personne commence à parler de manière inintelligible. Quel est le signe probable ?",
+        "options": [
+          {
+            "texte": "Il pourrait s'agir d'un AVC, avec des troubles de la parole.",
+            "correcte": true,
+            "feedback": "Exact ! Des difficultés à parler de manière claire peuvent être un signe d'AVC."
+          },
+          {
+            "texte": "Elle est probablement juste fatiguée, cela passera.",
+            "correcte": false,
+            "feedback": "Non, des troubles de la parole sont un signe d’AVC. Il faut contacter les secours immédiatement."
+          }
+        ]
+      },
+      {
+        "titre": "Rôle du temps (Time)",
+        "description": "Lorsqu'un AVC est suspecté, pourquoi est-il important de connaître l'heure exacte du début des symptômes ?",
+        "options": [
+          {
+            "texte": "Le temps est crucial pour déterminer le traitement à administrer.",
+            "correcte": true,
+            "feedback": "Exact ! Chaque minute compte pour sauver des cellules cérébrales et améliorer le pronostic du patient."
+          },
+          {
+            "texte": "C'est sans importance, tant que la personne est prise en charge rapidement.",
+            "correcte": false,
+            "feedback": "Non, le temps écoulé depuis le début des symptômes est essentiel pour déterminer le traitement."
+          }
+        ]
+      },
+      {
+        "titre": "Faire face à un AVC - Urgences",
+        "description": "Que devez-vous faire immédiatement si vous suspectez qu'une personne ait subi un AVC ?",
+        "options": [
+          {
+            "texte": "Appeler immédiatement les secours et fournir les informations sur les symptômes.",
+            "correcte": true,
+            "feedback": "Exact ! Appeler les secours immédiatement est crucial. Chaque minute compte."
+          },
+          {
+            "texte": "Attendre que la personne se repose avant d’agir.",
+            "correcte": false,
+            "feedback": "Non, un AVC nécessite une prise en charge urgente. Attendre est risqué."
+          }
+        ]
+      },
+      {
+        "titre": "Connaître les antécédents",
+        "description": "Une personne suspecte d’avoir un AVC a des antécédents de diabète et d'hypertension. Quel est l'impact de ces facteurs sur son état ?",
+        "options": [
+          {
+            "texte": "Ces facteurs augmentent les risques d'AVC.",
+            "correcte": true,
+            "feedback": "Exact ! Le diabète et l'hypertension augmentent le risque d'AVC, il faut agir rapidement."
+          },
+          {
+            "texte": "Ces informations ne changent rien dans la prise en charge immédiate.",
+            "correcte": false,
+            "feedback": "Non, ces facteurs peuvent aggraver l’état de la personne. Il est important de les mentionner aux secours."
+          }
+        ]
+      },
+      {
+        "titre": "AVC et diabète",
+        "description": "Une personne diabétique a un AVC. Que devez-vous savoir pour la prise en charge ?",
+        "options": [
+          {
+            "texte": "Le diabète peut aggraver l'AVC, il faut vérifier sa glycémie.",
+            "correcte": true,
+            "feedback": "Exact ! Le diabète peut aggraver les symptômes d’un AVC, il est crucial de vérifier la glycémie."
+          },
+          {
+            "texte": "Le diabète n’a pas d’incidence sur l’AVC.",
+            "correcte": false,
+            "feedback": "Non, le diabète a un impact sur la gestion de l’AVC. Il est important de connaître la glycémie de la victime."
+          }
+        ]
+      }
+    ]
+    },
+    "niveau_3": {
+      "titre": "Brûlures",
+      "temps": "5 min",
       "difficulte": "moyen",
       "exercices": [
         {
-          "titre": "Réanimation cardio-pulmonaire avancée",
-          "description": "Vous devez intervenir sur une victime en arrêt cardiaque avec un défibrillateur. Quelle est la première chose à faire ?",
+          "titre": "Brûlure chimique",
+          "description": "Une victime a subi une brûlure chimique. Que devez-vous faire en priorité ?",
           "options": [
             {
-              "texte": "Je commence la RCP avant d'utiliser le défibrillateur.",
-              "correcte": false,
-              "feedback": "Utiliser le défibrillateur dès que possible est essentiel."
-            },
-            {
-              "texte": "Je place le défibrillateur et suis les instructions.",
+              "texte": "Identifier le produit chimique et rincer abondamment à l’eau.",
               "correcte": true,
-              "feedback": "Il faut toujours suivre les instructions du défibrillateur."
+              "feedback": "Exact ! Identifier le produit et rincer abondamment à l’eau est essentiel pour limiter les dégâts."
             },
             {
-              "texte": "Je vérifie la victime pendant 5 minutes avant d'agir.",
+              "texte": "Appliquer une pommade pour soulager la douleur.",
               "correcte": false,
-              "feedback": "Il est important d'agir rapidement en cas d'arrêt cardiaque."
+              "feedback": "Non, il est important de rincer immédiatement à l'eau avant d'appliquer un traitement."
             }
           ]
         },
         {
-          "titre": "Utilisation du défibrillateur",
-          "description": "Le défibrillateur ne se déclenche pas. Que faire ?",
+          "titre": "Brûlure par source de froid",
+          "description": "Une victime a été brûlée par un contact avec de l'azote liquide. Que devez-vous faire ?",
           "options": [
             {
-              "texte": "Je tente d'utiliser un autre appareil.",
-              "correcte": false,
-              "feedback": "Cela pourrait retarder les secours. Vérifiez d'abord le bon fonctionnement de l'appareil."
-            },
-            {
-              "texte": "Je remplace les électrodes et attends les secours.",
-              "correcte": false,
-              "feedback": "Les actions doivent être rapides. Essayez d'abord de vérifier le matériel."
-            },
-            {
-              "texte": "Je vérifie les électrodes et m'assure qu'elles sont bien placées.",
+              "texte": "Rincer abondamment à l'eau tiède pendant 20 minutes.",
               "correcte": true,
-              "feedback": "Assurez-vous que les électrodes sont correctement placées pour que le défibrillateur fonctionne."
+              "feedback": "Bien joué ! Le froid extrême peut causer des brûlures, il faut rincer pour limiter les dommages."
+            },
+            {
+              "texte": "Appliquer une compresse chaude pour soulager la douleur.",
+              "correcte": false,
+              "feedback": "Non, il faut rincer à l'eau tiède, l'application de chaleur pourrait aggraver la situation."
             }
           ]
         },
         {
-          "titre": "Choc anaphylactique",
-          "description": "Une personne présente une réaction allergique grave. Quelle est la première chose à faire ?",
+          "titre": "Brûlure due à l'inhalation de fumée",
+          "description": "Une personne présente des signes de brûlures aux voies respiratoires après un incendie. Quel est le premier réflexe ?",
           "options": [
             {
-              "texte": "Je lui administre de l'adrénaline si elle en a.",
+              "texte": "Évacué la victime de la zone de fumée et la maintenir en position assise.",
               "correcte": true,
-              "feedback": "L'adrénaline est le traitement de première intention en cas de choc anaphylactique."
+              "feedback": "Exact ! Evacuer la victime et la maintenir en position assise est essentiel pour prévenir l'asphyxie."
             },
             {
-              "texte": "Je lui fais boire de l'eau.",
+              "texte": "Rincer la victime avec de l'eau froide immédiatement.",
               "correcte": false,
-              "feedback": "Cela peut aggraver la situation. L'adrénaline est nécessaire immédiatement."
-            },
-            {
-              "texte": "Je l'allonge et attends les secours.",
-              "correcte": false,
-              "feedback": "L'adrénaline est plus importante que l'attente des secours."
+              "feedback": "Non, en cas d'inhalation de fumée, l'évacuation est prioritaire, il ne faut pas appliquer d'eau froide sur les voies respiratoires."
             }
           ]
         },
         {
-          "titre": "Brûlures chimiques",
-          "description": "Une personne a des brûlures chimiques sur la peau. Que faire ?",
+          "titre": "Brûlure par incendie",
+          "description": "Une victime est brûlée par les flammes. Que faire en premier lieu ?",
           "options": [
             {
-              "texte": "Je mets une pommade pour soulager la douleur.",
-              "correcte": false,
-              "feedback": "Cela pourrait aggraver la brûlure. Il est important de rincer immédiatement."
-            },
-            {
-              "texte": "Je rince immédiatement la peau à l'eau claire pendant 20 minutes.",
+              "texte": "Faire en sorte que la victime roule sur le sol pour éteindre les flammes.",
               "correcte": true,
-              "feedback": "L'eau claire est le meilleur moyen de neutraliser les produits chimiques."
+              "feedback": "Bien joué ! Si la victime est en feu, il faut lui faire rouler sur le sol pour éteindre les flammes."
             },
             {
-              "texte": "Je demande à la victime de se déshabiller.",
+              "texte": "L'asperger d'eau froide immédiatement.",
               "correcte": false,
-              "feedback": "Il est important de rincer d'abord la zone brûlée avant d'agir."
+              "feedback": "Non, il est important de la faire rouler sur le sol avant tout, l'eau froide ne doit être appliquée qu'après."
             }
           ]
         },
         {
-          "titre": "Traumatisme crânien",
-          "description": "Une personne présente un traumatisme crânien grave. Que faire ?",
+          "titre": "Brûlure avec perte de peau",
+          "description": "La victime présente une brûlure avec une peau noire, brune ou blanche. Quel degré de brûlure cela indique-t-il ?",
           "options": [
             {
-              "texte": "Je tente de la réveiller en la secouant.",
-              "correcte": false,
-              "feedback": "Cela pourrait causer de graves dommages supplémentaires. Ne la bougez pas."
-            },
-            {
-              "texte": "Je l'installe confortablement pour attendre les secours.",
-              "correcte": false,
-              "feedback": "Ne bougez pas la victime sauf en cas de danger immédiat."
-            },
-            {
-              "texte": "Je la maintiens immobile et j'appelle les secours.",
+              "texte": "Brûlure au 3e degré.",
               "correcte": true,
-              "feedback": "Éviter de bouger la victime est essentiel pour ne pas aggraver la situation."
+              "feedback": "Exact ! Une peau noire, brune ou blanche indique une brûlure au 3e degré, la plus grave."
+            },
+            {
+              "texte": "Brûlure au 1er degré.",
+              "correcte": false,
+              "feedback": "Non, une peau noire, brune ou blanche correspond à une brûlure au 3e degré."
             }
           ]
         },
         {
-          "titre": "Secours aux enfants",
-          "description": "Un enfant est en arrêt respiratoire. Que faire ?",
+          "titre": "Brûlure avec cloques",
+          "description": "Une victime présente des cloques sur la peau après avoir subi une brûlure. Quel degré cela indique-t-il ?",
           "options": [
             {
-              "texte": "Je fais des compressions thoraciques adaptées à l'âge de l'enfant.",
+              "texte": "Brûlure au 2e degré.",
               "correcte": true,
-              "feedback": "Les compressions doivent être adaptées à l'âge et à la taille de l'enfant."
+              "feedback": "Exact ! La présence de cloques indique une brûlure au 2e degré."
             },
             {
-              "texte": "Je lui fais souffler dans la bouche.",
+              "texte": "Brûlure au 3e degré.",
               "correcte": false,
-              "feedback": "La respiration bouche-à-bouche est à adapter en fonction de la taille de l'enfant."
-            },
-            {
-              "texte": "Je le réchauffe avec une couverture.",
-              "correcte": false,
-              "feedback": "Cela n'est pas suffisant. Des actions immédiates comme la RCP sont nécessaires."
+              "feedback": "Non, une brûlure au 3e degré est plus profonde, et la peau devient noire, brune ou blanche."
             }
           ]
         },
         {
-          "titre": "Accident de plongée",
-          "description": "Une personne présente des signes d'accident de plongée. Que faire ?",
+          "titre": "Plan BABI",
+          "description": "En cas de plusieurs victimes gravement brûlées, quel protocole doit-on envisager ?",
           "options": [
             {
-              "texte": "Je la fais respirer profondément.",
-              "correcte": false,
-              "feedback": "Cela peut aggraver la situation. La stabilisation est plus importante."
-            },
-            {
-              "texte": "Je la laisse tranquille en attendant qu'elle se rétablisse.",
-              "correcte": false,
-              "feedback": "Il faut absolument l'emmener à l'hôpital pour une évaluation."
-            },
-            {
-              "texte": "Je la fais remonter lentement et je l'installe en position latérale.",
+              "texte": "Mettre en place le plan BABI.",
               "correcte": true,
-              "feedback": "Il faut la faire remonter lentement et la stabiliser avant l'arrivée des secours."
+              "feedback": "Bien joué ! Le plan BABI est destiné à gérer plusieurs victimes gravement brûlées."
+            },
+            {
+              "texte": "Attendre l’arrivée des secours sans agir.",
+              "correcte": false,
+              "feedback": "Non, le plan BABI doit être activé pour organiser la prise en charge immédiate des victimes."
             }
           ]
         },
         {
-          "titre": "Hyperthermie",
-          "description": "Une personne présente des signes de coup de chaleur. Que faire ?",
+          "titre": "Brûlure grave sur une grande surface",
+          "description": "Une victime a de grandes brûlures sur une large partie du corps. Que devez-vous faire ?",
           "options": [
             {
-              "texte": "Je la couvre pour la protéger du froid.",
-              "correcte": false,
-              "feedback": "Cela pourrait aggraver la situation. Il faut refroidir la victime."
-            },
-            {
-              "texte": "Je la fais boire et la refroidis immédiatement.",
+              "texte": "Éviter de refroidir la victime et la recouvrir d'un pansement sec.",
               "correcte": true,
-              "feedback": "Refroidir la victime est essentiel pour prévenir un choc thermique."
+              "feedback": "Exact ! Il faut éviter de refroidir trop longtemps la victime, et appliquer un pansement sec pour éviter l'infection."
             },
             {
-              "texte": "Je l'appelle immédiatement pour qu'elle parte se reposer.",
+              "texte": "Refroidir la zone brûlée avec de l’eau froide pendant 30 minutes.",
               "correcte": false,
-              "feedback": "Il est urgent de refroidir la victime avant tout."
+              "feedback": "Non, il ne faut pas refroidir trop longtemps. 20 minutes maximum avec de l’eau tiède suffisent."
             }
           ]
         },
         {
-          "titre": "Accident de voiture",
-          "description": "Une victime est bloquée dans une voiture après un accident. Que faire ?",
+          "titre": "Brûlure et intoxication au CO",
+          "description": "Une victime est brûlée et présente des signes d’intoxication au monoxyde de carbone. Que devez-vous faire ?",
           "options": [
             {
-              "texte": "Je tente de sortir la victime du véhicule.",
-              "correcte": false,
-              "feedback": "Cela peut aggraver ses blessures. Attendez l'arrivée des secours."
-            },
-            {
-              "texte": "Je commence à la soigner moi-même.",
-              "correcte": false,
-              "feedback": "Ne tentez rien sans les secours, cela pourrait causer plus de tort que de bien."
-            },
-            {
-              "texte": "Je contacte les secours et attends leur arrivée.",
+              "texte": "Évacuée immédiatement la victime hors de la zone d'incendie et lui donner de l'oxygène.",
               "correcte": true,
-              "feedback": "Restez calme et attendez les secours. Ne déplacez pas la victime."
+              "feedback": "Exact ! Il est crucial d’évacuer la victime et de lui administrer de l’oxygène si nécessaire."
+            },
+            {
+              "texte": "Appliquer un pansement sec et attendre les secours.",
+              "correcte": false,
+              "feedback": "Non, une intoxication au CO est grave et nécessite une évacuation rapide et un traitement par oxygénothérapie."
             }
           ]
         }
       ]
     },
-    "niveau_3": {
-      "titre": "112 ou 105 ?",
-      "temps": "4 min",
+    "niveau_4": {
+    "titre": "Diabète",
+    "temps": "5 min",
+    "difficulte": "moyen",
+    "exercices": [
+      {
+        "titre": "Hypoglycémie",
+        "description": "Une victime diabétique présente des symptômes d'hypoglycémie (sueurs, tremblements, agitation). Que faire ?",
+        "options": [
+          {
+            "texte": "Donner un sucre à action rapide par voie orale (comprimé de dextrose, etc.).",
+            "correcte": true,
+            "feedback": "Exact ! En cas d'hypoglycémie, il faut donner un sucre rapide pour améliorer rapidement l'état de la victime."
+          },
+          {
+            "texte": "Donner un verre d'eau pour apaiser la victime.",
+            "correcte": false,
+            "feedback": "Non, un verre d'eau ne va pas résoudre l'hypoglycémie. Un sucre rapide est nécessaire."
+          }
+        ]
+      },
+      {
+        "titre": "Hyperglycémie",
+        "description": "La victime présente des signes d'hyperglycémie (soif intense, uriner beaucoup, douleurs abdominales). Que faire ?",
+        "options": [
+          {
+            "texte": "Contacter immédiatement les secours et surveiller l'état de la victime.",
+            "correcte": true,
+            "feedback": "Exact ! En cas d'hyperglycémie, la situation peut être grave et nécessite une prise en charge médicale."
+          },
+          {
+            "texte": "Donner un sucre rapide pour réduire le taux de glucose.",
+            "correcte": false,
+            "feedback": "Non, un sucre rapide est destiné à traiter l'hypoglycémie, pas l'hyperglycémie."
+          }
+        ]
+      },
+      {
+        "titre": "Glycémie instable",
+        "description": "La victime est consciente mais présente des signes de confusion et d'agitation. Que faire pour évaluer la situation ?",
+        "options": [
+          {
+            "texte": "Demander à la victime si elle a de l’insuline et déterminer sa glycémie si possible.",
+            "correcte": true,
+            "feedback": "Bien joué ! Il est important de connaître les antécédents médicaux et de mesurer la glycémie si possible."
+          },
+          {
+            "texte": "Assurer que la victime mange des aliments solides.",
+            "correcte": false,
+            "feedback": "Non, il est préférable de mesurer la glycémie ou de donner un sucre rapide si nécessaire."
+          }
+        ]
+      },
+      {
+        "titre": "Symptômes d'hypoglycémie sévère",
+        "description": "La victime diabétique perd connaissance après avoir montré des signes d'hypoglycémie. Que faire ?",
+        "options": [
+          {
+            "texte": "Si quelqu’un sait utiliser le glucagon, lui administrer immédiatement.",
+            "correcte": true,
+            "feedback": "Exact ! En cas de perte de conscience, si le glucagon est disponible et que la personne sait l'utiliser, il faut l'administrer."
+          },
+          {
+            "texte": "La réveiller avec un verre de jus de fruit.",
+            "correcte": false,
+            "feedback": "Non, si la victime est inconsciente, il est dangereux de lui donner un liquide. Utilisez le glucagon si disponible."
+          }
+        ]
+      },
+      {
+        "titre": "Identification des symptômes d'AVC",
+        "description": "Les symptômes d’hypoglycémie peuvent ressembler à ceux d’un AVC (perte de conscience, confusion). Que devez-vous faire ?",
+        "options": [
+          {
+            "texte": "Vérifier la glycémie et consulter les signes spécifiques d’hypoglycémie.",
+            "correcte": true,
+            "feedback": "Bien joué ! Les symptômes peuvent se ressembler, il faut d'abord vérifier la glycémie avant d'agir."
+          },
+          {
+            "texte": "Penser uniquement à l'AVC et contacter immédiatement les secours.",
+            "correcte": false,
+            "feedback": "Non, bien que l'AVC soit grave, il est essentiel de vérifier la glycémie en premier lieu."
+          }
+        ]
+      },
+      {
+        "titre": "Utilisation de la pompe à insuline",
+        "description": "La victime utilise une pompe à insuline et présente des signes d'hypoglycémie. Que faire ?",
+        "options": [
+          {
+            "texte": "Fermer la pompe à insuline et administrer un sucre rapide.",
+            "correcte": true,
+            "feedback": "Exact ! Il est important de fermer la pompe à insuline et de traiter l'hypoglycémie avec un sucre rapide."
+          },
+          {
+            "texte": "Continuer d'utiliser la pompe à insuline et attendre l'arrivée des secours.",
+            "correcte": false,
+            "feedback": "Non, il faut fermer la pompe et traiter immédiatement l'hypoglycémie pour éviter une aggravation."
+          }
+        ]
+      },
+      {
+        "titre": "Signes d'hyperglycémie grave",
+        "description": "La victime présente des vomissements, une soif extrême et des douleurs abdominales après une crise d'hyperglycémie. Que faire ?",
+        "options": [
+          {
+            "texte": "Contacter immédiatement les secours pour évaluer la gravité de la situation.",
+            "correcte": true,
+            "feedback": "Exact ! Les symptômes d'hyperglycémie grave nécessitent une prise en charge médicale rapide."
+          },
+          {
+            "texte": "Donner de l'eau tiède pour apaiser la victime.",
+            "correcte": false,
+            "feedback": "Non, donner de l'eau ne réglera pas l'hyperglycémie, et la situation nécessite une intervention médicale."
+          }
+        ]
+      },
+      {
+        "titre": "Symptômes de faible glycémie",
+        "description": "La victime commence à trembler, à transpirer et se sent confuse après avoir pris de l’insuline. Que faire ?",
+        "options": [
+          {
+            "texte": "Donner un sucre rapide (comprimé de dextrose ou boisson sucrée).",
+            "correcte": true,
+            "feedback": "Exact ! En cas d'hypoglycémie, un sucre rapide est nécessaire pour augmenter le taux de glucose dans le sang."
+          },
+          {
+            "texte": "Demander à la victime de s'asseoir et attendre que les symptômes disparaissent.",
+            "correcte": false,
+            "feedback": "Non, il faut réagir immédiatement et administrer un sucre rapide."
+          }
+        ]
+      },
+      {
+        "titre": "Évaluation de la gravité de l'hypoglycémie",
+        "description": "La victime diabétique présente des symptômes d’hypoglycémie, mais elle est encore consciente. Que faire ?",
+        "options": [
+          {
+            "texte": "Demander à la victime de manger un aliment sucré à action rapide et surveiller son état.",
+            "correcte": true,
+            "feedback": "Exact ! Si la victime est consciente, il faut lui donner un sucre rapide et observer l'amélioration des symptômes."
+          },
+          {
+            "texte": "Ne rien faire et attendre les secours.",
+            "correcte": false,
+            "feedback": "Non, il faut toujours intervenir rapidement en cas d'hypoglycémie, surtout si la victime est consciente."
+          }
+        ]
+      }
+    ]
+    },
+    "niveau_5": {
+      "titre": "Électrocution / Électrisation",
+      "temps": "5 min",
       "difficulte": "moyen",
       "exercices": [
         {
-          "titre": "112 ou 105 ?",
-          "description": "Un enfant fait une forte fièvre et convulse. Quel numéro faut-il appeler ?",
+          "titre": "Risque immédiat",
+          "description": "La victime est toujours en contact avec une source d’électricité. Que faire ?",
           "options": [
             {
-              "texte": "112",
+              "texte": "Couper immédiatement la source de courant si possible ou écarter la victime avec un objet non conducteur.",
               "correcte": true,
-              "feedback": "Bonne réponse ! En cas de convulsions, appelez immédiatement le 112."
+              "feedback": "Exact ! Il est crucial d’écarter la victime de la source de courant avant d'intervenir."
             },
             {
-              "texte": "105",
+              "texte": "Tenter de retirer la victime manuellement.",
               "correcte": false,
-              "feedback": "Ce cas est une urgence médicale. Il faut appeler le 112."
+              "feedback": "Non, cela pourrait vous électrocuter également. Il faut utiliser un objet non conducteur pour écarter la victime."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Une personne âgée est tombée sans blessure mais ne peut pas se relever seule. Quel numéro est le plus adapté ?",
+          "titre": "Sécurisation de la scène",
+          "description": "La victime est électrisée, mais la source d’électricité est toujours active. Que faire ?",
           "options": [
             {
-              "texte": "112",
-              "correcte": false,
-              "feedback": "Ce n’est pas une urgence vitale. Préférez le 105."
+              "texte": "Éloigner les témoins de la zone dangereuse et appeler les secours immédiatement.",
+              "correcte": true,
+              "feedback": "Correct ! Sécuriser la zone et appeler les secours avant de tenter toute intervention."
             },
             {
-              "texte": "105",
-              "correcte": true,
-              "feedback": "Exact ! Le 105 est approprié pour une aide non urgente."
+              "texte": "Essayer d’éteindre la source d’électricité en utilisant les mains.",
+              "correcte": false,
+              "feedback": "Non, il est trop dangereux d'utiliser les mains pour éteindre la source d'électricité. Utilisez un objet non conducteur."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Douleurs thoraciques soudaines et intenses.. Quel numéro devez-vous composer ?",
+          "titre": "Victime inconsciente",
+          "description": "La victime est inconsciente après avoir été électrocutée. Quelle position doit-elle adopter ?",
           "options": [
             {
-              "texte": "112",
+              "texte": "Placer la victime en position latérale de sécurité (PLS) si elle est inconsciente.",
               "correcte": true,
-              "feedback": "Correct. Une douleur thoracique peut signaler un infarctus."
+              "feedback": "Exact ! La PLS est la position idéale pour une victime inconsciente afin de libérer ses voies respiratoires."
             },
             {
-              "texte": "105",
+              "texte": "Laisser la victime sur le dos et attendre les secours.",
               "correcte": false,
-              "feedback": "Ce symptôme est potentiellement grave. Composez le 112."
+              "feedback": "Non, la victime inconsciente doit être mise en PLS pour prévenir toute obstruction des voies respiratoires."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Votre voisin a une entorse légère et peut marcher. Que faire ?",
+          "titre": "Risque d'explosion",
+          "description": "Après l'électrocution, il y a un risque d'explosion à proximité (gaz ou matières inflammables). Que faire ?",
           "options": [
             {
-              "texte": "112",
-              "correcte": false,
-              "feedback": "Le 112 est réservé aux urgences vitales."
+              "texte": "Évacuer la zone immédiatement et prévenir les services d'urgence spécialisés.",
+              "correcte": true,
+              "feedback": "Exact ! En cas de risque d'explosion, évacuez la zone et contactez les secours immédiatement."
             },
             {
-              "texte": "105",
-              "correcte": true,
-              "feedback": "Bonne décision. Pour une aide non urgente, on appelle le 105."
+              "texte": "Rester près de la victime pour tenter de la secourir.",
+              "correcte": false,
+              "feedback": "Non, en cas de risque d'explosion, la priorité est d’évacuer la zone pour votre propre sécurité."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Accident de voiture avec blessés visibles. Quel numéro faut-il appeler ?",
+          "titre": "Brûlures électriques",
+          "description": "La victime présente des brûlures dues à l'électrocution. Quelle est la première étape à suivre ?",
           "options": [
             {
-              "texte": "112",
+              "texte": "Rincer immédiatement les brûlures à l'eau courante pendant 20 minutes.",
               "correcte": true,
-              "feedback": "Bonne réponse. En présence de blessés, appelez le 112."
+              "feedback": "Exact ! Le rinçage à l'eau courante est essentiel pour refroidir la brûlure et réduire les dommages."
             },
             {
-              "texte": "105",
+              "texte": "Appliquer une pommade sur les brûlures.",
               "correcte": false,
-              "feedback": "Ce type de situation nécessite une intervention urgente, donc le 112."
+              "feedback": "Non, il ne faut pas appliquer de pommade. Seul un rinçage à l'eau est recommandé avant de couvrir les brûlures."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Une personne semble inconsciente dans la rue. Quel numéro est le bon ?",
+          "titre": "Risque de choc électrique prolongé",
+          "description": "La victime a été électrisée pendant un moment prolongé, mais la source est maintenant coupée. Que faire ?",
           "options": [
             {
-              "texte": "112",
+              "texte": "Surveiller les signes de choc, réévaluer la respiration et l'état de la victime.",
               "correcte": true,
-              "feedback": "Très bien. Une personne inconsciente est une urgence."
+              "feedback": "Exact ! Il est crucial de surveiller la victime pour détecter tout signe de choc ou d'arrêt respiratoire."
             },
             {
-              "texte": "105",
+              "texte": "Attendre les secours sans effectuer de vérifications supplémentaires.",
               "correcte": false,
-              "feedback": "C’est une urgence vitale. Le 112 est nécessaire."
+              "feedback": "Non, même après la coupure de la source, il est important de vérifier les signes vitaux et de prendre des mesures immédiates si nécessaire."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Une personne a une jambe cassée mais respire normalement et est consciente. Quel numéro composer ?",
+          "titre": "Accident dans un lieu public",
+          "description": "L’électrocution a eu lieu dans un lieu public. Quelles sont les étapes supplémentaires à suivre ?",
           "options": [
             {
-              "texte": "112",
+              "texte": "S'assurer qu'il n'y a pas de danger immédiat pour d'autres personnes et appeler les secours.",
               "correcte": true,
-              "feedback": "Correct. Une fracture grave nécessite le 112."
+              "feedback": "Exact ! En lieu public, il est important de sécuriser la zone et d'avertir les autorités compétentes."
             },
             {
-              "texte": "105",
+              "texte": "Essayer de traiter la victime sur place sans attendre les secours.",
               "correcte": false,
-              "feedback": "Dans ce cas, il vaut mieux appeler le 112 pour une intervention rapide."
+              "feedback": "Non, il est primordial d'attendre les secours spécialisés dans ce type de situation pour une prise en charge optimale."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Besoin de transport médical non urgent pour une consultation. Quel numéro est adapté ?",
+          "titre": "Victime avec brûlures sévères",
+          "description": "La victime présente des brûlures sévères (peau carbonisée). Quelle est l'étape la plus urgente à réaliser ?",
           "options": [
             {
-              "texte": "112",
-              "correcte": false,
-              "feedback": "Le 112 est réservé aux urgences vitales."
+              "texte": "Recouvrir la victime avec un linge sec et attendre les secours.",
+              "correcte": true,
+              "feedback": "Exact ! Après un rinçage, il est important de couvrir la brûlure avec un linge propre et sec pour éviter l'infection."
             },
             {
-              "texte": "105",
-              "correcte": true,
-              "feedback": "Bonne réponse. Le 105 est conçu pour les transports non urgents."
+              "texte": "Essayer de traiter les brûlures avec un antiseptique.",
+              "correcte": false,
+              "feedback": "Non, il ne faut pas appliquer de pommade ni d'antiseptique. Seul un linge sec est recommandé en attendant les secours."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Vous êtes témoin d’une personne en train de faire une crise d’épilepsie. Que faire ?",
+          "titre": "Exposition prolongée à l'électricité",
+          "description": "La victime a été exposée à l'électricité pendant plus de 30 secondes. Quels risques sont associés à cette situation ?",
           "options": [
             {
-              "texte": "112",
+              "texte": "Il existe un risque de lésions internes graves, telles que des troubles cardiaques ou respiratoires.",
               "correcte": true,
-              "feedback": "Exact. Une crise d’épilepsie peut être dangereuse."
+              "feedback": "Exact ! L'exposition prolongée peut entraîner des blessures internes graves nécessitant une prise en charge immédiate."
             },
             {
-              "texte": "105",
+              "texte": "Les lésions sont uniquement superficielles, la victime ne risque rien.",
               "correcte": false,
-              "feedback": "Trop risqué d’attendre. Appelez le 112 immédiatement."
+              "feedback": "Non, une exposition prolongée peut entraîner des troubles cardiaques ou respiratoires graves."
             }
           ]
         },
         {
-          "titre": "112 ou 105 ?",
-          "description": "Une personne a de la fièvre depuis 3 jours, sans détresse apparente. Quel service contacter ?",
+          "titre": "Accident du travail",
+          "description": "L'électrocution a eu lieu dans un environnement de travail (ex : chantier). Que faut-il vérifier ?",
           "options": [
             {
-              "texte": "112",
-              "correcte": false,
-              "feedback": "Ce n’est pas une urgence. Le 105 suffit."
+              "texte": "Contacter immédiatement les services de secours spécialisés et informer l'entreprise de l'incident.",
+              "correcte": true,
+              "feedback": "Exact ! En cas d'accident du travail, il est important de prévenir les services de secours et l'entreprise pour un suivi approprié."
             },
             {
-              "texte": "105",
-              "correcte": true,
-              "feedback": "Bonne réponse. Le 105 est indiqué ici."
+              "texte": "Éviter d'informer l'employeur et traiter la victime sur place.",
+              "correcte": false,
+              "feedback": "Non, l'employeur doit être informé pour garantir la sécurité et la gestion de l'incident."
             }
           ]
         }
@@ -559,516 +806,835 @@
 
   "fire": {
     "niveau_1": {
-      "titre": "Réagir face au feu",
-      "temps": "8 min",
-      "difficulte": "difficile",
+      "titre": "Incendie de bâtiment",
+      "temps": "5 min",
+      "difficulte": "moyen",
       "exercices": [
         {
-          "titre": "Départ de feu",
-          "description": "Vous remarquez un feu de friteuse, que faites-vous ?",
+          "titre": "Identification du feu",
+          "description": "Le bâtiment est en feu, vous êtes l’appelant. Quelle information est la plus importante à donner ?",
           "options": [
             {
-              "texte": "Je couvre avec un couvercle ou une couverture anti-feu.",
+              "texte": "Préciser la localisation des flammes et la présence de fumée.",
               "correcte": true,
-              "feedback": "Bonne action, cela prive le feu d'oxygène."
+              "feedback": "Exact ! La localisation des flammes et de la fumée est cruciale pour que les secours puissent intervenir rapidement."
             },
             {
-              "texte": "Je couvre avec un linge humide.",
+              "texte": "Donner le nom du propriétaire du bâtiment.",
               "correcte": false,
-              "feedback": "C'est dangereux, cela peut aggraver l'incendie."
+              "feedback": "Non, l'information la plus importante concerne l'emplacement du feu et les détails sur le bâtiment."
             }
           ]
         },
         {
-          "titre": "Feu dans une poubelle",
-          "description": "Vous voyez des flammes sortir d'une poubelle publique.",
+          "titre": "Type de bâtiment",
+          "description": "Vous êtes en train d'observer un incendie dans un building à appartements. Quelles informations supplémentaires devez-vous fournir ?",
           "options": [
             {
-              "texte": "Je m'éloigne et j'appelle les pompiers.",
+              "texte": "Le nombre d'étages du bâtiment et la hauteur de celui-ci.",
               "correcte": true,
-              "feedback": "Bonne réaction, la sécurité d'abord."
+              "feedback": "Exact ! La hauteur et le nombre d'étages du bâtiment sont essentiels pour l'intervention des secours."
             },
             {
-              "texte": "J'essaie d'éteindre avec mes pieds.",
+              "texte": "La date de construction du bâtiment.",
               "correcte": false,
-              "feedback": "C'est risqué, le feu peut se propager."
-            },
-            {
-              "texte": "Je filme pour avoir une preuve.",
-              "correcte": false,
-              "feedback": "La priorité est d’appeler les secours, pas de filmer."
+              "feedback": "Non, la date de construction n’est pas aussi essentielle que la hauteur et le nombre d’étages."
             }
           ]
         },
         {
-          "titre": "Extincteur approprié",
-          "description": "Quel extincteur utiliser sur un feu électrique ?",
+          "titre": "Évacuation du bâtiment",
+          "description": "Une évacuation a-t-elle été réalisée ? Si non, que devez-vous préciser ?",
           "options": [
             {
-              "texte": "Extincteur à eau.",
-              "correcte": false,
-              "feedback": "Dangereux, risque d'électrocution."
-            },
-            {
-              "texte": "Extincteur à mousse.",
-              "correcte": false,
-              "feedback": "Pas recommandé pour ce type de feu."
-            },
-            {
-              "texte": "Extincteur à CO2.",
+              "texte": "Préciser si des personnes sont encore à l’intérieur et où elles se trouvent.",
               "correcte": true,
-              "feedback": "Parfait, le CO2 est adapté aux feux électriques."
+              "feedback": "Exact ! Il est crucial de savoir si des personnes sont encore présentes et où elles se trouvent."
+            },
+            {
+              "texte": "Mentionner la couleur des fenêtres et des portes.",
+              "correcte": false,
+              "feedback": "Non, ce détail n'est pas pertinent pour l'intervention des secours."
             }
           ]
         },
         {
-          "titre": "Signalement de feu",
-          "description": "Vous êtes le témoin d’un feu dans un bâtiment vide.",
+          "titre": "Accès au bâtiment",
+          "description": "Le bâtiment est difficile d’accès en raison de la présence de débris. Que faire ?",
           "options": [
             {
-              "texte": "Je préviens les occupants.",
-              "correcte": false,
-              "feedback": "Le bâtiment est vide, inutile."
+              "texte": "Informer les secours de l’accès difficile pour qu'ils puissent prendre les mesures nécessaires.",
+              "correcte": true,
+              "feedback": "Exact ! Il est important de mentionner tout obstacle à l’accès pour faciliter l’intervention des secours."
             },
             {
-              "texte": "J'appelle le 112 immédiatement.",
-              "correcte": true,
-              "feedback": "Bonne réaction, l'intervention rapide est essentielle."
+              "texte": "Essayer d’enlever les débris par vous-même.",
+              "correcte": false,
+              "feedback": "Non, il est préférable de laisser les secours gérer l’accès en toute sécurité."
             }
           ]
         },
         {
-          "titre": "Feu de voiture",
-          "description": "Une voiture commence à fumer sur un parking.",
+          "titre": "Sécurisation des occupants",
+          "description": "La victime est coincée dans une pièce en feu. Que devez-vous faire ?",
           "options": [
             {
-              "texte": "Je m’éloigne et j’appelle les secours.",
+              "texte": "Fermer la porte et placer des linges humides au bas de la porte, ouvrir la fenêtre si possible.",
               "correcte": true,
-              "feedback": "Très bien, sécurité avant tout."
+              "feedback": "Exact ! Cela permet de limiter la propagation de la fumée et de signaler la présence de la victime aux secours."
             },
             {
-              "texte": "J'ouvre le capot pour voir ce qu'il se passe.",
+              "texte": "Ouvrir la porte et essayer de sortir la victime.",
               "correcte": false,
-              "feedback": "C'est dangereux, risque d'explosion ou de brûlures."
+              "feedback": "Non, ouvrir la porte risquerait de propager le feu. Il faut limiter la circulation de l'air et protéger la victime."
             }
           ]
         },
         {
-          "titre": "Sortie en cas d'incendie",
-          "description": "Un incendie se déclare dans un immeuble, quelle sortie utiliser ?",
+          "titre": "Feu de friteuse",
+          "description": "Un feu de friteuse se déclare dans la cuisine. Que faire en priorité ?",
           "options": [
             {
-              "texte": "L'ascenseur.",
-              "correcte": false,
-              "feedback": "À éviter absolument en cas d'incendie."
+              "texte": "Couper l’approvisionnement en énergie (gaz, électricité) et essayer de couvrir la friteuse avec un torchon humide.",
+              "correcte": true,
+              "feedback": "Exact ! Couper l’énergie et couvrir la friteuse avec un torchon humide est la méthode la plus efficace pour éteindre un feu de friteuse."
             },
             {
-              "texte": "Les escaliers.",
-              "correcte": true,
-              "feedback": "Bonne décision, les escaliers sont sûrs."
+              "texte": "Essayer d’éteindre le feu avec de l’eau.",
+              "correcte": false,
+              "feedback": "Non, il ne faut jamais utiliser d’eau pour éteindre un feu de friteuse, cela peut aggraver l’incendie."
             }
           ]
         },
         {
-          "titre": "Type de feu",
-          "description": "Quel est le type de feu provoqué par de l’huile en combustion ?",
+          "titre": "Appel aux secours",
+          "description": "Lors de l’appel aux secours, quelle information concernant l’accès au bâtiment est essentielle ?",
           "options": [
             {
-              "texte": "Feu de classe A.",
-              "correcte": false,
-              "feedback": "Non, ce sont les matériaux solides comme le bois."
+              "texte": "Décrire comment le bâtiment est accessible (rue, entrée, etc.).",
+              "correcte": true,
+              "feedback": "Exact ! Préciser l'accès au bâtiment permettra aux secours de s'orienter plus rapidement."
             },
             {
-              "texte": "Feu de classe F.",
-              "correcte": true,
-              "feedback": "Exact, la classe F concerne les huiles de cuisson."
+              "texte": "Donner des informations sur le type de décoration intérieure.",
+              "correcte": false,
+              "feedback": "Non, ce détail n'est pas nécessaire. La priorité est l'accès et la sécurité."
             }
           ]
         },
         {
-          "titre": "Réaction en cas de fumée",
-          "description": "Que faire en présence de fumée dans une pièce ?",
+          "titre": "Bâtiment avec panneaux solaires",
+          "description": "Le bâtiment en feu possède des panneaux solaires. Que faut-il savoir à ce sujet ?",
           "options": [
             {
-              "texte": "Me baisser pour ramper jusqu'à la sortie.",
+              "texte": "Les panneaux solaires peuvent encore être sous tension même après la coupure de courant. Il faut en informer les secours.",
               "correcte": true,
-              "feedback": "Excellente réaction, l'air est plus respirable au sol."
+              "feedback": "Exact ! Les panneaux solaires peuvent conserver de l’électricité et présenter un risque supplémentaire."
             },
             {
-              "texte": "Courir vers la sortie en criant.",
+              "texte": "Il n’est pas nécessaire d’en informer les secours.",
               "correcte": false,
-              "feedback": "Non, il faut garder son calme et éviter d'inhaler la fumée."
+              "feedback": "Non, il est crucial d'informer les secours de la présence de panneaux solaires pour éviter un risque électrique."
             }
           ]
         },
         {
-          "titre": "Extinction d’un petit feu",
-          "description": "Vous voyez un petit feu de papier dans une corbeille.",
+          "titre": "Feu dans un hôtel",
+          "description": "Il y a un incendie dans un hôtel et des personnes sont encore à l’intérieur. Que faire ?",
           "options": [
             {
-              "texte": "Je verse de l’eau dessus si j’en ai à disposition.",
+              "texte": "Préciser le nombre de personnes présentes et leurs localisations dans le bâtiment.",
               "correcte": true,
-              "feedback": "Bonne réaction si c’est sans risque électrique autour."
+              "feedback": "Exact ! Connaître la localisation des victimes permet aux secours de mieux cibler leur intervention."
             },
             {
-              "texte": "Je jette la corbeille par la fenêtre.",
+              "texte": "Essayer d'éteindre le feu soi-même.",
               "correcte": false,
-              "feedback": "C’est dangereux pour les autres."
+              "feedback": "Non, il est plus important d’informer les secours et de garantir la sécurité de tous."
             }
           ]
         },
         {
-          "titre": "Réaction face à un feu de forêt",
-          "description": "Un feu de forêt est proche de votre position.",
+          "titre": "Évacuation des occupants",
+          "description": "L’évacuation a été partiellement réalisée, mais certains occupants sont encore dans le bâtiment. Que faut-il faire ?",
           "options": [
             {
-              "texte": "Je pars en voiture immédiatement.",
+              "texte": "Informer les secours de l’emplacement des personnes restantes pour qu’ils puissent intervenir rapidement.",
               "correcte": true,
-              "feedback": "Bonne décision si la route est dégagée."
+              "feedback": "Exact ! Il est essentiel de signaler les personnes présentes à l’intérieur pour optimiser l’intervention des secours."
             },
             {
-              "texte": "Je monte sur le toit pour surveiller.",
+              "texte": "Attendre que l’évacuation soit complètement terminée avant d’appeler les secours.",
               "correcte": false,
-              "feedback": "Non, vous vous exposez inutilement au danger."
-            },
-            {
-              "texte": "Je tente de l’éteindre seul avec un seau.",
-              "correcte": false,
-              "feedback": "Trop risqué, il faut contacter les pompiers immédiatement."
+              "feedback": "Non, il est crucial d’informer les secours immédiatement pour éviter toute perte de temps."
             }
           ]
         }
       ]
     },
     "niveau_2": {
-      "titre": "Prévention et matériel",
-      "temps": "10 min",
+      "titre": "Incendie de véhicule",
+      "temps": "5 min",
       "difficulte": "moyen",
       "exercices": [
         {
-          "titre": "Emplacement d’un extincteur",
-          "description": "Où placer un extincteur dans une maison ?",
+          "titre": "Identification du véhicule",
+          "description": "Un véhicule est en feu sur l'autoroute. Que devez-vous absolument savoir sur le véhicule ?",
           "options": [
             {
-              "texte": "Proche des sources de chaleur.",
-              "correcte": false,
-              "feedback": "Non, il doit être facilement accessible mais à distance du danger."
+              "texte": "Le numéro de plaque du véhicule et le type de véhicule.",
+              "correcte": true,
+              "feedback": "Exact ! Le numéro de plaque et le type de véhicule sont cruciaux pour identifier et localiser rapidement le véhicule en feu."
             },
             {
-              "texte": "Dans un lieu visible et facile d’accès.",
-              "correcte": true,
-              "feedback": "Exact, l'accès rapide est crucial."
+              "texte": "Le modèle de la voiture et la couleur.",
+              "correcte": false,
+              "feedback": "Non, bien que ces informations puissent être utiles, ce n'est pas ce qui est le plus urgent à fournir dans cette situation."
             }
           ]
         },
         {
-          "titre": "Matériaux inflammables",
-          "description": "Quels objets sont inflammables ?",
+          "titre": "Type de source d'énergie",
+          "description": "Le véhicule en feu est hybride. Que devez-vous spécifiquement mentionner aux secours ?",
           "options": [
             {
-              "texte": "Produits ménagers, tissus, papiers.",
+              "texte": "Indiquer que le véhicule utilise une source d'énergie hybride, ce qui peut poser des risques supplémentaires.",
               "correcte": true,
-              "feedback": "Oui, ils peuvent s'enflammer facilement."
+              "feedback": "Exact ! Les véhicules hybrides peuvent présenter des risques différents, notamment liés à la batterie électrique."
             },
             {
-              "texte": "Verre, céramique, acier.",
+              "texte": "Mentionner uniquement que le véhicule est en feu.",
               "correcte": false,
-              "feedback": "Ces matériaux ne brûlent pas facilement."
+              "feedback": "Non, il est essentiel de spécifier le type d'énergie du véhicule pour mieux préparer l'intervention."
             }
           ]
         },
         {
-          "titre": "Installation électrique",
-          "description": "Quel comportement est dangereux ?",
+          "titre": "Marchandises dangereuses",
+          "description": "Le véhicule transportait des marchandises dangereuses. Que devez-vous savoir sur ces marchandises ?",
           "options": [
             {
-              "texte": "Débrancher les appareils inutilisés.",
-              "correcte": false,
-              "feedback": "C’est justement une bonne pratique."
+              "texte": "Obtenir le numéro ONU et le code d'identification du danger.",
+              "correcte": true,
+              "feedback": "Exact ! Le numéro ONU et le code d'identification du danger sont essentiels pour que les secours puissent prendre les bonnes précautions."
             },
             {
-              "texte": "Surcharger une prise multiple.",
-              "correcte": true,
-              "feedback": "C’est un risque d’échauffement et d’incendie."
+              "texte": "Savoir si les marchandises sont fragiles.",
+              "correcte": false,
+              "feedback": "Non, ce n’est pas le plus important. Le plus crucial est le type de danger associé aux marchandises."
             }
           ]
         },
         {
-          "titre": "Détecteur de fumée",
-          "description": "Pourquoi installer un détecteur de fumée ?",
+          "titre": "Présence de personnes dans le véhicule",
+          "description": "Y a-t-il encore des personnes dans le véhicule en feu ? Que devez-vous faire dans ce cas ?",
           "options": [
             {
-              "texte": "Pour éviter que les voisins se plaignent.",
-              "correcte": false,
-              "feedback": "Ce n’est pas sa fonction."
+              "texte": "Évacuer les occupants si possible et veiller à leur sécurité.",
+              "correcte": true,
+              "feedback": "Exact ! La priorité est d'évacuer les occupants si cela est faisable, en veillant à leur sécurité."
             },
             {
-              "texte": "Pour être alerté dès le début d’un feu.",
-              "correcte": true,
-              "feedback": "Oui, il alerte dès les premières fumées."
+              "texte": "Essayer d’éteindre le feu avec l’extincteur du véhicule.",
+              "correcte": false,
+              "feedback": "Non, il est préférable de ne pas prendre de risques inutiles en essayant d’éteindre le feu soi-même."
             }
           ]
         },
         {
-          "titre": "Utilisation du four",
-          "description": "Quel comportement est sûr ?",
+          "titre": "Position du véhicule",
+          "description": "Le véhicule est en feu sur la bande d'arrêt d'urgence de l'autoroute. Que devez-vous faire immédiatement ?",
           "options": [
             {
-              "texte": "Laisser des objets en plastique à proximité.",
-              "correcte": false,
-              "feedback": "Non, ils peuvent fondre ou brûler."
+              "texte": "Mettre le triangle de danger et vous placer en sécurité derrière le rail de sécurité.",
+              "correcte": true,
+              "feedback": "Exact ! Vous devez marquer le danger et vous assurer que vous êtes en sécurité avant tout."
             },
             {
-              "texte": "Toujours vérifier avant d’allumer.",
-              "correcte": true,
-              "feedback": "C’est une bonne habitude de sécurité."
+              "texte": "Continuer à observer sans faire d’autres actions.",
+              "correcte": false,
+              "feedback": "Non, il est important de prendre des mesures immédiates pour signaler le danger et vous protéger."
             }
           ]
         },
         {
-          "titre": "Stockage des produits chimiques",
-          "description": "Où ranger les produits inflammables ?",
+          "titre": "Risque de propagation de l'incendie",
+          "description": "Le véhicule est en feu et se trouve à proximité d'un garage. Quelles informations supplémentaires devez-vous fournir aux secours ?",
           "options": [
             {
-              "texte": "Dans un endroit chaud et bien éclairé.",
-              "correcte": false,
-              "feedback": "Mauvaise idée, la chaleur augmente le risque."
+              "texte": "Préciser qu'il y a un risque de propagation du feu au garage à proximité.",
+              "correcte": true,
+              "feedback": "Exact ! Il est crucial de signaler toute proximité avec des zones à risque de propagation du feu."
             },
             {
-              "texte": "Dans un local ventilé et frais.",
-              "correcte": true,
-              "feedback": "Parfait, c’est plus sûr."
+              "texte": "Préciser que le feu pourrait se propager à un autre véhicule.",
+              "correcte": false,
+              "feedback": "Non, même si cette information est pertinente, le garage présente un risque plus immédiat."
             }
           ]
         },
         {
-          "titre": "Allumettes et briquets",
-          "description": "Quelle précaution prendre avec les enfants ?",
+          "titre": "Proximité avec d'autres véhicules",
+          "description": "Le véhicule en feu est près d'un autre véhicule. Que devez-vous faire ?",
           "options": [
             {
-              "texte": "Les laisser jouer sous surveillance.",
-              "correcte": false,
-              "feedback": "C’est trop risqué, même surveillés."
+              "texte": "Informer les secours du risque de propagation à d'autres véhicules.",
+              "correcte": true,
+              "feedback": "Exact ! La proximité avec d'autres véhicules doit être signalée pour éviter une propagation rapide du feu."
             },
             {
-              "texte": "Les ranger hors de portée.",
-              "correcte": true,
-              "feedback": "Bonne pratique pour éviter les accidents."
+              "texte": "Essayer d’éloigner l'autre véhicule soi-même.",
+              "correcte": false,
+              "feedback": "Non, il est préférable d'attendre l'arrivée des secours et de vous mettre en sécurité."
             }
           ]
         },
         {
-          "titre": "Prévention en cuisine",
-          "description": "Que faut-il éviter ?",
+          "titre": "Feu et fumée",
+          "description": "Le véhicule dégage une forte fumée. Comment vérifier s'il s'agit d'une fumée normale ou d'un risque supplémentaire ?",
           "options": [
             {
-              "texte": "Laisser une casserole sur le feu sans surveillance.",
+              "texte": "S'assurer que ce n'est pas la poudre dégagée par l'airbag, en observant bien la nature de la fumée.",
               "correcte": true,
-              "feedback": "Cela cause de nombreux départs de feu domestiques."
+              "feedback": "Exact ! La fumée de l'airbag peut être confuse avec celle d'un incendie et doit être distinguée."
             },
             {
-              "texte": "Utiliser une hotte aspirante.",
+              "texte": "Penser que toute fumée est dangereuse et ne pas chercher à l'analyser.",
               "correcte": false,
-              "feedback": "C’est recommandé pour la ventilation."
+              "feedback": "Non, bien qu'il soit important de rester vigilant, il est nécessaire de vérifier la source de la fumée."
             }
           ]
         },
         {
-          "titre": "Barbecue",
-          "description": "Comment sécuriser un barbecue ?",
+          "titre": "Accès au véhicule",
+          "description": "Le véhicule est situé sur une autoroute, mais l’accès est difficile en raison du trafic. Que faire ?",
           "options": [
             {
-              "texte": "Utiliser de l’essence pour démarrer.",
-              "correcte": false,
-              "feedback": "Très dangereux, à éviter absolument."
+              "texte": "Informer les secours de l'emplacement précis du véhicule et du trafic, pour faciliter leur arrivée.",
+              "correcte": true,
+              "feedback": "Exact ! Il est important de donner des détails précis pour aider les secours à naviguer dans le trafic."
             },
             {
-              "texte": "L’installer loin des arbres et bâtiments.",
-              "correcte": true,
-              "feedback": "Bonne précaution contre les incendies."
+              "texte": "Attendre que les véhicules se déplacent d'eux-mêmes.",
+              "correcte": false,
+              "feedback": "Non, il est essentiel d’informer immédiatement les secours de la situation pour éviter des retards."
             }
           ]
         },
         {
-          "titre": "Rangements des extincteurs",
-          "description": "À quelle fréquence vérifier un extincteur ?",
+          "titre": "Restez joignable",
+          "description": "Après avoir donné les informations essentielles aux secours, que devez-vous faire ensuite ?",
           "options": [
             {
-              "texte": "Tous les 5 ans.",
-              "correcte": false,
-              "feedback": "C’est trop espacé."
+              "texte": "Rester joignable et garder la ligne téléphonique libre pour toute nouvelle information.",
+              "correcte": true,
+              "feedback": "Exact ! Rester joignable est essentiel pour toute mise à jour ou instruction supplémentaire des secours."
             },
             {
-              "texte": "Une fois par an.",
-              "correcte": true,
-              "feedback": "Oui, c’est le minimum recommandé."
+              "texte": "Éteindre votre téléphone pour éviter des distractions.",
+              "correcte": false,
+              "feedback": "Non, il est essentiel de rester en contact avec les secours et de garder la ligne ouverte."
             }
           ]
         }
       ]
     },
     "niveau_3": {
-      "titre": "Réactions en situation d’urgence",
-      "temps": "12 min",
-      "difficulte": "facile",
+      "titre": "Odeur de gaz",
+      "temps": "5 min",
+      "difficulte": "moyen",
       "exercices": [
         {
-          "titre": "Feu au travail",
-          "description": "Un feu se déclenche dans votre bureau, que faites-vous ?",
+          "titre": "Identification de la source",
+          "description": "Une odeur de gaz est détectée dans votre quartier. Que devez-vous vérifier en priorité ?",
           "options": [
             {
-              "texte": "Je me cache sous le bureau.",
-              "correcte": false,
-              "feedback": "Mauvaise idée, il faut évacuer."
+              "texte": "Chercher à savoir si c'est une fuite, un sifflement, ou un bruit provenant de l'origine de l'odeur.",
+              "correcte": true,
+              "feedback": "Exact ! La nature du bruit ou du sifflement peut vous donner des informations essentielles sur la source de la fuite."
             },
             {
-              "texte": "Je quitte le bâtiment calmement.",
-              "correcte": true,
-              "feedback": "Bonne réaction."
+              "texte": "Attendre simplement de voir si l'odeur disparaît.",
+              "correcte": false,
+              "feedback": "Non, il est important d'agir rapidement et de vérifier d'où provient la fuite."
             }
           ]
         },
         {
-          "titre": "Coupure d’électricité",
-          "description": "Suite à un feu, l'électricité est coupée.",
+          "titre": "Localisation de la fuite",
+          "description": "L'odeur de gaz semble provenir d'un bâtiment. Que devez-vous faire en premier ?",
           "options": [
             {
-              "texte": "J’utilise une bougie.",
-              "correcte": false,
-              "feedback": "Dangereux, risque de nouveau feu."
+              "texte": "S'assurer de la source de la fuite et de l'origine exacte dans le bâtiment, puis évacuer si nécessaire.",
+              "correcte": true,
+              "feedback": "Exact ! Identifier la source de la fuite permet de prendre des mesures de sécurité appropriées."
             },
             {
-              "texte": "J’utilise une lampe torche.",
-              "correcte": true,
-              "feedback": "Parfait, sans risque."
+              "texte": "Allumer un appareil électrique pour vérifier si l'odeur provient d'une fuite d'un appareil en particulier.",
+              "correcte": false,
+              "feedback": "Non, il est dangereux d'utiliser des appareils électriques en présence de gaz. Vous devez éviter toute source d'étincelle."
             }
           ]
         },
         {
-          "titre": "Panique dans la foule",
-          "description": "Un feu éclate dans un lieu public bondé.",
+          "titre": "Risque d'incendie",
+          "description": "Vous sentez une forte odeur de gaz dans un bâtiment. Que devez-vous vérifier ensuite ?",
           "options": [
             {
-              "texte": "Je pousse les autres pour sortir.",
-              "correcte": false,
-              "feedback": "Cela aggrave la situation."
+              "texte": "Vérifier s'il y a un incendie ou une source de feu à proximité du gaz.",
+              "correcte": true,
+              "feedback": "Exact ! Un incendie pourrait rapidement se propager si la fuite de gaz est proche d'une flamme."
             },
             {
-              "texte": "Je garde mon calme et suis les consignes.",
-              "correcte": true,
-              "feedback": "C’est la bonne attitude."
+              "texte": "Faire un test avec un briquet pour détecter d'où provient l'odeur.",
+              "correcte": false,
+              "feedback": "Non, cela est extrêmement dangereux. Ne jamais essayer d'allumer une flamme en présence de gaz."
             }
           ]
         },
         {
-          "titre": "Gaz en fuite",
-          "description": "Vous sentez une forte odeur de gaz.",
+          "titre": "Rupture de canalisation",
+          "description": "L'odeur de gaz provient d'une zone où des travaux de canalisation sont en cours. Que devez-vous faire ?",
           "options": [
             {
-              "texte": "Allumer la lumière pour mieux voir.",
-              "correcte": false,
-              "feedback": "Cela peut provoquer une explosion."
+              "texte": "Informer immédiatement les secours de la rupture de canalisation due aux travaux.",
+              "correcte": true,
+              "feedback": "Exact ! Il est important de signaler tout lien avec des travaux en cours, car cela peut aider les secours à évaluer la situation."
             },
             {
-              "texte": "Ouvrir les fenêtres et sortir.",
-              "correcte": true,
-              "feedback": "Bonne décision."
+              "texte": "Essayer de réparer la canalisation pour stopper la fuite.",
+              "correcte": false,
+              "feedback": "Non, n'essayez pas de réparer la fuite vous-même. Vous devez alerter les secours et éviter tout contact direct avec la fuite."
             }
           ]
         },
         {
-          "titre": "Fausse alerte",
-          "description": "L’alarme incendie sonne, mais vous ne voyez rien.",
+          "titre": "Proximité de conduites à haute pression",
+          "description": "La fuite de gaz est proche d'une conduite à haute pression. Pourquoi cette information est-elle importante ?",
           "options": [
             {
-              "texte": "Je reste à mon poste en attendant.",
-              "correcte": false,
-              "feedback": "On évacue toujours par précaution."
+              "texte": "Cela présente un danger supplémentaire et doit être mentionné aux secours.",
+              "correcte": true,
+              "feedback": "Exact ! La proximité de conduites à haute pression augmente considérablement le risque d'explosion et doit être signalée."
             },
             {
-              "texte": "Je suis la procédure d’évacuation.",
-              "correcte": true,
-              "feedback": "C’est le bon réflexe."
+              "texte": "Cela n'a aucune importance si la fuite n'est pas directement dans la conduite à haute pression.",
+              "correcte": false,
+              "feedback": "Non, la proximité d'une conduite à haute pression est un facteur de danger qu'il ne faut pas sous-estimer."
             }
           ]
         },
         {
-          "titre": "Coup de chaleur",
-          "description": "Une personne s'effondre lors d’un feu.",
+          "titre": "Evacuation du bâtiment",
+          "description": "Si vous êtes dans un bâtiment où l'odeur de gaz est présente, que devez-vous faire ?",
           "options": [
             {
-              "texte": "Je l’évacue immédiatement si possible.",
+              "texte": "Evacuer immédiatement le bâtiment et n'utiliser aucun appareil électrique.",
               "correcte": true,
-              "feedback": "Priorité à la mise en sécurité."
+              "feedback": "Exact ! Il est essentiel de quitter les lieux rapidement sans utiliser d'appareils électriques."
             },
             {
-              "texte": "Je lui donne à boire.",
+              "texte": "Allumer la lumière pour mieux voir lors de l'évacuation.",
               "correcte": false,
-              "feedback": "Pas prioritaire dans cette situation."
+              "feedback": "Non, n'utilisez pas d'électricité. Il est crucial d'éviter toute source d'étincelles."
             }
           ]
         },
         {
-          "titre": "Ascenseur bloqué",
-          "description": "Un feu bloque un ascenseur avec des personnes à l’intérieur.",
+          "titre": "Proximité avec des zones vulnérables",
+          "description": "La fuite de gaz se produit près d'une école et d'une maison de retraite. Pourquoi est-ce important ?",
           "options": [
             {
-              "texte": "J'essaie de forcer la porte.",
-              "correcte": false,
-              "feedback": "C’est risqué et inefficace."
+              "texte": "Il est crucial d'évacuer ces zones à risque et d'en informer les secours.",
+              "correcte": true,
+              "feedback": "Exact ! Les zones vulnérables, comme les écoles et maisons de retraite, nécessitent une attention particulière."
             },
             {
-              "texte": "J'appelle les secours immédiatement.",
-              "correcte": true,
-              "feedback": "C’est la meilleure chose à faire."
+              "texte": "Cela n'a pas d'importance si les personnes ne sont pas immédiatement exposées au gaz.",
+              "correcte": false,
+              "feedback": "Non, il est toujours important d'informer les secours des zones vulnérables et d'évacuer si nécessaire."
             }
           ]
         },
         {
-          "titre": "Feu en forêt (à distance)",
-          "description": "Vous voyez de la fumée au loin en forêt.",
+          "titre": "Rester joignable",
+          "description": "Après avoir signalé l'incident, que devez-vous faire ?",
           "options": [
             {
-              "texte": "J'appelle les secours.",
+              "texte": "Rester joignable et garder la ligne libre pour d'autres instructions.",
               "correcte": true,
-              "feedback": "Bonne initiative, mieux vaut prévenir rapidement."
+              "feedback": "Exact ! Il est important de rester en contact avec les secours pour d'éventuelles informations supplémentaires."
             },
             {
-              "texte": "Je vais voir de plus près.",
+              "texte": "Éteindre votre téléphone pour ne pas être dérangé.",
               "correcte": false,
-              "feedback": "Non, cela peut être très dangereux."
+              "feedback": "Non, vous devez garder la ligne ouverte pour toute communication avec les secours."
             }
           ]
         },
         {
-          "titre": "Aide aux personnes",
-          "description": "Une personne âgée a besoin d’aide pour évacuer.",
+          "titre": "Aération du bâtiment",
+          "description": "Si vous détectez une fuite de gaz dans un bâtiment, que devez-vous faire en priorité ?",
           "options": [
             {
-              "texte": "Je la prends avec moi si cela ne me met pas en danger.",
+              "texte": "Aérer le local où l'odeur de gaz est détectée, si cela peut être fait en toute sécurité.",
               "correcte": true,
-              "feedback": "Bravo, la solidarité compte."
+              "feedback": "Exact ! Aérer le local permet de dissiper une partie du gaz, mais assurez-vous que cela ne crée pas de nouveaux risques."
             },
             {
-              "texte": "Je cours seul pour aller plus vite.",
+              "texte": "Essayer de localiser précisément la fuite en utilisant des appareils électroniques.",
               "correcte": false,
-              "feedback": "L’entraide est prioritaire si possible."
+              "feedback": "Non, évitez d'utiliser des appareils électroniques qui peuvent provoquer des étincelles en présence de gaz."
             }
           ]
         },
         {
-          "titre": "Fin d’alerte",
-          "description": "Le feu est éteint, que faire avant de rentrer ?",
+          "titre": "Interdiction d'utiliser des appareils électriques",
+          "description": "Pourquoi est-il important de ne pas utiliser d'appareils électriques en cas de fuite de gaz ?",
           "options": [
             {
-              "texte": "Attendre les consignes des autorités.",
+              "texte": "Parce que l'électricité peut provoquer une étincelle et enflammer le gaz.",
               "correcte": true,
-              "feedback": "C’est essentiel pour la sécurité."
+              "feedback": "Exact ! L'électricité est un facteur de risque majeur en cas de fuite de gaz."
             },
             {
-              "texte": "Rentrer rapidement pour vérifier mes affaires.",
+              "texte": "Parce que l'appareil pourrait mal fonctionner si la fuite de gaz est trop importante.",
               "correcte": false,
-              "feedback": "Trop dangereux sans autorisation."
+              "feedback": "Non, la vraie raison est que l'électricité peut provoquer une étincelle qui mettrait le feu au gaz."
+            }
+          ]
+        }
+      ]
+    },
+    "niveau_4": {
+      "titre": "Animal dangereux",
+      "temps": "5 min",
+      "difficulte": "moyen",
+      "exercices": [
+        {
+          "titre": "Identification de l'animal",
+          "description": "Un appel indique la présence d'un animal dangereux. Quel est le premier élément à identifier ?",
+          "options": [
+            {
+              "texte": "Identifier de quel animal il s'agit, par exemple guêpes ou autre.",
+              "correcte": true,
+              "feedback": "Exact ! Identifier l'animal est essentiel pour évaluer les risques et les actions à entreprendre."
+            },
+            {
+              "texte": "Identifier immédiatement le propriétaire de l'animal.",
+              "correcte": false,
+              "feedback": "Non, l'identification de l'animal est prioritaire afin de déterminer le danger."
+            }
+          ]
+        },
+        {
+          "titre": "Propriétaire de l'animal",
+          "description": "Le propriétaire de l'animal est-il présent ? Que devez-vous faire si c'est le cas ?",
+          "options": [
+            {
+              "texte": "Demander si le propriétaire est capable de contrôler l'animal et d'assurer la sécurité.",
+              "correcte": true,
+              "feedback": "Exact ! Le propriétaire peut être une source d'information cruciale pour maîtriser la situation."
+            },
+            {
+              "texte": "Interroger le propriétaire pour connaître le comportement habituel de l'animal.",
+              "correcte": false,
+              "feedback": "Bien que l'information soit utile, ce n'est pas une priorité immédiate."
+            }
+          ]
+        },
+        {
+          "titre": "Présence de vétérinaire",
+          "description": "Un vétérinaire est-il présent ou a-t-il été contacté ? Pourquoi est-ce important ?",
+          "options": [
+            {
+              "texte": "Il est crucial de savoir si un vétérinaire a été contacté pour garantir une prise en charge professionnelle.",
+              "correcte": true,
+              "feedback": "Exact ! Le vétérinaire peut offrir un soutien important dans le traitement ou la gestion de l'animal."
+            },
+            {
+              "texte": "Un vétérinaire n'est pas nécessaire si l'animal est de petite taille.",
+              "correcte": false,
+              "feedback": "Non, un vétérinaire est toujours utile en cas de doute sur l'animal ou son comportement."
+            }
+          ]
+        },
+        {
+          "titre": "Accessibilité de l'animal",
+          "description": "L'animal est situé dans un endroit difficile d'accès. Que devez-vous faire ?",
+          "options": [
+            {
+              "texte": "Ne tentez pas d'atteindre l'animal et attendez l'arrivée des secours.",
+              "correcte": true,
+              "feedback": "Exact ! Si l'animal est difficile d'accès, il est préférable de ne pas risquer d'aggraver la situation."
+            },
+            {
+              "texte": "Essayer d'atteindre l'animal pour l'éloigner de la zone dangereuse.",
+              "correcte": false,
+              "feedback": "Non, vous devez éviter d'interagir directement avec l'animal, surtout si l'accès est risqué."
+            }
+          ]
+        },
+        {
+          "titre": "Animal en fuite",
+          "description": "L'animal est en train de s'enfuir. Quelle est la meilleure action à entreprendre ?",
+          "options": [
+            {
+              "texte": "Ne tentez pas de bloquer son chemin et alertez immédiatement les secours.",
+              "correcte": true,
+              "feedback": "Exact ! L'animal en fuite peut devenir plus dangereux si on tente de l'entraver. Alertez les secours."
+            },
+            {
+              "texte": "Poursuivre l'animal pour l'empêcher de s'enfuir.",
+              "correcte": false,
+              "feedback": "Non, cela pourrait aggraver la situation. Il est préférable de prévenir les secours."
+            }
+          ]
+        },
+        {
+          "titre": "Proximité d'enfants",
+          "description": "L'animal se trouve à proximité d'une crèche ou d'enfants. Que devez-vous faire ?",
+          "options": [
+            {
+              "texte": "Assurer immédiatement la sécurité des enfants en les éloignant de l'animal et en alertant les secours.",
+              "correcte": true,
+              "feedback": "Exact ! La sécurité des enfants est primordiale. Il faut les éloigner rapidement."
+            },
+            {
+              "texte": "Rester sur place et observer l'animal en attendant l'arrivée des secours.",
+              "correcte": false,
+              "feedback": "Non, il faut immédiatement éloigner les enfants de la zone de danger."
+            }
+          ]
+        },
+        {
+          "titre": "Tenter de capturer l'animal",
+          "description": "Un animal dangereux est à proximité, que devez-vous faire ?",
+          "options": [
+            {
+              "texte": "Ne tentez pas de capturer ou de dompter l'animal, éloignez-vous de la zone dangereuse.",
+              "correcte": true,
+              "feedback": "Exact ! Ne jamais tenter de capturer ou dompter un animal dangereux."
+            },
+            {
+              "texte": "Tenter d'immobiliser l'animal à l'aide d'un objet.",
+              "correcte": false,
+              "feedback": "Non, cela pourrait être très risqué. Ne jamais tenter de maîtriser un animal dangereux seul."
+            }
+          ]
+        },
+        {
+          "titre": "Animal dans une hauteur",
+          "description": "L'animal se trouve à une grande hauteur, que devez-vous faire ?",
+          "options": [
+            {
+              "texte": "Ne tentez pas d'atteindre l'animal et attendez l'arrivée des secours spécialisés.",
+              "correcte": true,
+              "feedback": "Exact ! Il est important de ne pas prendre de risques inutiles en tentant d'atteindre un animal à une hauteur difficile."
+            },
+            {
+              "texte": "Tenter de grimper pour capturer l'animal.",
+              "correcte": false,
+              "feedback": "Non, cela pourrait être dangereux. Attendez les secours spécialisés."
+            }
+          ]
+        },
+        {
+          "titre": "Eviter de créer un danger",
+          "description": "L'animal semble particulièrement agité. Quelle est la meilleure attitude à adopter ?",
+          "options": [
+            {
+              "texte": "Gardez une distance sécuritaire et ne tentez pas de provoquer l'animal.",
+              "correcte": true,
+              "feedback": "Exact ! Il est important de ne pas provoquer l'animal, surtout s'il est agité, pour éviter une attaque."
+            },
+            {
+              "texte": "S'approcher doucement pour tenter de calmer l'animal.",
+              "correcte": false,
+              "feedback": "Non, il est risqué de s'approcher d'un animal agité. Maintenez une distance de sécurité."
+            }
+          ]
+        },
+        {
+          "titre": "Rester joignable",
+          "description": "Après avoir signalé la présence d'un animal dangereux, quelle est l'étape suivante ?",
+          "options": [
+            {
+              "texte": "Rester joignable pour les secours et garder votre ligne téléphonique libre.",
+              "correcte": true,
+              "feedback": "Exact ! Les secours peuvent avoir besoin de précisions supplémentaires."
+            },
+            {
+              "texte": "Fermer votre téléphone pour ne pas être dérangé.",
+              "correcte": false,
+              "feedback": "Non, vous devez rester joignable pour toute mise à jour de la situation."
+            }
+          ]
+        }
+      ]
+    },
+    "niveau_5": {
+      "titre": "Substance dangereuse",
+      "temps": "6 min",
+      "difficulte": "élevée",
+      "exercices": [
+        {
+          "titre": "Identification de la substance",
+          "description": "Un appel signale un incident impliquant une substance dangereuse. Quelle est la première information à identifier ?",
+          "options": [
+            {
+              "texte": "Il est crucial d'identifier de quelle substance il s'agit pour évaluer les risques.",
+              "correcte": true,
+              "feedback": "Exact ! L'identification de la substance permet de déterminer les dangers spécifiques et la manière de gérer l'incident."
+            },
+            {
+              "texte": "Il est plus important d'identifier immédiatement le lieu de l'incident.",
+              "correcte": false,
+              "feedback": "Non, bien que le lieu soit important, l'identification de la substance est la première priorité."
+            }
+          ]
+        },
+        {
+          "titre": "Informations techniques sur la substance",
+          "description": "Avez-vous des informations techniques sur la substance ? Pourquoi sont-elles importantes ?",
+          "options": [
+            {
+              "texte": "Les informations techniques sur la substance permettent de connaître ses propriétés dangereuses et les mesures de précaution.",
+              "correcte": true,
+              "feedback": "Exact ! Les informations techniques, comme le numéro ONU et le type de danger, sont cruciales pour intervenir en toute sécurité."
+            },
+            {
+              "texte": "Les informations techniques sont secondaires, l'important est d'agir rapidement sans prendre trop de précautions.",
+              "correcte": false,
+              "feedback": "Non, les informations techniques sont indispensables pour déterminer la meilleure façon de gérer la situation."
+            }
+          ]
+        },
+        {
+          "titre": "Numéro d'identification du danger",
+          "description": "Pourquoi est-il important de connaître le numéro d'identification du danger de la substance ?",
+          "options": [
+            {
+              "texte": "Le numéro d'identification du danger permet de savoir exactement quel type de risque la substance représente, ce qui aide à déterminer les mesures de sécurité à prendre.",
+              "correcte": true,
+              "feedback": "Exact ! Le numéro d'identification du danger permet aux secours de comprendre rapidement les risques associés à la substance."
+            },
+            {
+              "texte": "Le numéro d'identification du danger n'est pas nécessaire si vous pouvez déjà voir de la fumée ou des gaz.",
+              "correcte": false,
+              "feedback": "Non, le numéro d'identification du danger reste crucial pour les secours, même si vous voyez des signes visibles."
+            }
+          ]
+        },
+        {
+          "titre": "Type de substance",
+          "description": "Quelles sont les propriétés de la substance impliquée ? Comment cela influence-t-il l'action des secours ?",
+          "options": [
+            {
+              "texte": "Il est essentiel de savoir si la substance est toxique, corrosive, inflammable ou explosive pour déterminer les risques et les procédures de gestion.",
+              "correcte": true,
+              "feedback": "Exact ! Chaque type de danger requiert une gestion spécifique et des précautions adaptées."
+            },
+            {
+              "texte": "Peu importe les propriétés de la substance, les secours traiteront tous les incidents de la même manière.",
+              "correcte": false,
+              "feedback": "Non, les propriétés de la substance influencent fortement les actions à entreprendre et la manière d'intervenir."
+            }
+          ]
+        },
+        {
+          "titre": "Conditionnement de la substance",
+          "description": "Comment le conditionnement de la substance (boîtes, fûts, bouteilles) influence-t-il l'approche des secours ?",
+          "options": [
+            {
+              "texte": "Le type de conditionnement (plastique, métal, etc.) aide les secours à comprendre la nature de la substance et comment elle pourrait réagir.",
+              "correcte": true,
+              "feedback": "Exact ! Le conditionnement peut fournir des indices sur les risques de fuite, de réaction chimique ou d'explosion."
+            },
+            {
+              "texte": "Le conditionnement n'est pas important, seuls les effets visibles de la substance comptent.",
+              "correcte": false,
+              "feedback": "Non, le type de conditionnement joue un rôle important dans l'évaluation des risques et des actions à entreprendre."
+            }
+          ]
+        },
+        {
+          "titre": "Lieu de l'incident",
+          "description": "L'incident s'est produit à l'extérieur dans une zone industrielle. Pourquoi est-il crucial de connaître le type de surface (route, voie d'eau, etc.) ?",
+          "options": [
+            {
+              "texte": "Le type de surface détermine les risques de propagation de la substance et les mesures spécifiques à prendre pour limiter les dégâts.",
+              "correcte": true,
+              "feedback": "Exact ! La surface peut affecter la manière dont la substance se propage et les dangers qu'elle représente."
+            },
+            {
+              "texte": "Le type de surface est sans importance, car tous les types de substances se comportent de la même manière.",
+              "correcte": false,
+              "feedback": "Non, le type de surface influence la manière dont la substance interagit avec l'environnement."
+            }
+          ]
+        },
+        {
+          "titre": "Fumée et odeur",
+          "description": "L'odeur et la couleur de la fumée ou des gaz sont-elles des indices importants ?",
+          "options": [
+            {
+              "texte": "Oui, la couleur de la fumée et l'odeur peuvent donner des indices sur la nature de la substance et aider les secours à réagir de manière appropriée.",
+              "correcte": true,
+              "feedback": "Exact ! Ces indices permettent de mieux comprendre les risques et d'adopter les bonnes pratiques pour gérer l'incident."
+            },
+            {
+              "texte": "Non, ces indices sont secondaires. Seules les informations sur la substance elle-même sont importantes.",
+              "correcte": false,
+              "feedback": "Non, ces indices sont cruciaux pour une gestion rapide et efficace de la situation."
+            }
+          ]
+        },
+        {
+          "titre": "Impact sur la végétation et les animaux",
+          "description": "La végétation environnante et les animaux ont-ils été touchés ? Pourquoi est-ce pertinent ?",
+          "options": [
+            {
+              "texte": "Oui, si la substance a un effet nocif sur la végétation ou les animaux, cela peut indiquer un danger environnemental plus large et affecter la gestion de l'incident.",
+              "correcte": true,
+              "feedback": "Exact ! L'impact sur l'environnement peut étendre la zone à surveiller et renforcer l'urgence de l'intervention."
+            },
+            {
+              "texte": "Non, l'impact sur la végétation et les animaux n'est pas pertinent pour l'intervention des secours.",
+              "correcte": false,
+              "feedback": "Non, l'impact environnemental est un facteur clé qui peut influencer la stratégie d'intervention."
+            }
+          ]
+        },
+        {
+          "titre": "Sécurité et précautions",
+          "description": "Que devez-vous faire en attendant les secours ?",
+          "options": [
+            {
+              "texte": "Il est essentiel de ne pas toucher la substance et de s'éloigner du danger. Restez à contre-vent et évitez toute ingestion, fumée ou ingestion de nourriture.",
+              "correcte": true,
+              "feedback": "Exact ! La sécurité personnelle est primordiale. Ne touchez pas la substance et éloignez-vous du danger."
+            },
+            {
+              "texte": "Vous pouvez essayer de neutraliser la substance si vous avez des gants et un masque.",
+              "correcte": false,
+              "feedback": "Non, il est préférable de ne pas intervenir directement et d'attendre les secours professionnels."
+            }
+          ]
+        },
+        {
+          "titre": "Communication avec les secours",
+          "description": "Que devez-vous faire après avoir donné l'alerte ?",
+          "options": [
+            {
+              "texte": "Rester joignable pour les services de secours et garder votre ligne téléphonique libre.",
+              "correcte": true,
+              "feedback": "Exact ! Vous devez rester joignable pour fournir toute information complémentaire aux secours."
+            },
+            {
+              "texte": "Fermer votre téléphone pour ne pas être dérangé.",
+              "correcte": false,
+              "feedback": "Non, il est essentiel de rester joignable afin de communiquer toute évolution de la situation."
             }
           ]
         }
