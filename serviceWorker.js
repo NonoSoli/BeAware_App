@@ -1,4 +1,4 @@
-const version = "2025-04-22-5"; // <-- à mettre à jour à chaque nouvelle version
+const version = "2025-04-23-3"; // <-- à mettre à jour à chaque nouvelle version
 const staticCacheName = `cache-${version}`;
 const assets = ["/", "/home.html"];
 
