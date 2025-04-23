@@ -126,7 +126,7 @@
               "feedback": "Exact ! Le déclenchement des airbags indique un impact violent. Mentionnez-le aux secours."
             },
             {
-              "texte": "C’est bon signe, cela veut dire que tout le monde va bien.",
+              "texte": "C’est bon signe, les airbags ont évité des blessures.",
               "correcte": false,
               "feedback": "Non, même si les airbags protègent, leur déclenchement signale un choc sérieux."
             }
@@ -142,7 +142,7 @@
               "feedback": "Bonne réaction ! Une femme enceinte est considérée comme vulnérable : les secours doivent en être informés dès le début."
             },
             {
-              "texte": "Attendre de voir si elle va mieux avant d’agir.",
+              "texte": "Inutile de mentionner qu'une victime est enceinte.",
               "correcte": false,
               "feedback": "Non, toute douleur après un accident chez une personne vulnérable doit être prise très au sérieux."
             }
@@ -166,7 +166,7 @@
         },
         {
           "titre": "Analyser la scène",
-          "description": "Avant de vous approcher, que devez-vous regarder pour évaluer les dangers ?",
+          "description": "Avant de vous approcher, que devez-vous regarder ?",
           "options": [
             {
               "texte": "Fumée, véhicules en feu, fils électriques, fuites.",
@@ -174,7 +174,7 @@
               "feedback": "Très bien ! Il faut repérer les risques immédiats avant toute intervention."
             },
             {
-              "texte": "La couleur de la voiture et le nombre de passagers.",
+              "texte": "La modèle de la voiture et le nombre de passagers.",
               "correcte": false,
               "feedback": "Non, l’analyse initiale vise à repérer les dangers (feu, explosion, liquide, électricité) pour rester en sécurité."
             }
@@ -828,7 +828,7 @@
         },
         {
           "titre": "Type de bâtiment",
-          "description": "Vous êtes en train d'observer un incendie dans un building à appartements. Quelles informations supplémentaires devez-vous fournir ?",
+          "description": "Vous êtes en train d'observer un incendie dans un building. Quelles informations devez-vous fournir ?",
           "options": [
             {
               "texte": "Le nombre d'étages du bâtiment et la hauteur de celui-ci.",
@@ -852,9 +852,9 @@
               "feedback": "Exact ! Il est crucial de savoir si des personnes sont encore présentes et où elles se trouvent."
             },
             {
-              "texte": "Mentionner la couleur des fenêtres et des portes.",
+              "texte": "Mentionner la présence d'animaux domestiques dans l'immeuble.",
               "correcte": false,
-              "feedback": "Non, ce détail n'est pas pertinent pour l'intervention des secours."
+              "feedback": "Non, les vies humaines passent avant celles des animaux."
             }
           ]
         },
@@ -875,18 +875,18 @@
           ]
         },
         {
-          "titre": "Sécurisation des occupants",
-          "description": "La victime est coincée dans une pièce en feu. Que devez-vous faire ?",
+          "titre": "Sécurité personnel",
+          "description": "Vous êtes coincé dans une pièce en feu. Que devez-vous faire ?",
           "options": [
             {
               "texte": "Fermer la porte et placer des linges humides au bas de la porte, ouvrir la fenêtre si possible.",
               "correcte": true,
-              "feedback": "Exact ! Cela permet de limiter la propagation de la fumée et de signaler la présence de la victime aux secours."
+              "feedback": "Exact ! Cela permet de limiter la propagation de la fumée et de signaler sa présence aux secours."
             },
             {
-              "texte": "Ouvrir la porte et essayer de sortir la victime.",
+              "texte": "Ouvrir la porte et essayer de sortir.",
               "correcte": false,
-              "feedback": "Non, ouvrir la porte risquerait de propager le feu. Il faut limiter la circulation de l'air et protéger la victime."
+              "feedback": "Non, ouvrir la porte risquerait de propager le feu. Il faut limiter la circulation de l'air et se protéger."
             }
           ]
         },
@@ -908,7 +908,7 @@
         },
         {
           "titre": "Appel aux secours",
-          "description": "Lors de l’appel aux secours, quelle information concernant l’accès au bâtiment est essentielle ?",
+          "description": "Lors de l’appel aux secours, quelle information concernant l’accès à l'intervention est essentielle ?",
           "options": [
             {
               "texte": "Décrire comment le bâtiment est accessible (rue, entrée, etc.).",
@@ -916,7 +916,7 @@
               "feedback": "Exact ! Préciser l'accès au bâtiment permettra aux secours de s'orienter plus rapidement."
             },
             {
-              "texte": "Donner des informations sur le type de décoration intérieure.",
+              "texte": "Donner des informations sur le nombre de pièce que compte le bâtiment.",
               "correcte": false,
               "feedback": "Non, ce détail n'est pas nécessaire. La priorité est l'accès et la sécurité."
             }
@@ -1321,9 +1321,9 @@
               "feedback": "Exact ! Identifier l'animal est essentiel pour évaluer les risques et les actions à entreprendre."
             },
             {
-              "texte": "Identifier immédiatement le propriétaire de l'animal.",
+              "texte": "Essayer de déterminer si l’animal est domestique ou sauvage avant toute autre chose.",
               "correcte": false,
-              "feedback": "Non, l'identification de l'animal est prioritaire afin de déterminer le danger."
+              "feedback": "Non, même si cette information peut être utile, l’identification précise de l’animal reste prioritaire."
             }
           ]
         },
@@ -1337,9 +1337,9 @@
               "feedback": "Exact ! Le propriétaire peut être une source d'information cruciale pour maîtriser la situation."
             },
             {
-              "texte": "Interroger le propriétaire pour connaître le comportement habituel de l'animal.",
+              "texte": "Demander au propriétaire de rester près de l’animal pour vous aider à le surveiller.",
               "correcte": false,
-              "feedback": "Bien que l'information soit utile, ce n'est pas une priorité immédiate."
+              "feedback": "Non, cela pourrait mettre le propriétaire en danger. Il faut d’abord évaluer sa capacité à maîtriser l’animal."
             }
           ]
         },
@@ -1353,9 +1353,9 @@
               "feedback": "Exact ! Le vétérinaire peut offrir un soutien important dans le traitement ou la gestion de l'animal."
             },
             {
-              "texte": "Un vétérinaire n'est pas nécessaire si l'animal est de petite taille.",
+              "texte": "S'il n’y a pas de blessés, l’intervention d’un vétérinaire n’est pas forcément nécessaire.",
               "correcte": false,
-              "feedback": "Non, un vétérinaire est toujours utile en cas de doute sur l'animal ou son comportement."
+              "feedback": "Non, un vétérinaire peut intervenir même sans blessure pour évaluer les risques liés à l’animal."
             }
           ]
         },
@@ -1369,9 +1369,9 @@
               "feedback": "Exact ! Si l'animal est difficile d'accès, il est préférable de ne pas risquer d'aggraver la situation."
             },
             {
-              "texte": "Essayer d'atteindre l'animal pour l'éloigner de la zone dangereuse.",
+              "texte": "Utiliser des outils à disposition pour tenter de l’atteindre ou le faire descendre doucement.",
               "correcte": false,
-              "feedback": "Non, vous devez éviter d'interagir directement avec l'animal, surtout si l'accès est risqué."
+              "feedback": "Non, manipuler l’animal sans équipement ni expertise est dangereux. Attendez les secours."
             }
           ]
         },
@@ -1385,9 +1385,9 @@
               "feedback": "Exact ! L'animal en fuite peut devenir plus dangereux si on tente de l'entraver. Alertez les secours."
             },
             {
-              "texte": "Poursuivre l'animal pour l'empêcher de s'enfuir.",
+              "texte": "Tentez de suivre l’animal à distance pour indiquer sa direction aux secours.",
               "correcte": false,
-              "feedback": "Non, cela pourrait aggraver la situation. Il est préférable de prévenir les secours."
+              "feedback": "Non, même à distance, suivre un animal dangereux peut vous exposer. Restez en sécurité et donnez un dernier point de localisation."
             }
           ]
         },
@@ -1401,9 +1401,9 @@
               "feedback": "Exact ! La sécurité des enfants est primordiale. Il faut les éloigner rapidement."
             },
             {
-              "texte": "Rester sur place et observer l'animal en attendant l'arrivée des secours.",
+              "texte": "Rester proche pour surveiller l’évolution de la situation en attendant les secours.",
               "correcte": false,
-              "feedback": "Non, il faut immédiatement éloigner les enfants de la zone de danger."
+              "feedback": "Non, il faut d’abord évacuer les enfants de la zone avant toute observation."
             }
           ]
         },
@@ -1417,9 +1417,9 @@
               "feedback": "Exact ! Ne jamais tenter de capturer ou dompter un animal dangereux."
             },
             {
-              "texte": "Tenter d'immobiliser l'animal à l'aide d'un objet.",
+              "texte": "Essayer de le faire fuir avec du bruit ou un jet d’eau.",
               "correcte": false,
-              "feedback": "Non, cela pourrait être très risqué. Ne jamais tenter de maîtriser un animal dangereux seul."
+              "feedback": "Non, provoquer l’animal peut être très risqué. Mieux vaut rester à distance."
             }
           ]
         },
@@ -1433,9 +1433,9 @@
               "feedback": "Exact ! Il est important de ne pas prendre de risques inutiles en tentant d'atteindre un animal à une hauteur difficile."
             },
             {
-              "texte": "Tenter de grimper pour capturer l'animal.",
+              "texte": "Tenter de l’attirer avec de la nourriture pour qu’il descende par lui-même.",
               "correcte": false,
-              "feedback": "Non, cela pourrait être dangereux. Attendez les secours spécialisés."
+              "feedback": "Non, cela pourrait rendre l’animal plus imprévisible. Il vaut mieux laisser faire les professionnels."
             }
           ]
         },
@@ -1449,9 +1449,9 @@
               "feedback": "Exact ! Il est important de ne pas provoquer l'animal, surtout s'il est agité, pour éviter une attaque."
             },
             {
-              "texte": "S'approcher doucement pour tenter de calmer l'animal.",
+              "texte": "Faire du bruit pour le distraire ou le détourner de sa trajectoire.",
               "correcte": false,
-              "feedback": "Non, il est risqué de s'approcher d'un animal agité. Maintenez une distance de sécurité."
+              "feedback": "Non, cela risque d’amplifier son agitation. Restez calme et à distance."
             }
           ]
         },
@@ -1465,9 +1465,9 @@
               "feedback": "Exact ! Les secours peuvent avoir besoin de précisions supplémentaires."
             },
             {
-              "texte": "Fermer votre téléphone pour ne pas être dérangé.",
+              "texte": "Envoyer un message automatique puis éteindre le téléphone pour économiser la batterie.",
               "correcte": false,
-              "feedback": "Non, vous devez rester joignable pour toute mise à jour de la situation."
+              "feedback": "Non, il faut rester joignable en cas de besoin urgent de la part des secours."
             }
           ]
         }
@@ -1476,7 +1476,7 @@
     "niveau_5": {
       "titre": "Substance dangereuse",
       "temps": "6 min",
-      "difficulte": "élevée",
+      "difficulte": "difficile",
       "exercices": [
         {
           "titre": "Identification de la substance",
@@ -1488,9 +1488,9 @@
               "feedback": "Exact ! L'identification de la substance permet de déterminer les dangers spécifiques et la manière de gérer l'incident."
             },
             {
-              "texte": "Il est plus important d'identifier immédiatement le lieu de l'incident.",
+              "texte": "Il est utile de localiser précisément le lieu pour évaluer les risques environnementaux immédiats.",
               "correcte": false,
-              "feedback": "Non, bien que le lieu soit important, l'identification de la substance est la première priorité."
+              "feedback": "Non, bien que la localisation soit importante, la nature de la substance est primordiale pour évaluer le danger et choisir la bonne approche."
             }
           ]
         },
@@ -1504,9 +1504,9 @@
               "feedback": "Exact ! Les informations techniques, comme le numéro ONU et le type de danger, sont cruciales pour intervenir en toute sécurité."
             },
             {
-              "texte": "Les informations techniques sont secondaires, l'important est d'agir rapidement sans prendre trop de précautions.",
+              "texte": "Même sans les données techniques complètes, il est possible d’estimer les risques à partir des indices visuels et olfactifs.",
               "correcte": false,
-              "feedback": "Non, les informations techniques sont indispensables pour déterminer la meilleure façon de gérer la situation."
+              "feedback": "Non, les indices visuels peuvent être trompeurs. Les informations techniques sont essentielles pour une évaluation fiable des risques."
             }
           ]
         },
@@ -1520,9 +1520,9 @@
               "feedback": "Exact ! Le numéro d'identification du danger permet aux secours de comprendre rapidement les risques associés à la substance."
             },
             {
-              "texte": "Le numéro d'identification du danger n'est pas nécessaire si vous pouvez déjà voir de la fumée ou des gaz.",
+              "texte": "En observant directement les effets visibles comme des fumées ou des réactions, on peut souvent déduire le danger sans ce numéro.",
               "correcte": false,
-              "feedback": "Non, le numéro d'identification du danger reste crucial pour les secours, même si vous voyez des signes visibles."
+              "feedback": "Non, le numéro d’identification donne des données précises et codifiées, essentielles à l’intervention sécurisée."
             }
           ]
         },
@@ -1536,9 +1536,9 @@
               "feedback": "Exact ! Chaque type de danger requiert une gestion spécifique et des précautions adaptées."
             },
             {
-              "texte": "Peu importe les propriétés de la substance, les secours traiteront tous les incidents de la même manière.",
+              "texte": "La nature chimique exacte importe moins que les symptômes visibles chez les personnes exposées.",
               "correcte": false,
-              "feedback": "Non, les propriétés de la substance influencent fortement les actions à entreprendre et la manière d'intervenir."
+              "feedback": "Non, les symptômes peuvent varier selon l’exposition. Mieux vaut connaître précisément les propriétés de la substance."
             }
           ]
         },
@@ -1552,9 +1552,9 @@
               "feedback": "Exact ! Le conditionnement peut fournir des indices sur les risques de fuite, de réaction chimique ou d'explosion."
             },
             {
-              "texte": "Le conditionnement n'est pas important, seuls les effets visibles de la substance comptent.",
+              "texte": "Le conditionnement est secondaire ; ce sont surtout les étiquettes de danger qui comptent.",
               "correcte": false,
-              "feedback": "Non, le type de conditionnement joue un rôle important dans l'évaluation des risques et des actions à entreprendre."
+              "feedback": "Non, le type de contenant (et son matériau) influe sur les risques de fuite, d'explosion ou de réaction."
             }
           ]
         },
@@ -1568,9 +1568,9 @@
               "feedback": "Exact ! La surface peut affecter la manière dont la substance se propage et les dangers qu'elle représente."
             },
             {
-              "texte": "Le type de surface est sans importance, car tous les types de substances se comportent de la même manière.",
+              "texte": "Ce qui compte surtout, c’est la proximité avec des zones habitées, pas la nature du sol ou de la surface.",
               "correcte": false,
-              "feedback": "Non, le type de surface influence la manière dont la substance interagit avec l'environnement."
+              "feedback": "Non, la surface (sol, route, eau) influence directement la propagation et la contamination."
             }
           ]
         },
@@ -1584,9 +1584,9 @@
               "feedback": "Exact ! Ces indices permettent de mieux comprendre les risques et d'adopter les bonnes pratiques pour gérer l'incident."
             },
             {
-              "texte": "Non, ces indices sont secondaires. Seules les informations sur la substance elle-même sont importantes.",
+              "texte": "Les fumées peuvent être trompeuses ; seules des analyses en laboratoire permettent une vraie identification.",
               "correcte": false,
-              "feedback": "Non, ces indices sont cruciaux pour une gestion rapide et efficace de la situation."
+              "feedback": "Non, même si l’analyse est idéale, les odeurs et couleurs donnent de précieux indices en urgence."
             }
           ]
         },
@@ -1600,9 +1600,9 @@
               "feedback": "Exact ! L'impact sur l'environnement peut étendre la zone à surveiller et renforcer l'urgence de l'intervention."
             },
             {
-              "texte": "Non, l'impact sur la végétation et les animaux n'est pas pertinent pour l'intervention des secours.",
+              "texte": "Ce type d’impact environnemental est rarement immédiat et ne doit pas ralentir l’intervention humaine.",
               "correcte": false,
-              "feedback": "Non, l'impact environnemental est un facteur clé qui peut influencer la stratégie d'intervention."
+              "feedback": "Non, un impact visible sur la faune et la flore peut signaler une zone à haut risque et une urgence d'intervention élargie."
             }
           ]
         },
@@ -1616,9 +1616,9 @@
               "feedback": "Exact ! La sécurité personnelle est primordiale. Ne touchez pas la substance et éloignez-vous du danger."
             },
             {
-              "texte": "Vous pouvez essayer de neutraliser la substance si vous avez des gants et un masque.",
+              "texte": "Si vous vous sentez bien protégé (masque, gants), vous pouvez approcher pour mieux évaluer la situation.",
               "correcte": false,
-              "feedback": "Non, il est préférable de ne pas intervenir directement et d'attendre les secours professionnels."
+              "feedback": "Non, sans équipement professionnel, vous vous mettez en danger. L’éloignement est la meilleure protection."
             }
           ]
         },
@@ -1632,9 +1632,9 @@
               "feedback": "Exact ! Vous devez rester joignable pour fournir toute information complémentaire aux secours."
             },
             {
-              "texte": "Fermer votre téléphone pour ne pas être dérangé.",
+              "texte": "Après avoir donné l’alerte, vous pouvez évacuer sans attendre, surtout si vous êtes en sécurité.",
               "correcte": false,
-              "feedback": "Non, il est essentiel de rester joignable afin de communiquer toute évolution de la situation."
+              "feedback": "Non, rester joignable est essentiel pour transmettre des informations complémentaires qui peuvent sauver des vies."
             }
           ]
         }
