@@ -1644,23 +1644,217 @@
 
   "prevent": {
     "niveau_1": {
-      "titre": "Prévention des accidents",
-      "temps": "4 min",
-      "difficulte": "moyen",
+      "titre": "Détecteurs de fumée et sécurité",
+      "temps": "6 min",
+      "difficulte": "difficile",
       "exercices": [
         {
-          "titre": "Prévention des chutes",
-          "description": "Quel conseil donnez-vous pour éviter les chutes à la maison ?",
+          "titre": "Emplacement optimal",
+          "description": "Quel est l'emplacement le plus efficace pour installer un détecteur de fumée dans une habitation standard ?",
           "options": [
             {
-              "texte": "Installer des tapis glissants partout.",
-              "correcte": false,
-              "feedback": "C'est à éviter !"
+              "texte": "Au centre du plafond de chaque pièce principale",
+              "correcte": true,
+              "feedback": "Correct! Cette position permet une détection optimale car la fumée monte naturellement vers le plafond."
             },
             {
-              "texte": "Bien éclairer les escaliers et enlever les obstacles.",
+              "texte": "Près des fenêtres pour évacuer la fumée rapidement",
+              "correcte": false,
+              "feedback": "Incorrect. Près des fenêtres, les courants d'air peuvent disperser la fumée et retarder la détection."
+            },
+            {
+              "texte": "À proximité immédiate des appareils électriques",
+              "correcte": false,
+              "feedback": "Incorrect. Trop près des appareils, les fausses alertes sont fréquentes à cause de la vapeur ou des variations de température."
+            }
+          ]
+        },
+        {
+          "titre": "Fréquence de maintenance",
+          "description": "À quelle fréquence faut-il tester le bon fonctionnement d'un détecteur de fumée pour garantir une protection efficace ?",
+          "options": [
+            {
+              "texte": "Une fois par an, lors du changement des piles",
+              "correcte": false,
+              "feedback": "Insuffisant. Un test annuel ne garantit pas un fonctionnement continu et fiable du dispositif."
+            },
+            {
+              "texte": "Une fois par mois minimum",
               "correcte": true,
-              "feedback": "Bonne réponse, c'est une mesure essentielle de prévention."
+              "feedback": "Correct! Un test mensuel permet de s'assurer du bon fonctionnement et de détecter rapidement les défaillances."
+            },
+            {
+              "texte": "Uniquement après des travaux dans le logement",
+              "correcte": false,
+              "feedback": "Très insuffisant. Les détecteurs peuvent se dégrader indépendamment des travaux et nécessitent une vérification régulière."
+            }
+          ]
+        },
+        {
+          "titre": "Durée de vie",
+          "description": "Quelle est la durée de vie moyenne d'un détecteur de fumée avant qu'il ne devienne moins fiable ?",
+          "options": [
+            {
+              "texte": "Environ 10 ans",
+              "correcte": true,
+              "feedback": "Correct! Même avec un entretien régulier, les capteurs se dégradent et nécessitent un remplacement après environ 10 ans."
+            },
+            {
+              "texte": "Indéfinie tant qu'on change les piles",
+              "correcte": false,
+              "feedback": "Faux. Le capteur lui-même se dégrade avec le temps, indépendamment de l'état des piles."
+            },
+            {
+              "texte": "20 ans minimum avec un entretien adéquat",
+              "correcte": false,
+              "feedback": "Incorrect. Même les détecteurs de haute qualité ne sont pas conçus pour durer aussi longtemps."
+            }
+          ]
+        },
+        {
+          "titre": "Type de détecteur optimal",
+          "description": "Quel type de détecteur offre la meilleure protection globale contre les incendies domestiques ?",
+          "options": [
+            {
+              "texte": "Détecteur ionique",
+              "correcte": false,
+              "feedback": "Partiellement efficace. Il détecte bien les flammes vives mais moins les feux couvants, qui sont plus fréquents la nuit."
+            },
+            {
+              "texte": "Détecteur photoélectrique",
+              "correcte": false,
+              "feedback": "Partiellement efficace. Il détecte bien les feux couvants mais moins rapidement les flammes vives."
+            },
+            {
+              "texte": "Détecteur combiné (ionique et photoélectrique)",
+              "correcte": true,
+              "feedback": "Correct! Cette technologie double offre une protection contre tous les types d'incendies domestiques."
+            }
+          ]
+        },
+        {
+          "titre": "Interconnexion des détecteurs",
+          "description": "Dans une maison à deux étages, quelle configuration des détecteurs de fumée est la plus sécuritaire ?",
+          "options": [
+            {
+              "texte": "Un détecteur par étage, fonctionnant indépendamment",
+              "correcte": false,
+              "feedback": "Insuffisant. Si un incendie se déclare à l'étage où vous ne vous trouvez pas, vous pourriez ne pas entendre l'alarme."
+            },
+            {
+              "texte": "Plusieurs détecteurs interconnectés",
+              "correcte": true,
+              "feedback": "Correct! Quand un détecteur se déclenche, tous les autres sonnent également, alertant dans toute la maison."
+            },
+            {
+              "texte": "Un seul détecteur très puissant dans l'entrée principale",
+              "correcte": false,
+              "feedback": "Dangereux. Un détecteur unique ne peut pas couvrir efficacement tous les espaces d'une maison à étages."
+            }
+          ]
+        },
+        {
+          "titre": "Hauteur d'installation",
+          "description": "Quelle distance minimale doit-on respecter entre un détecteur de fumée au plafond et le mur adjacent ?",
+          "options": [
+            {
+              "texte": "Au moins 30 cm du mur",
+              "correcte": true,
+              "feedback": "Correct! Cette distance évite les zones mortes où l'air stagne et permet une meilleure détection de la fumée."
+            },
+            {
+              "texte": "Le plus près possible du mur",
+              "correcte": false,
+              "feedback": "Incorrect. Dans les coins et près des murs, l'air stagne et la fumée met plus de temps à atteindre le détecteur."
+            },
+            {
+              "texte": "Au centre exact de la pièce uniquement",
+              "correcte": false,
+              "feedback": "Trop restrictif. Un détecteur peut être efficace à différents endroits du plafond, tant qu'il est à bonne distance des murs."
+            }
+          ]
+        },
+        {
+          "titre": "Pièces à éviter",
+          "description": "Dans quelle pièce est-il généralement déconseillé d'installer un détecteur de fumée standard ?",
+          "options": [
+            {
+              "texte": "La chambre d'enfant",
+              "correcte": false,
+              "feedback": "Au contraire, les chambres d'enfants sont prioritaires pour l'installation de détecteurs de fumée."
+            },
+            {
+              "texte": "La salle de bain",
+              "correcte": true,
+              "feedback": "Correct! La vapeur d'eau déclenche souvent de fausses alertes. Un détecteur de chaleur y est plus adapté."
+            },
+            {
+              "texte": "Le couloir entre les chambres",
+              "correcte": false,
+              "feedback": "C'est un emplacement recommandé, permettant de surveiller plusieurs pièces et les voies d'évacuation."
+            }
+          ]
+        },
+        {
+          "titre": "Norme et certification",
+          "description": "Quelle certification garantit qu'un détecteur de fumée répond aux normes européennes actuelles ?",
+          "options": [
+            {
+              "texte": "Marquage CE uniquement",
+              "correcte": false,
+              "feedback": "Insuffisant. Le marquage CE n'indique que la conformité aux exigences administratives européennes."
+            },
+            {
+              "texte": "Label NF DAAF",
+              "correcte": true,
+              "feedback": "Correct! Cette certification atteste que le détecteur a été testé selon la norme EN 14604 et vérifié par un organisme indépendant."
+            },
+            {
+              "texte": "Mention 'Conforme' sur l'emballage",
+              "correcte": false,
+              "feedback": "Attention! Ce terme n'a aucune valeur légale et n'atteste d'aucun test de performance réel."
+            }
+          ]
+        },
+        {
+          "titre": "Cause d'inefficacité",
+          "description": "Quelle est la cause la plus fréquente d'échec de détection lors d'un incendie réel ?",
+          "options": [
+            {
+              "texte": "Piles manquantes ou déchargées",
+              "correcte": true,
+              "feedback": "Exact! Dans plus de 70% des cas d'échec, les piles avaient été retirées ou étaient épuisées sans avoir été remplacées."
+            },
+            {
+              "texte": "Défaillance électronique du capteur",
+              "correcte": false,
+              "feedback": "Rare. Les défaillances techniques représentent moins de 15% des échecs de détection."
+            },
+            {
+              "texte": "Type de fumée non détectable",
+              "correcte": false,
+              "feedback": "Peu fréquent. Les détecteurs modernes sont conçus pour réagir à la plupart des types de fumée d'incendie domestique."
+            }
+          ]
+        },
+        {
+          "titre": "Détecteurs connectés",
+          "description": "Quel est le principal avantage sécuritaire d'un détecteur de fumée connecté par rapport à un modèle standard ?",
+          "options": [
+            {
+              "texte": "Il peut éteindre automatiquement un début d'incendie",
+              "correcte": false,
+              "feedback": "Faux. Les détecteurs connectés n'ont pas de fonction d'extinction, ils ne font que détecter et alerter."
+            },
+            {
+              "texte": "Il alerte même en votre absence du logement",
+              "correcte": true,
+              "feedback": "Correct! L'alerte à distance permet d'intervenir rapidement même si personne n'est présent sur place."
+            },
+            {
+              "texte": "Sa durée de vie est significativement plus longue",
+              "correcte": false,
+              "feedback": "Inexact. La connectivité n'augmente pas la durée de vie du capteur, qui reste d'environ 10 ans comme les modèles standards."
             }
           ]
         }
@@ -1670,52 +1864,6 @@
   
   "one-seven-two-two": {
     "niveau_1": {
-      "titre": "Connaître le 1722",
-      "temps": "2 min",
-      "difficulte": "facile",
-      "exercices": [
-        {
-          "titre": "Appel au 1722",
-          "description": "Quand faut-il appeler le 1722 ?",
-          "options": [
-            {
-              "texte": "En cas de tempête ou d'inondation sans danger de mort.",
-              "correcte": true,
-              "feedback": "Exact, c'est un numéro pour les situations non urgentes."
-            },
-            {
-              "texte": "En cas de feu avec des victimes.",
-              "correcte": false,
-              "feedback": "Dans ce cas, il faut appeler le 112."
-            }
-          ]
-        }
-      ]
-    },
-    "niveau_2": {
-      "titre": "Connaître le 1722",
-      "temps": "2 min",
-      "difficulte": "facile",
-      "exercices": [
-        {
-          "titre": "Appel au 1722",
-          "description": "Quand faut-il appeler le 1722 ?",
-          "options": [
-            {
-              "texte": "En cas de tempête ou d'inondation sans danger de mort.",
-              "correcte": true,
-              "feedback": "Exact, c'est un numéro pour les situations non urgentes."
-            },
-            {
-              "texte": "En cas de feu avec des victimes.",
-              "correcte": false,
-              "feedback": "Dans ce cas, il faut appeler le 112."
-            }
-          ]
-        }
-      ]
-    },
-    "niveau_3": {
       "titre": "Connaître le 1722",
       "temps": "2 min",
       "difficulte": "facile",

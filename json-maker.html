@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Générateur de fichier JSON</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Ajout de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        /* Style basique pour l'interface */
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -31,36 +30,15 @@
             padding: 10px;
             border-radius: 5px;
         }
-        .folder {
-            background-color: #f1f1f1;
-            margin-bottom: 10px;
-        }
-        .level {
-            background-color: #e0f7fa;
-            margin-bottom: 5px;
-        }
-        .exercise {
-            background-color: #fce4ec;
-            margin-bottom: 5px;
-        }
-        .folder > .folder-title, .level > .level-title, .exercise > .exercise-title {
+        .folder { background-color: #f1f1f1; margin-bottom: 10px; }
+        .level { background-color: #e0f7fa; margin-bottom: 5px; }
+        .exercise { background-color: #fce4ec; margin-bottom: 5px; }
+        .folder-title, .level-title, .exercise-title {
+            font-weight: bold;
             cursor: pointer;
-            font-weight: bold;
         }
-        .folder > .folder-title:hover, .level > .level-title:hover, .exercise > .exercise-title:hover {
+        .folder-title:hover, .level-title:hover, .exercise-title:hover {
             color: #007BFF;
-        }
-        .folder-title {
-            font-weight: bold;
-        }
-        .exercice-form input, .exercice-form textarea, .exercice-form select {
-            margin-bottom: 10px;
-        }
-        .exercice-form {
-            margin-top: 20px;
-        }
-        .option {
-            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -79,7 +57,7 @@
 
     <div>
         <label for="niveauTitle">Titre du Niveau:</label>
-        <input type="text" id="niveauTitle" placeholder="Entrez le titre du niveau">
+        <input type="text" id="niveauTitle" placeholder="Entrez le titre du niveau" maxlength="35">
     </div>
 
     <div>
@@ -98,7 +76,6 @@
 
     <h3>Exercices</h3>
 
-    <!-- Sélection du niveau existant -->
     <div>
         <label for="niveauExistants">Sélectionner un niveau existant:</label>
         <select id="niveauExistants">
@@ -109,15 +86,15 @@
     <div id="exercices">
         <div class="exercice-form">
             <label for="exerciceTitle">Titre de l'exercice:</label>
-            <input type="text" class="exerciceTitle" placeholder="Entrez le titre de l'exercice" maxlength="40">
+            <input type="text" class="exerciceTitle" placeholder="Entrez le titre de l'exercice" maxlength="25">
 
             <label for="exerciceDescription">Description de l'exercice:</label>
-            <textarea class="exerciceDescription" placeholder="Entrez la description de l'exercice" maxlength="120"></textarea>
+            <textarea class="exerciceDescription" placeholder="Entrez la description de l'exercice" maxlength="100"></textarea>
 
             <div id="options-container">
                 <div class="option">
                     <label for="optionText">Option 1 (Texte):</label>
-                    <input type="text" class="optionText" placeholder="Texte de l'option" maxlength="60">
+                    <input type="text" class="optionText" placeholder="Texte de l'option" maxlength="80">
 
                     <label for="optionCorrecte">Option 1 (Correcte):</label>
                     <select class="optionCorrecte">
@@ -126,7 +103,7 @@
                     </select>
 
                     <label for="optionFeedback">Option 1 (Feedback):</label>
-                    <textarea class="optionFeedback" placeholder="Feedback de l'option" maxlength="120"></textarea>
+                    <textarea class="optionFeedback" placeholder="Feedback de l'option" maxlength="100"></textarea>
                 </div>
             </div>
 
@@ -136,16 +113,10 @@
     </div>
 
     <button onclick="generateJSON()">Générer le fichier JSON</button>
-    <button onclick="loadJSON()">Charger un fichier JSON</button>
-    <a id="downloadLink" style="display: none;">Télécharger le fichier JSON</a>
-    <input type="file" id="fileInput" style="display: none;" accept=".json">
 
-    <!-- Visualiseur des données -->
     <div id="visualiseur">
         <h2>Visualiseur des Domaines, Niveaux et Exercices</h2>
-        <div id="domains-view">
-            <!-- Visualiseur dynamique des domaines -->
-        </div>
+        <div id="domains-view"></div>
     </div>
 
     <script>
@@ -158,19 +129,12 @@
             const niveauTemps = document.getElementById('niveauTemps').value;
             const niveauDifficulte = document.getElementById('niveauDifficulte').value;
 
-            // Récupérer ou créer le niveau pour le domaine
             if (!currentJSONData[domaine]) {
                 currentJSONData[domaine] = {};
             }
 
-            let niveauKey;
-            if (niveauTitle) {
-                niveauKey = niveauTitle;
-            } else {
-                niveauKey = 'niveau_' + (Object.keys(currentJSONData[domaine]).length + 1);
-            }
+            let niveauKey = niveauTitle || 'niveau_' + (Object.keys(currentJSONData[domaine]).length + 1);
 
-            // Si ce niveau n'existe pas, créer un nouveau niveau
             if (!currentJSONData[domaine][niveauKey]) {
                 currentJSONData[domaine][niveauKey] = {
                     titre: niveauTitle,
@@ -180,20 +144,17 @@
                 };
             }
 
-            // Récupération des options
             const exercice = {
                 titre: document.querySelector('.exerciceTitle').value,
                 description: document.querySelector('.exerciceDescription').value,
                 options: []
             };
 
-            // Vérifier que tous les champs sont remplis
             if (!exercice.titre || !exercice.description) {
                 alert("Tous les champs de l'exercice doivent être remplis.");
                 return;
             }
 
-            // Récupérer les options et vérifier qu'une seule est correcte
             let correctOptionCount = 0;
             document.querySelectorAll('.option').forEach(optionElement => {
                 const option = {
@@ -202,7 +163,6 @@
                     feedback: optionElement.querySelector('.optionFeedback').value
                 };
 
-                // Vérifier que tous les champs des options sont remplis
                 if (!option.texte || !option.feedback) {
                     alert("Tous les champs de l'option doivent être remplis.");
                     return;
@@ -213,18 +173,16 @@
                 exercice.options.push(option);
             });
 
-            // Vérifier qu'il n'y a qu'une seule option correcte
             if (correctOptionCount !== 1) {
                 alert("Il doit y avoir exactement une option correcte.");
                 return;
             }
 
-            // Ajouter l'exercice au niveau choisi
             currentJSONData[domaine][niveauKey].exercices.push(exercice);
 
             clearExerciceFields();
-            renderDomainsView(); // Re-render le visualiseur après ajout
-            updateNiveauxSelection(); // Mettre à jour la liste des niveaux
+            renderDomainsView();
+            updateNiveauxSelection();
         }
 
         function clearExerciceFields() {
@@ -247,32 +205,30 @@
             downloadLink.innerText = "Télécharger le fichier JSON";
         }
 
-        function loadJSON() {
-            const fileInput = document.getElementById('fileInput');
-            fileInput.click(); // Simuler le clic pour ouvrir le sélecteur de fichiers
-
-            fileInput.addEventListener('change', function() {
-                const file = fileInput.files[0];
-                const reader = new FileReader();
-
-                reader.onload = function(event) {
-                    try {
-                        currentJSONData = JSON.parse(event.target.result);
-                        alert("Fichier JSON chargé avec succès !");
-                        renderDomainsView(); // Afficher le contenu après chargement
-                        updateNiveauxSelection(); // Mettre à jour la liste des niveaux
-                    } catch (error) {
-                        alert("Erreur lors du chargement du fichier JSON.");
+        function loadJSONFromPath() {
+            fetch('assets/json/exercices_data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du fichier JSON');
                     }
-                };
-
-                reader.readAsText(file);
-            });
+                    return response.json();
+                })
+                .then(data => {
+                    currentJSONData = data;
+                    alert("Fichier JSON chargé avec succès !");
+                    renderDomainsView();
+                    updateNiveauxSelection();
+                })
+                .catch(error => {
+                    console.error('Erreur :', error);
+                    alert("Impossible de charger le fichier JSON.");
+                });
         }
+
 
         function renderDomainsView() {
             const domainsView = document.getElementById('domains-view');
-            domainsView.innerHTML = ''; // Clear the view before rendering
+            domainsView.innerHTML = '';
 
             for (const domaine in currentJSONData) {
                 const domainElement = document.createElement('div');
@@ -282,7 +238,6 @@
                 domainTitle.textContent = domaine;
                 domainElement.appendChild(domainTitle);
 
-                // Créer un visuel pour les niveaux
                 const levelsContainer = document.createElement('div');
                 for (const niveau in currentJSONData[domaine]) {
                     const levelElement = document.createElement('div');
@@ -293,7 +248,6 @@
                     levelTitle.textContent = currentJSONData[domaine][niveau].titre;
                     levelElement.appendChild(levelTitle);
 
-                    // Créer un visuel pour les exercices
                     const exercisesContainer = document.createElement('div');
                     currentJSONData[domaine][niveau].exercices.forEach(exercice => {
                         const exerciceElement = document.createElement('div');
@@ -315,22 +269,20 @@
                 domainsView.appendChild(domainElement);
             }
 
-            // Ajouter de l'interactivité pour afficher/masquer les sous-dossiers avec jQuery
             $('.folder-title').on('click', function() {
-                $(this).next('.level').slideToggle(); // Afficher/masquer les niveaux avec animation
+                $(this).next('.level').slideToggle();
             });
 
             $('.level-title').on('click', function() {
-                $(this).next('.exercise').slideToggle(); // Afficher/masquer les exercices avec animation
+                $(this).next('.exercise').slideToggle();
             });
         }
 
         function updateNiveauxSelection() {
             const domaine = document.getElementById('domaine').value;
             const niveauExistants = document.getElementById('niveauExistants');
-            niveauExistants.innerHTML = '<option value="">Choisir un niveau...</option>'; // Clear previous options
+            niveauExistants.innerHTML = '<option value="">Choisir un niveau...</option>';
 
-            // Vérifier si des niveaux existent pour le domaine sélectionné
             if (currentJSONData[domaine]) {
                 for (const niveau in currentJSONData[domaine]) {
                     const option = document.createElement('option');
@@ -341,14 +293,9 @@
             }
         }
 
-        // Appeler la fonction pour afficher les niveaux dès qu'un domaine est sélectionné
         document.getElementById('domaine').addEventListener('change', updateNiveauxSelection);
-
-        // Initialiser l'affichage des niveaux au chargement de la page
         updateNiveauxSelection();
 
-
-        // Ajouter une nouvelle option à l'exercice
         let optionCount = 1;
         $('#addOptionBtn').on('click', function() {
             if (optionCount < 4) {
@@ -374,8 +321,8 @@
             }
         });
 
-        // Ajouter un exercice sous le niveau sélectionné
         $('#addExerciceBtn').on('click', addExercice);
+        document.addEventListener('DOMContentLoaded', loadJSONFromPath);
 
     </script>
 </body>
