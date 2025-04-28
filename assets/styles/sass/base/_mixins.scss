@@ -88,6 +88,11 @@
       font-size: clamp(0.75rem, 4.5vw, 1rem);
     }
   }
+
+  &.medic-home-button, &.fire-home-button, &.one-seven-two-two-home-button, &.prevent-home-button {
+    width: 25vw;
+    height: 25vw;
+  }
 }
 
 // ==========================
@@ -345,6 +350,7 @@
 // Zone de feedback
 @mixin feedback {
   margin-top: 4vh;
+  margin-bottom: 6vh;
   font-size: 2vh;
   text-align: center;
   color: #333;

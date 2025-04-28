@@ -16,26 +16,33 @@
 
 .grid-level-buttons {
   display: grid;
-  grid-template-columns: auto 1fr; // bouton à gauche, description à droite
+  grid-template-columns: auto 1fr;
   align-items: center;
   gap: 2rem;
   padding: 1rem;
   margin-left: 3vh;
+  margin-bottom: 2vh;
 
   .diamond-button {
-    justify-self: center;
-    width: clamp(150px, 10vw, 250px); // ajustement de la taille du bouton
-    height: clamp(150px, 10vw, 250px); // ajustement de la taille du bouton
-    font-size: clamp(
-      1rem,
-      4vw,
-      2rem
-    ); // ajustement de la taille de la police du bouton
-    margin-bottom: 2vh;
+    position: relative;
+    margin: 0 auto;
+    width: clamp(150px, 10vw, 250px);
+    height: clamp(150px, 10vw, 250px);
+    font-size: 0; // pour éviter que l'espace vide parasite l'alignement
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(3rem, 8vw, 4rem);
+      text-align: center;
+      width: 80%;
+    }
   }
 
   .description {
-    font-size: clamp(1.25rem, 4vw, 2rem); // taille du texte description ajustée
+    font-size: clamp(1.25rem, 4vw, 2rem);
     color: $color-text;
     max-width: 90%;
     display: flex;
@@ -45,13 +52,12 @@
   }
 
   @media (max-width: $breakpoint-mobile) {
-    grid-template-columns: 1fr; // empilement sur mobile
+    grid-template-columns: 1fr;
     text-align: center;
 
     .diamond-button {
-      margin: 0 auto;
-      width: 70%; // réduit un peu la taille sur mobile
-      height: auto;
+      width: 25vw;
+      height: 25vw;
     }
 
     .description {

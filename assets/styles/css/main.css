@@ -23,8 +23,8 @@ html, body {
 }
 .medic-home-button {
   position: relative;
-  width: 25vw;
-  height: 25vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -47,7 +47,7 @@ html, body {
 }
 .medic-home-button::after {
   background-color: #0068cc;
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -72,30 +72,35 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(25vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .medic-home-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .medic-home-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .medic-home-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .medic-home-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .medic-home-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .medic-home-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.medic-home-button.medic-home-button, .medic-home-button.fire-home-button, .medic-home-button.one-seven-two-two-home-button, .medic-home-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .fire-home-button {
   position: relative;
-  width: 25vw;
-  height: 25vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -118,7 +123,7 @@ html, body {
 }
 .fire-home-button::after {
   background-color: #cc0c00;
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -143,30 +148,35 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(25vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .fire-home-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .fire-home-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .fire-home-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .fire-home-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .fire-home-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .fire-home-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.fire-home-button.medic-home-button, .fire-home-button.fire-home-button, .fire-home-button.one-seven-two-two-home-button, .fire-home-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .one-seven-two-two-home-button {
   position: relative;
-  width: 25vw;
-  height: 25vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -189,7 +199,7 @@ html, body {
 }
 .one-seven-two-two-home-button::after {
   background-color: rgb(57.6, 57.6, 57.6);
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -214,30 +224,35 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(25vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .one-seven-two-two-home-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .one-seven-two-two-home-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .one-seven-two-two-home-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .one-seven-two-two-home-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .one-seven-two-two-home-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .one-seven-two-two-home-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.one-seven-two-two-home-button.medic-home-button, .one-seven-two-two-home-button.fire-home-button, .one-seven-two-two-home-button.one-seven-two-two-home-button, .one-seven-two-two-home-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .prevent-home-button {
   position: relative;
-  width: 25vw;
-  height: 25vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -260,7 +275,7 @@ html, body {
 }
 .prevent-home-button::after {
   background-color: #cc7000;
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -285,24 +300,29 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(25vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .prevent-home-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .prevent-home-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .prevent-home-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .prevent-home-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .prevent-home-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .prevent-home-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.prevent-home-button.medic-home-button, .prevent-home-button.fire-home-button, .prevent-home-button.one-seven-two-two-home-button, .prevent-home-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .rectangular-button {
@@ -483,8 +503,8 @@ html, body {
 
 .non-activ-level-button {
   position: relative;
-  width: 8vw;
-  height: 8vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -507,7 +527,7 @@ html, body {
 }
 .non-activ-level-button::after {
   background-color: rgb(173.6, 173.6, 173.6);
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -532,30 +552,35 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(8vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .non-activ-level-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .non-activ-level-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .non-activ-level-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .non-activ-level-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .non-activ-level-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .non-activ-level-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.non-activ-level-button.medic-home-button, .non-activ-level-button.fire-home-button, .non-activ-level-button.one-seven-two-two-home-button, .non-activ-level-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .medic-level-button {
   position: relative;
-  width: 8vw;
-  height: 8vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -578,7 +603,7 @@ html, body {
 }
 .medic-level-button::after {
   background-color: #0068cc;
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -603,30 +628,35 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(8vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .medic-level-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .medic-level-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .medic-level-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .medic-level-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .medic-level-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .medic-level-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.medic-level-button.medic-home-button, .medic-level-button.fire-home-button, .medic-level-button.one-seven-two-two-home-button, .medic-level-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .fire-level-button {
   position: relative;
-  width: 8vw;
-  height: 8vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -649,7 +679,7 @@ html, body {
 }
 .fire-level-button::after {
   background-color: #cc0c00;
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -674,30 +704,35 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(8vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .fire-level-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .fire-level-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .fire-level-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .fire-level-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .fire-level-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .fire-level-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.fire-level-button.medic-home-button, .fire-level-button.fire-home-button, .fire-level-button.one-seven-two-two-home-button, .fire-level-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .prevent-level-button {
   position: relative;
-  width: 8vw;
-  height: 8vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -720,7 +755,7 @@ html, body {
 }
 .prevent-level-button::after {
   background-color: #cc7000;
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -745,30 +780,35 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(8vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .prevent-level-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .prevent-level-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .prevent-level-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .prevent-level-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .prevent-level-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .prevent-level-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.prevent-level-button.medic-home-button, .prevent-level-button.fire-home-button, .prevent-level-button.one-seven-two-two-home-button, .prevent-level-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .one-seven-two-two-level-button {
   position: relative;
-  width: 8vw;
-  height: 8vw;
+  width: clamp(60px, 12vw, 120px);
+  height: clamp(60px, 12vw, 120px);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -791,7 +831,7 @@ html, body {
 }
 .one-seven-two-two-level-button::after {
   background-color: rgb(57.6, 57.6, 57.6);
-  top: 10px;
+  top: 6px;
   left: -4px;
   width: calc(100% + 8px);
   height: calc(100% + 8px);
@@ -816,24 +856,29 @@ html, body {
   text-align: center;
   width: 100%;
   height: 100%;
-  font-size: calc(8vw * 1);
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
   .one-seven-two-two-level-button {
-    width: 20vw;
-    height: 20vw;
-  }
-  .one-seven-two-two-level-button img {
-    width: 70%;
+    width: clamp(45px, 18vw, 90px);
+    height: clamp(45px, 18vw, 90px);
   }
   .one-seven-two-two-level-button span {
-    font-size: calc(20vw * 0.7);
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
-  .one-seven-two-two-level-button .button-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-    gap: 1.5rem;
+}
+@media (max-width: 360px) {
+  .one-seven-two-two-level-button {
+    width: clamp(40px, 20vw, 75px);
+    height: clamp(40px, 20vw, 75px);
   }
+  .one-seven-two-two-level-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}
+.one-seven-two-two-level-button.medic-home-button, .one-seven-two-two-level-button.fire-home-button, .one-seven-two-two-level-button.one-seven-two-two-home-button, .one-seven-two-two-level-button.prevent-home-button {
+  width: 25vw;
+  height: 25vw;
 }
 
 .rectangular-box-levels {
@@ -979,6 +1024,7 @@ html, body {
 
 .feedback {
   margin-top: 4vh;
+  margin-bottom: 6vh;
   font-size: 2vh;
   text-align: center;
   color: #333;
@@ -1045,7 +1091,7 @@ html, body {
   margin-top: 30px;
   background-color: #ffffff;
   border-radius: 50%;
-  padding: 3rem;
+  padding: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1127,13 +1173,23 @@ html, body {
   gap: 2rem;
   padding: 1rem;
   margin-left: 3vh;
+  margin-bottom: 2vh;
 }
 .grid-level-buttons .diamond-button {
-  justify-self: center;
+  position: relative;
+  margin: 0 auto;
   width: clamp(150px, 10vw, 250px);
   height: clamp(150px, 10vw, 250px);
-  font-size: clamp(1rem, 4vw, 2rem);
-  margin-bottom: 2vh;
+  font-size: 0;
+}
+.grid-level-buttons .diamond-button span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(3rem, 8vw, 4rem);
+  text-align: center;
+  width: 80%;
 }
 .grid-level-buttons .description {
   font-size: clamp(1.25rem, 4vw, 2rem);
@@ -1150,9 +1206,8 @@ html, body {
     text-align: center;
   }
   .grid-level-buttons .diamond-button {
-    margin: 0 auto;
-    width: 70%;
-    height: auto;
+    width: 25vw;
+    height: 25vw;
   }
   .grid-level-buttons .description {
     margin-top: 1rem;
