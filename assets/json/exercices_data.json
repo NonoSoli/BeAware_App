@@ -7,7 +7,7 @@
       "exercices": [
         {
           "titre": "Premiers réflexes",
-          "description": "Vous arrivez juste après un accident : une voiture a percuté un arbre, une personne est à l’intérieur. Que faites-vous en premier ?",
+          "description": "Vous etes témoins d'un accident : une voiture a percuté un arbre, une personne est à l’intérieur. Que faites-vous en premier?",
           "options": [
             {
               "texte": "Je m’approche pour extraire la victime.",
@@ -20,7 +20,7 @@
               "feedback": "Exact ! Votre sécurité passe en premier. Signalez l’accident et éloignez-vous du danger avant tout."
             },
             {
-              "texte": "J’appelle le 112 tout de suite, sans m’arrêter.",
+              "texte": "J’appelle le 112.",
               "correcte": false,
               "feedback": "Non, vous devez d’abord sécuriser les lieux et recueillir des infos utiles avant d’appeler les secours."
             }
@@ -28,20 +28,25 @@
         },
         {
           "titre": "Appel au 112",
-          "description": "Vous êtes prêt à appeler le 112 pour signaler un accident de la route. Que devez-vous absolument faire avant d’appeler ?",
+          "description": "Vous êtes témoin d’un accident. Avant de composer le 112, quelle est votre priorité immédiate ?",
           "options": [
             {
-              "texte": "Recueillir un maximum d’infos sur l'accident.",
+              "texte": "Prendre quelques instants pour observer la scène et comprendre la situation.",
               "correcte": true,
-              "feedback": "Oui ! Plus vous donnez de détails (nombre de blessés, type de véhicule, danger visible…), plus les secours seront efficaces."
+              "feedback": "Bonne décision. Ces premières observations permettront aux secours de mieux évaluer l’urgence et d’intervenir efficacement."
             },
             {
-              "texte": "Appeler tout de suite, même si je n’ai pas encore regardé la scène.",
+              "texte": "Appeler tout de suite, même sans avoir tous les détails.",
               "correcte": false,
-              "feedback": "Non, il vaut mieux observer d’abord pour transmettre des infos utiles : état des victimes, véhicules, risques éventuels."
+              "feedback": "Réflexe naturel, mais sans informations claires, les secours risquent de perdre un temps précieux à comprendre la situation."
+            },
+            {
+              "texte": "Chercher quelqu’un autour pour s’assurer qu’on n’est pas seul à gérer.",
+              "correcte": false,
+              "feedback": "Compréhensible sous le stress, mais il vaut mieux commencer par évaluer la situation vous-même avant de chercher de l’aide."
             }
           ]
-        },
+        },        
         {
           "titre": "Victime coincée",
           "description": "Une personne semble coincée dans sa voiture après un choc. Elle est consciente mais paniquée. Que faire ?",
@@ -55,51 +60,51 @@
               "texte": "Rester proche, la rassurer sans la bouger, et attendre les secours.",
               "correcte": true,
               "feedback": "Bonne réaction ! Rassurez-la et attendez les secours. Le calme peut aider à éviter un choc ou une panique."
-            },
-            {
-              "texte": "Ignorer la victime et rester à distance.",
-              "correcte": false,
-              "feedback": "Mauvais réflexe. Même si vous ne devez pas la déplacer, votre présence rassurante est précieuse jusqu’à l’arrivée des secours."
             }
           ]
         },
         {
           "titre": "Fumée ou feu",
-          "description": "Après un accident, vous voyez de la fumée sortir du capot d’une voiture. Que faites-vous ?",
+          "description": "Après un accident, vous remarquez de la fumée s’échappant du capot d’une voiture accidentée. Quelle est votre réaction la plus appropriée ?",
           "options": [
             {
-              "texte": "Je tente d’éteindre le feu si c’est possible et sans danger.",
+              "texte": "Je m’éloigne rapidement et alerte les secours.",
+              "correcte": false,
+              "feedback": "C’est prudent, mais il est parfois possible d’agir sans danger immédiat pour éviter une aggravation de la situation."
+            },
+            {
+              "texte": "Je tente d’évaluer la situation et, si possible sans risque, d’utiliser un extincteur.",
               "correcte": true,
-              "feedback": "Bonne réaction ! Si vous avez un extincteur et que c’est sûr, une première tentative peut éviter le pire."
+              "feedback": "Bonne décision. Si la fumée est légère et que vous avez un extincteur, intervenir rapidement peut empêcher un incendie."
             },
             {
-              "texte": "Je m’approche pour regarder de plus près.",
+              "texte": "Je vérifie s’il y a encore quelqu’un dans la voiture avant toute autre action.",
               "correcte": false,
-              "feedback": "Non, c’est risqué. Il pourrait y avoir un incendie, une explosion ou des vapeurs toxiques."
-            },
-            {
-              "texte": "J’attends à côté pour voir ce qu’il se passe.",
-              "correcte": false,
-              "feedback": "Non, éloignez-vous immédiatement du véhicule. La fumée peut être dangereuse, voire annonciatrice d’un incendie."
+              "feedback": "C’est courageux, mais potentiellement dangereux. Il faut d’abord évaluer les risques comme le feu ou les fumées toxiques."
             }
           ]
-        },
+        },        
         {
           "titre": "Marchandises dangereuses",
-          "description": "Une camionnette accidentée affiche un panneau orange avec un code sur fond noir. Que signifie ce panneau ?",
+          "description": "Après un accident impliquant une camionnette, vous remarquez un panneau orange avec un code noir affiché à l’arrière du véhicule. Que cela peut-il indiquer ?",
           "options": [
             {
-              "texte": "Le véhicule transporte des matières dangereuses.",
+              "texte": "Le véhicule transporte des matières potentiellement dangereuses.",
               "correcte": true,
-              "feedback": "Exact ! Ces panneaux signalent des produits potentiellement toxiques, inflammables ou explosifs."
+              "feedback": "Bonne observation. Ce type de panneau est utilisé pour signaler le transport de substances dangereuses (inflammables, toxiques, corrosives…)."
             },
             {
-              "texte": "C’est juste une plaque de signalisation ordinaire.",
+              "texte": "C’est probablement un panneau de contrôle technique ou d'immatriculation spéciale.",
               "correcte": false,
-              "feedback": "Non. Ce panneau orange indique la présence de matières dangereuses. Ne vous approchez pas."
+              "feedback": "Non. Ce n’est pas un simple panneau administratif : il indique un danger potentiel lié au chargement."
+            },
+            {
+              "texte": "Cela concerne uniquement les professionnels, pas besoin d’y faire attention.",
+              "correcte": false,
+              "feedback": "Faux. Même en tant que témoin, vous devez rester à distance en présence de ce type de signalement. Il y a un vrai risque."
             }
           ]
-        },
+        },        
         {
           "titre": "Victime inconsciente",
           "description": "Vous trouvez un blessé inconscient dans sa voiture après l’impact. Il ne répond pas. Quelle est votre priorité ?",
@@ -118,71 +123,224 @@
         },
         {
           "titre": "Airbags déclenchés",
-          "description": "Vous remarquez que les airbags se sont déclenchés après un accident. Que devez-vous en conclure ?",
+          "description": "Sur les lieux d’un accident, vous voyez que les airbags se sont déclenchés dans l’un des véhicules. Quelle interprétation est la plus pertinente ?",
           "options": [
             {
-              "texte": "Il y a eu un choc important, potentiellement traumatique.",
+              "texte": "Cela signifie qu’il y a eu un choc suffisamment fort pour causer des blessures graves.",
               "correcte": true,
-              "feedback": "Exact ! Le déclenchement des airbags indique un impact violent. Mentionnez-le aux secours."
+              "feedback": "Exact. Le déclenchement d’un airbag n’est pas anodin. Il indique un choc violent, à signaler aux secours."
             },
             {
-              "texte": "C’est bon signe, les airbags ont évité des blessures.",
+              "texte": "C’est rassurant : cela prouve que les passagers sont protégés.",
               "correcte": false,
-              "feedback": "Non, même si les airbags protègent, leur déclenchement signale un choc sérieux."
+              "feedback": "Faux. Même si les airbags protègent, leur activation révèle un impact important et un risque de blessures internes."
+            },
+            {
+              "texte": "Les airbags se déclenchent automatiquement, cela ne donne pas d’indication sur la gravité de l’accident.",
+              "correcte": false,
+              "feedback": "Non. Leur déclenchement dépend de l’intensité du choc. Cela reste un indice utile pour évaluer la situation."
             }
           ]
-        },
+        },        
         {
           "titre": "Passager vulnérable",
-          "description": "Une passagère enceinte se plaint de douleurs après un accident. Que faut-il faire ?",
+          "description": "Une passagère enceinte se plaint de douleurs abdominales après un accident. Quelle est la meilleure chose à faire ?",
           "options": [
             {
-              "texte": "Le signaler immédiatement au 112.",
+              "texte": "Le signaler immédiatement lors de l’appel au 112.",
               "correcte": true,
-              "feedback": "Bonne réaction ! Une femme enceinte est considérée comme vulnérable : les secours doivent en être informés dès le début."
+              "feedback": "Très bien. La grossesse est un facteur de risque important, toute douleur doit être signalée sans délai aux secours."
             },
             {
-              "texte": "Inutile de mentionner qu'une victime est enceinte.",
+              "texte": "Attendre de voir si les douleurs passent avant d’alarmer les secours.",
               "correcte": false,
-              "feedback": "Non, toute douleur après un accident chez une personne vulnérable doit être prise très au sérieux."
+              "feedback": "Non. Chez une personne enceinte, même des douleurs légères doivent être prises très au sérieux dès le départ."
+            },
+            {
+              "texte": "La rassurer en lui disant que c’est sûrement le stress.",
+              "correcte": false,
+              "feedback": "Même si vous souhaitez la rassurer, il est crucial de ne pas minimiser : chaque information compte pour les secours."
             }
           ]
-        },
+        },        
         {
           "titre": "Plusieurs témoins",
-          "description": "Vous êtes plusieurs témoins d’un accident. L’un d’eux commence à appeler le 112. Que devez-vous faire ?",
+          "description": "Vous êtes plusieurs sur les lieux d’un accident. Une personne commence à appeler le 112. Quelle est la meilleure chose à faire de votre côté ?",
           "options": [
             {
-              "texte": "Lui laisser la ligne libre et observer la scène pour lui transmettre des infos utiles.",
+              "texte": "Observer attentivement la scène pour lui fournir des informations précises à transmettre.",
               "correcte": true,
-              "feedback": "Oui, une seule personne doit appeler. Les autres doivent aider à sécuriser les lieux ou collecter les infos."
+              "feedback": "Exact. Pendant qu’une personne appelle, les autres peuvent contribuer en observant et sécurisant la zone."
             },
             {
-              "texte": "Appeler aussi, pour être sûr que les secours soient informés.",
+              "texte": "Appeler vous aussi, au cas où l’autre personne oublie quelque chose.",
               "correcte": false,
-              "feedback": "Non, cela surcharge la ligne. Il vaut mieux se répartir les rôles : un appel, les autres assistent."
+              "feedback": "Non, il vaut mieux éviter de surcharger la ligne. La coordination est plus efficace qu’un appel en double."
+            },
+            {
+              "texte": "Attendre en retrait pour ne pas gêner l’appel ou les secours à venir.",
+              "correcte": false,
+              "feedback": "Ce n’est pas la meilleure option. Vous pouvez aider à rassembler des infos ou sécuriser les lieux sans gêner."
             }
           ]
-        },
+        },        
         {
           "titre": "Analyser la scène",
-          "description": "Avant de vous approcher, que devez-vous regarder ?",
+          "description": "Avant de vous approcher du lieu de l’accident, que devez-vous regarder en priorité ?",
           "options": [
             {
-              "texte": "Fumée, véhicules en feu, fils électriques, fuites.",
+              "texte": "La présence de fumée, de feu, de câbles électriques ou de fuites de liquide.",
               "correcte": true,
-              "feedback": "Très bien ! Il faut repérer les risques immédiats avant toute intervention."
+              "feedback": "Bonne réponse. Repérer les dangers immédiats est essentiel pour votre sécurité et celle des victimes."
             },
             {
-              "texte": "La modèle de la voiture et le nombre de passagers.",
+              "texte": "Le type de véhicules impliqués et s’ils semblent gravement endommagés.",
               "correcte": false,
-              "feedback": "Non, l’analyse initiale vise à repérer les dangers (feu, explosion, liquide, électricité) pour rester en sécurité."
+              "feedback": "C’est secondaire. Il faut d’abord identifier les risques qui pourraient mettre tout le monde en danger."
+            },
+            {
+              "texte": "Le comportement des passants et des autres témoins pour décider quoi faire.",
+              "correcte": false,
+              "feedback": "Se fier uniquement aux réactions des autres peut être trompeur. Il faut d’abord faire votre propre évaluation des risques."
             }
           ]
-        }                                                        
+        }                                                               
       ]
     },
     "niveau_2": {
+      "titre": "BEFAST : Réflexion approfondie",
+      "temps": "5 min",
+      "difficulte": "élevé",
+      "exercices": [
+        {
+          "titre": "B - Balance (Équilibre)",
+          "description": "Une personne commence à se déséquilibrer, tombe soudainement ou semble avoir perdu le contrôle de ses mouvements. Que devez-vous faire en priorité ?",
+          "options": [
+            {
+              "texte": "Chercher un soutien extérieur pour l'aider à se remettre debout.",
+              "correcte": false,
+              "feedback": "Non, en cas de perte d'équilibre soudaine, surtout si elle est accompagnée d'autres symptômes, il est important d'agir rapidement et de contacter les secours."
+            },
+            {
+              "texte": "Observer les autres symptômes (troubles de la vision, de l'élocution) avant d'agir.",
+              "correcte": true,
+              "feedback": "Exact ! Même si la perte d'équilibre est préoccupante, il est essentiel d'observer d'autres signes avant de prendre une décision et appeler les secours."
+            },
+            {
+              "texte": "Essayer de calmer la personne en lui parlant, cela passera sûrement.",
+              "correcte": false,
+              "feedback": "Cela pourrait être dangereux. Si la personne perd soudainement l'équilibre sans raison apparente, un AVC doit être suspecté."
+            }
+          ]
+        },
+        {
+          "titre": "E - Eyes (Yeux)",
+          "description": "Une personne se plaint de vision trouble et de vision double après un vertige. Vous hésitez : que faire en priorité ?",
+          "options": [
+            {
+              "texte": "L'encourager à se reposer un moment, cela devrait passer.",
+              "correcte": false,
+              "feedback": "Les troubles visuels soudains ne sont pas à prendre à la légère. Ce sont des signes d'AVC qui nécessitent une intervention immédiate."
+            },
+            {
+              "texte": "Contacter les secours en précisant les symptômes (vision trouble, vertiges).",
+              "correcte": true,
+              "feedback": "Bien joué ! Les troubles visuels sont un signe majeur d'AVC, et il est crucial de prévenir les secours dès que possible."
+            },
+            {
+              "texte": "Essayer de lui donner de l'eau ou un médicament pour soulager les symptômes.",
+              "correcte": false,
+              "feedback": "Ce n’est pas le moment pour ce genre de mesures. Un AVC ne doit pas être ignoré, contactez immédiatement les secours."
+            }
+          ]
+        },
+        {
+          "titre": "F - Face (Visage)",
+          "description": "Lors de votre examen, une personne présente un affaissement d’un coin de la bouche, mais ne se plaint d’aucune douleur. Quelle est la bonne réaction ?",
+          "options": [
+            {
+              "texte": "Ignorer l’affaissement, il peut s'agir d’une simple fatigue ou d'une expression faciale involontaire.",
+              "correcte": false,
+              "feedback": "Un affaissement de la bouche est un signe clair d’AVC et doit être pris en compte immédiatement. Ne prenez pas de risques."
+            },
+            {
+              "texte": "Demander à la personne de sourire ou de bouger ses lèvres pour évaluer l'étendue du problème.",
+              "correcte": false,
+              "feedback": "Cela pourrait être utile pour observer l’affaissement, mais l'important est d'agir rapidement et d'appeler les secours sans attendre."
+            },
+            {
+              "texte": "Appeler immédiatement les secours, en mentionnant l’affaissement facial.",
+              "correcte": true,
+              "feedback": "Exact ! Un affaissement du visage est un signe d'AVC, il faut agir immédiatement en appelant les secours."
+            }
+          ]
+        },
+        {
+          "titre": "A - Arm (Bras)",
+          "description": "Lors du test de levée des bras, un des bras tombe soudainement et ne peut pas être levé aussi haut que l'autre. Que devez-vous faire en priorité ?",
+          "options": [
+            {
+              "texte": "Cela n'a probablement rien à voir avec un AVC. La personne peut avoir une faiblesse musculaire.",
+              "correcte": false,
+              "feedback": "Un bras qui ne se lève pas ou tombe pendant cet exercice est un signe d'AVC. Il faut appeler les secours immédiatement."
+            },
+            {
+              "texte": "Observer un peu plus longtemps pour voir si l'état de la personne s'améliore avant de réagir.",
+              "correcte": false,
+              "feedback": "Il est trop risqué d'attendre. Un bras qui ne se lève pas ou tombe est un signe d'AVC, il faut appeler les secours immédiatement."
+            },
+            {
+              "texte": "Alerter immédiatement les secours en précisant que la personne présente une faiblesse d'un bras.",
+              "correcte": true,
+              "feedback": "Exact ! Une faiblesse soudaine d'un bras est un symptôme d'AVC et doit être communiqué aux secours dès que possible."
+            }
+          ]
+        },
+        {
+          "titre": "S - Speech (Élocution)",
+          "description": "Une personne commence à parler de manière incohérente, avec des mots incompréhensibles. Comment réagir dans cette situation ?",
+          "options": [
+            {
+              "texte": "Essayer de lui demander de répéter plus calmement, cela pourrait être une simple difficulté passagère.",
+              "correcte": false,
+              "feedback": "Ce n'est pas une simple difficulté passagère. Des troubles soudains de la parole doivent immédiatement éveiller les soupçons d’un AVC."
+            },
+            {
+              "texte": "Inquiéter la personne en lui demandant si elle se sent bien et s’il y a des symptômes associés.",
+              "correcte": false,
+              "feedback": "Il est important de ne pas perdre de temps dans ce genre de situation. Le plus vite possible, appelez les secours et signalez le trouble de la parole."
+            },
+            {
+              "texte": "Contactez immédiatement les secours en mentionnant les troubles de la parole et les symptômes associés.",
+              "correcte": true,
+              "feedback": "Exact ! Des troubles de la parole sont des signes caractéristiques d’un AVC et nécessitent une prise en charge urgente."
+            }
+          ]
+        },
+        {
+          "titre": "T - Time (Temps)",
+          "description": "Pourquoi est-il crucial de connaître l'heure exacte d'apparition des symptômes ?",
+          "options": [
+            {
+              "texte": "Cela permet de mieux comprendre la situation, mais cela ne change pas grand-chose à la prise en charge immédiate.",
+              "correcte": false,
+              "feedback": "Le temps écoulé depuis le début des symptômes est essentiel pour déterminer le traitement. Plus le temps passe, plus les conséquences peuvent être graves."
+            },
+            {
+              "texte": "C'est un facteur important pour le traitement. Chaque minute compte pour limiter les dégâts cérébraux.",
+              "correcte": true,
+              "feedback": "Exact ! Le temps est crucial. Plus tôt le traitement commence, meilleures sont les chances de limiter les séquelles de l'AVC."
+            },
+            {
+              "texte": "Cela n'est pas si urgent. Tant que les secours arrivent vite, cela ne change rien.",
+              "correcte": false,
+              "feedback": "Faux, connaître le temps écoulé est fondamental pour savoir quel traitement appliquer et si certains traitements peuvent encore être efficaces."
+            }
+          ]
+        }
+      ]
+    },
+    "niveau_3": {
     "titre": "Accident Vasculaire Cérébral (AVC)",
     "temps": "5 min",
     "difficulte": "moyen",
@@ -333,7 +491,7 @@
       }
     ]
     },
-    "niveau_3": {
+    "niveau_4": {
       "titre": "Brûlures",
       "temps": "5 min",
       "difficulte": "moyen",
@@ -484,7 +642,7 @@
         }
       ]
     },
-    "niveau_4": {
+    "niveau_5": {
     "titre": "Diabète",
     "temps": "5 min",
     "difficulte": "moyen",
@@ -635,7 +793,7 @@
       }
     ]
     },
-    "niveau_5": {
+    "niveau_6": {
       "titre": "Électrocution / Électrisation",
       "temps": "5 min",
       "difficulte": "moyen",
