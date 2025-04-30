@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const backToHomeButton = document.querySelector('.back-to-home');
     if (backToHomeButton) {
         backToHomeButton.addEventListener('click', () => {
-        window.location.href = '../../home.html';
+        window.location.href = '/BeAware/home.html';
       });
     }
 

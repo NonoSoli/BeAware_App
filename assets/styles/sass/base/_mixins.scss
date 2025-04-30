@@ -70,7 +70,7 @@
     font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   }
 
-  // Responsive direct sans redéfinir de variable
+  // Responsive
   @media (max-width: $breakpoint-mobile) {
     width: clamp(45px, 18vw, 90px);
     height: clamp(45px, 18vw, 90px);
@@ -311,7 +311,9 @@
   }
 }
 
+// ==========================
 // Barre de progression
+// ==========================
 @mixin progress-bar-container {
   background-color: #d9d9d9;
   border-radius: 100px;
@@ -329,6 +331,9 @@
   transition: width 0.3s ease-in-out;
 }
 
+// ==========================
+// Bouton suivant
+// ==========================
 @mixin next-button {
   background-color: #0082ff;
   color: white;
@@ -347,7 +352,9 @@
   z-index: 1000;
 }
 
-// Zone de feedback
+// ==========================
+// Feedback
+// ==========================
 @mixin feedback {
   margin-top: 4vh;
   margin-bottom: 6vh;

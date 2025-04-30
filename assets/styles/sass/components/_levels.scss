@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 @use "../base/mixins" as *;
 
-// Pour les variables spécifiques au domaine (ex : medic)
+// Pour les variables spécifiques au domaine
 @use "../medic/variables" as medic;
 
 .page-levels {
@@ -9,7 +9,7 @@
     padding: 3vh;
   }
   .bottom-header {
-    margin-top: 0px; // ou la valeur que tu veux uniquement pour cette page
+    margin-top: 0px;
     padding-top: 3vh;
   }
 }
@@ -28,7 +28,7 @@
     margin: 0 auto;
     width: clamp(150px, 10vw, 250px);
     height: clamp(150px, 10vw, 250px);
-    font-size: 0; // pour éviter que l'espace vide parasite l'alignement
+    font-size: 0;
 
     span {
       position: absolute;
