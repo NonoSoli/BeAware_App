@@ -347,7 +347,7 @@
   bottom: 3vh;
   left: 50%;
   transform: translateX(-50%);
-  width: 90vh;
+  //width: 90vh;
   max-width: 600px;
   z-index: 1000;
 }
@@ -358,7 +358,8 @@
 @mixin feedback {
   margin-top: 4vh;
   margin-bottom: 6vh;
-  margin: 3vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
   font-size: 2vh;
   text-align: center;
   color: #333;

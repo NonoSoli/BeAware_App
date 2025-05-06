@@ -1017,7 +1017,6 @@ html, body {
   bottom: 3vh;
   left: 50%;
   transform: translateX(-50%);
-  width: 90vh;
   max-width: 600px;
   z-index: 1000;
 }
@@ -1025,6 +1024,8 @@ html, body {
 .feedback {
   margin-top: 4vh;
   margin-bottom: 6vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
   font-size: 2vh;
   text-align: center;
   color: #333;
@@ -1050,7 +1051,7 @@ html, body {
 .header {
   width: 100%;
   text-align: center;
-  margin-bottom: 5vh;
+  margin-bottom: 10px;
   background-color: #ff0f00;
 }
 .header.medic-header {
@@ -1095,8 +1096,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24vw;
-  height: 24vw;
+  width: 30vw;
+  height: 30vw;
 }
 .header .top-header .logo-container .logo-header {
   height: 100%;
@@ -1105,18 +1106,16 @@ html, body {
 }
 @media (max-width: 600px) {
   .header .top-header .logo-container {
-    width: 10vw;
-    height: 10vw;
     padding: 0.7rem;
   }
   .header .top-header .logo-container .logo-header {
-    height: 40px;
+    height: 10vh;
   }
 }
 .header .bottom-header {
   margin: 50px 0 80px;
   background-color: #ff0f00;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 .header .bottom-header .header-title {
   font-size: 7vw;
@@ -1246,7 +1245,7 @@ html, body {
 }
 
 .exercice-description {
-  font-size: 3vh;
+  font-size: 2.5vh;
   text-align: center;
   margin-bottom: 5vh;
   margin-left: 2vh;

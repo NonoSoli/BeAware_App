@@ -7,7 +7,7 @@
       "exercices": [
         {
           "titre": "Premiers réflexes",
-          "description": "Vous etes témoins d'un accident : une voiture a percuté un arbre, une personne est à l’intérieur. Que faites-vous en premier?",
+          "description": "Vous etes témoins d'un accident : une voiture a percuté un arbre. Que faites-vous en premier?",
           "options": [
             {
               "texte": "Je m’approche pour extraire la victime.",
@@ -36,12 +36,12 @@
               "feedback": "Bonne décision. Ces premières observations permettront aux secours de mieux évaluer l’urgence et d’intervenir efficacement."
             },
             {
-              "texte": "Appeler tout de suite, même sans avoir tous les détails.",
+              "texte": "Appeler tout de suite.",
               "correcte": false,
               "feedback": "Réflexe naturel, mais sans informations claires, les secours risquent de perdre un temps précieux à comprendre la situation."
             },
             {
-              "texte": "Chercher quelqu’un autour pour s’assurer qu’on n’est pas seul à gérer.",
+              "texte": "Chercher un témoin de l'accident.",
               "correcte": false,
               "feedback": "Compréhensible sous le stress, mais il vaut mieux commencer par évaluer la situation vous-même avant de chercher de l’aide."
             }
@@ -52,7 +52,7 @@
           "description": "Une personne semble coincée dans sa voiture après un choc. Elle est consciente mais paniquée. Que faire ?",
           "options": [
             {
-              "texte": "Essayer de l’aider à sortir calmement.",
+              "texte": "L’aider à sortir calmement.",
               "correcte": false,
               "feedback": "Non, ne bougez jamais une victime sauf en cas de danger immédiat. Cela peut aggraver des blessures internes ou vertébrales."
             },
@@ -65,7 +65,7 @@
         },
         {
           "titre": "Fumée ou feu",
-          "description": "Après un accident, vous remarquez de la fumée s’échappant du capot d’une voiture accidentée. Quelle est votre réaction la plus appropriée ?",
+          "description": "Vous remarquez de la fumée s’échappant du capot d’une voiture accidentée. Quelle est la réaction la plus appropriée ?",
           "options": [
             {
               "texte": "Je m’éloigne rapidement et alerte les secours.",
@@ -73,7 +73,7 @@
               "feedback": "C’est prudent, mais il est parfois possible d’agir sans danger immédiat pour éviter une aggravation de la situation."
             },
             {
-              "texte": "Je tente d’évaluer la situation et, si possible sans risque, d’utiliser un extincteur.",
+              "texte": "Je tente d’évaluer la situation et j'utilise un extincteur.",
               "correcte": true,
               "feedback": "Bonne décision. Si la fumée est légère et que vous avez un extincteur, intervenir rapidement peut empêcher un incendie."
             },
@@ -86,7 +86,7 @@
         },        
         {
           "titre": "Marchandises dangereuses",
-          "description": "Après un accident impliquant une camionnette, vous remarquez un panneau orange avec un code noir affiché à l’arrière du véhicule. Que cela peut-il indiquer ?",
+          "description": "Après un accident, vous remarquez un panneau orange avec un code noir affiché à l’arrière du véhicule. Que cela peut-il indiquer ?",
           "options": [
             {
               "texte": "Le véhicule transporte des matières potentiellement dangereuses.",
@@ -94,7 +94,7 @@
               "feedback": "Bonne observation. Ce type de panneau est utilisé pour signaler le transport de substances dangereuses (inflammables, toxiques, corrosives…)."
             },
             {
-              "texte": "C’est probablement un panneau de contrôle technique ou d'immatriculation spéciale.",
+              "texte": "Le véhicule provient d'un pays étranger.",
               "correcte": false,
               "feedback": "Non. Ce n’est pas un simple panneau administratif : il indique un danger potentiel lié au chargement."
             },
@@ -123,7 +123,7 @@
         },
         {
           "titre": "Airbags déclenchés",
-          "description": "Sur les lieux d’un accident, vous voyez que les airbags se sont déclenchés dans l’un des véhicules. Quelle interprétation est la plus pertinente ?",
+          "description": "Sur les lieux d’un accident, vous voyez que les airbags se sont déclenchés. Quelle interprétation est la plus pertinente ?",
           "options": [
             {
               "texte": "Cela signifie qu’il y a eu un choc suffisamment fort pour causer des blessures graves.",
@@ -131,7 +131,7 @@
               "feedback": "Exact. Le déclenchement d’un airbag n’est pas anodin. Il indique un choc violent, à signaler aux secours."
             },
             {
-              "texte": "C’est rassurant : cela prouve que les passagers sont protégés.",
+              "texte": "C’est rassurant, les passagers sont protégés.",
               "correcte": false,
               "feedback": "Faux. Même si les airbags protègent, leur activation révèle un impact important et un risque de blessures internes."
             },
@@ -152,14 +152,14 @@
               "feedback": "Très bien. La grossesse est un facteur de risque important, toute douleur doit être signalée sans délai aux secours."
             },
             {
-              "texte": "Attendre de voir si les douleurs passent avant d’alarmer les secours.",
+              "texte": "Aider la victime à sortir du véhicule.",
               "correcte": false,
-              "feedback": "Non. Chez une personne enceinte, même des douleurs légères doivent être prises très au sérieux dès le départ."
+              "feedback": "Non. Bouger la victime risque d'aggraver ses blessures."
             },
             {
               "texte": "La rassurer en lui disant que c’est sûrement le stress.",
               "correcte": false,
-              "feedback": "Même si vous souhaitez la rassurer, il est crucial de ne pas minimiser : chaque information compte pour les secours."
+              "feedback": "Même si vous souhaitez la rassurer, il est crucial de ne pas minimiser."
             }
           ]
         },        
@@ -173,7 +173,7 @@
               "feedback": "Exact. Pendant qu’une personne appelle, les autres peuvent contribuer en observant et sécurisant la zone."
             },
             {
-              "texte": "Appeler vous aussi, au cas où l’autre personne oublie quelque chose.",
+              "texte": "Appeler vous aussi, pour donner un complément d'informations.",
               "correcte": false,
               "feedback": "Non, il vaut mieux éviter de surcharger la ligne. La coordination est plus efficace qu’un appel en double."
             },
@@ -210,7 +210,7 @@
     "niveau_2": {
       "titre": "BEFAST : Réflexion approfondie",
       "temps": "5 min",
-      "difficulte": "élevé",
+      "difficulte": "difficile",
       "exercices": [
         {
           "titre": "B - Balance (Équilibre)",
