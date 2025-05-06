@@ -1,7 +1,7 @@
 {
     "name": "Be Aware",
     "short_name": "Be Aware",
-    "start_url": "BeAware/home.html",
+    "start_url": "home.html",
     "display": "standalone",
     "background-color": "white",
     "theme_color": "white",
