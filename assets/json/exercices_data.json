@@ -216,6 +216,230 @@
           ]
         }
       ]
+    },
+    "niveau_2": {
+      "titre": "Obstruction respiratoire",
+      "temps": "5 min",
+      "difficulte": "moyen",
+      "exercices": [
+        {
+          "titre": "Signes à observer",
+          "description": "Une personne semble paniquée, met ses mains à la gorge et ne parle plus. Que penser ?",
+          "options": [
+            {
+              "texte": "Elle a une obstruction grave des voies respiratoires.",
+              "correcte": true,
+              "feedback": "Bonne réponse. L'absence de son est un indice important."
+            },
+            {
+              "texte": "Elle fait une crise de panique forte.",
+              "correcte": false,
+              "feedback": "Une personne en panique peut encore parler et respirer."
+            },
+            {
+              "texte": "Elle fait une réaction allergique modérée.",
+              "correcte": false,
+              "feedback": "Ce n’est pas le tableau typique d’une allergie légère."
+            }
+          ]
+        },
+        {
+          "titre": "Que faire en premier ?",
+          "description": "La personne semble s’étouffer, elle est debout et ne parle plus. Que faire ?",
+          "options": [
+            {
+              "texte": "Lui donner plusieurs claques entre les omoplates.",
+              "correcte": true,
+              "feedback": "Correct. Ce geste peut suffire à déloger l’objet."
+            },
+            {
+              "texte": "Lui demander de respirer calmement.",
+              "correcte": false,
+              "feedback": "Elle ne peut pas respirer, il faut agir vite."
+            },
+            {
+              "texte": "Appeler les secours sans intervenir.",
+              "correcte": false,
+              "feedback": "Il faut agir immédiatement si la personne ne respire plus."
+            }
+          ]
+        },
+        {
+          "titre": "Si elle tousse ?",
+          "description": "Une personne tousse fort et peut encore parler. Quelle est la bonne attitude ?",
+          "options": [
+            {
+              "texte": "L’observer sans intervenir pour l’instant.",
+              "correcte": true,
+              "feedback": "Exact. La toux efficace est le meilleur moyen d’expulsion."
+            },
+            {
+              "texte": "Faire des claques dans le dos pour aider.",
+              "correcte": false,
+              "feedback": "Tant qu’elle tousse, ne faites rien."
+            },
+            {
+              "texte": "Aller chercher de l’eau pour l’aider à avaler.",
+              "correcte": false,
+              "feedback": "Boire peut aggraver la situation si l’objet est toujours présent."
+            }
+          ]
+        },
+        {
+          "titre": "Si elle s’effondre",
+          "description": "Après plusieurs tentatives, la victime tombe inconsciente. Quelle suite ?",
+          "options": [
+            {
+              "texte": "Commencer une réanimation au plus vite.",
+              "correcte": true,
+              "feedback": "Bonne décision. Même si l’objet est encore là, on commence la RCP."
+            },
+            {
+              "texte": "Attendre qu’elle reprenne connaissance.",
+              "correcte": false,
+              "feedback": "Chaque seconde compte. Agissez sans attendre."
+            },
+            {
+              "texte": "Essayer de retirer l’objet avec les doigts.",
+              "correcte": false,
+              "feedback": "Interdit sans visualisation directe. Risque d’aggraver."
+            }
+          ]
+        },
+        {
+          "titre": "Et pour un nourrisson ?",
+          "description": "Un bébé ne pleure plus et devient bleu. Que faire en priorité ?",
+          "options": [
+            {
+              "texte": "Claques dans le dos puis compressions thoraciques.",
+              "correcte": true,
+              "feedback": "Exact. Ce sont les gestes adaptés pour un bébé."
+            },
+            {
+              "texte": "Faire des compressions abdominales.",
+              "correcte": false,
+              "feedback": "Contre-indiqué avant 1 an. Trop dangereux."
+            },
+            {
+              "texte": "Le secouer doucement pour qu’il réagisse.",
+              "correcte": false,
+              "feedback": "Interdit. Cela ne débloque pas les voies respiratoires."
+            }
+          ]
+        }
+      ]
+    },
+    "niveau_3": {
+      "titre": "Perte de connaissance",
+      "temps": "5 min",
+      "difficulte": "moyen",
+      "exercices": [
+        {
+          "titre": "Repérer la situation",
+          "description": "Une personne s’effondre soudainement au sol sans réagir. Que devez-vous vérifier en priorité ?",
+          "options": [
+            {
+              "texte": "Sa conscience et sa respiration.",
+              "correcte": true,
+              "feedback": "Exact. Ce sont les deux fonctions vitales à évaluer d'abord."
+            },
+            {
+              "texte": "Si elle a une carte d'identité sur elle.",
+              "correcte": false,
+              "feedback": "L'identité est secondaire face à l'urgence vitale."
+            },
+            {
+              "texte": "Si elle a perdu beaucoup de sang.",
+              "correcte": false,
+              "feedback": "Ce n’est pas le premier réflexe en cas d’effondrement soudain."
+            }
+          ]
+        },
+        {
+          "titre": "Geste en cas de respiration",
+          "description": "La personne est inconsciente mais respire. Quelle est l’action la plus adaptée ?",
+          "options": [
+            {
+              "texte": "La placer en position latérale de sécurité.",
+              "correcte": true,
+              "feedback": "Bonne réponse. Cela évite l’étouffement."
+            },
+            {
+              "texte": "L’asseoir pour l’aider à respirer.",
+              "correcte": false,
+              "feedback": "Mauvais choix : la position assise est instable si inconscient."
+            },
+            {
+              "texte": "La recouvrir et attendre les secours.",
+              "correcte": false,
+              "feedback": "Il faut sécuriser la respiration, pas juste attendre."
+            }
+          ]
+        },
+        {
+          "titre": "Geste en cas d’arrêt respiratoire",
+          "description": "La victime est inconsciente et ne respire plus. Que faire immédiatement ?",
+          "options": [
+            {
+              "texte": "Commencer un massage cardiaque.",
+              "correcte": true,
+              "feedback": "Exact. C’est une urgence vitale absolue."
+            },
+            {
+              "texte": "La mettre en PLS",
+              "correcte": false,
+              "feedback": "Inutile, la PLS doit être mise en place lorsque la victime respire encore."
+            },
+            {
+              "texte": "Trouver un DEA",
+              "correcte": false,
+              "feedback": "La priorité est la RCP."
+            }
+          ]
+        },
+        {
+          "titre": "Surveillance de la victime",
+          "description": "En PLS, que devez-vous faire en attendant les secours ?",
+          "options": [
+            {
+              "texte": "Contrôler sa respiration régulièrement.",
+              "correcte": true,
+              "feedback": "Correct. Il faut surveiller tout changement."
+            },
+            {
+              "texte": "Aller chercher une couverture chaude.",
+              "correcte": false,
+              "feedback": "Couvrir est utile mais la surveillance prime."
+            },
+            {
+              "texte": "Lui parler pour qu’elle se réveille.",
+              "correcte": false,
+              "feedback": "Si elle ne répond pas, elle est inconsciente."
+            }
+          ]
+        },
+        {
+          "titre": "Détection d’un malaise simple",
+          "description": "Une personne dit se sentir faible, voit flou, puis s’assoit. Que faire ?",
+          "options": [
+            {
+              "texte": "La laisser assise et surveiller ses signes.",
+              "correcte": true,
+              "feedback": "Bonne réponse. Ne pas coucher immédiatement sauf aggravation."
+            },
+            {
+              "texte": "La forcer à se lever pour aller à l’ombre.",
+              "correcte": false,
+              "feedback": "Ne jamais forcer un déplacement en cas de malaise."
+            },
+            {
+              "texte": "Lui faire boire un verre d’eau sucrée.",
+              "correcte": false,
+              "feedback": "Inutile tant que le malaise n’est pas clairement identifié."
+            }
+          ]
+        }
+      ]
     }
   },
 
@@ -264,6 +488,230 @@
               "texte": "En ouvrant les fenêtres du couloir pour évacuer la fumée et améliorer la visibilité.",
               "correcte": false,
               "feedback": "Ouvrir les fenêtres crée un appel d'air qui attise l'incendie et peut accélérer sa propagation."
+            }
+          ]
+        }
+      ]
+    },
+    "niveau_2": {
+      "titre": "Accident de voiture : sécuriser les lieux",
+      "temps": "5 min",
+      "difficulte": "facile",
+      "exercices": [
+        {
+          "titre": "Arrivée sur les lieux",
+          "description": "Vous arrivez sur un accident. Que faites-vous en premier ?",
+          "options": [
+            {
+              "texte": "Allumer les feux de détresse et enfiler le gilet.",
+              "correcte": true,
+              "feedback": "Correct. Ces gestes signalent votre présence et assurent votre sécurité."
+            },
+            {
+              "texte": "Aller directement voir les victimes.",
+              "correcte": false,
+              "feedback": "Non. Il faut d'abord sécuriser la zone pour éviter un suraccident."
+            },
+            {
+              "texte": "Appeler les secours immédiatement.",
+              "correcte": false,
+              "feedback": "Pas encore. Sécurisez d'abord les lieux pour éviter d'autres accidents."
+            }
+          ]
+        },
+        {
+          "titre": "Positionnement du véhicule",
+          "description": "Où stationner votre voiture pour intervenir ?",
+          "options": [
+            {
+              "texte": "Après l'accident, sur le bas-côté.",
+              "correcte": true,
+              "feedback": "Exact. Cela évite de gêner et protège des dangers en amont."
+            },
+            {
+              "texte": "Juste devant les véhicules accidentés.",
+              "correcte": false,
+              "feedback": "Non. Cela peut masquer l'accident et gêner les secours."
+            },
+            {
+              "texte": "En face, de l'autre côté de la route.",
+              "correcte": false,
+              "feedback": "Mauvais choix. Cela vous expose inutilement au danger."
+            }
+          ]
+        },
+        {
+          "titre": "Signalisation de l'accident",
+          "description": "Comment signaler l'accident aux autres usagers ?",
+          "options": [
+            {
+              "texte": "Placer un triangle à 30 mètres en amont.",
+              "correcte": true,
+              "feedback": "Bien joué. Cela avertit les autres conducteurs à temps."
+            },
+            {
+              "texte": "Allumer les feux de route du véhicule accidenté.",
+              "correcte": false,
+              "feedback": "Insuffisant. Un triangle est plus visible et réglementaire."
+            },
+            {
+              "texte": "Faire des signes avec les bras au milieu de la route.",
+              "correcte": false,
+              "feedback": "Dangereux. Ne vous exposez pas inutilement."
+            }
+          ]
+        },
+        {
+          "titre": "Sécurité des passagers",
+          "description": "Que faire des passagers indemnes ?",
+          "options": [
+            {
+              "texte": "Les éloigner de la route, derrière la barrière.",
+              "correcte": true,
+              "feedback": "Parfait. Cela les met à l'abri d'un éventuel suraccident."
+            },
+            {
+              "texte": "Les laisser dans la voiture avec les ceintures.",
+              "correcte": false,
+              "feedback": "Non. Ils pourraient être en danger si un autre véhicule percute."
+            },
+            {
+              "texte": "Les regrouper près du véhicule accidenté.",
+              "correcte": false,
+              "feedback": "Mauvais choix. Il faut les éloigner de la zone dangereuse."
+            }
+          ]
+        },
+        {
+          "titre": "Couper le contact",
+          "description": "Pourquoi couper le contact des véhicules accidentés ?",
+          "options": [
+            {
+              "texte": "Pour éviter un incendie ou des courts-circuits.",
+              "correcte": true,
+              "feedback": "Exact. Cela réduit les risques d'incendie."
+            },
+            {
+              "texte": "Pour économiser la batterie du véhicule.",
+              "correcte": false,
+              "feedback": "Ce n'est pas la priorité en cas d'accident."
+            },
+            {
+              "texte": "Pour désactiver les airbags restants.",
+              "correcte": false,
+              "feedback": "Les airbags peuvent se déclencher même sans contact."
+            }
+          ]
+        }
+      ]
+    },
+    "niveau_3": {
+      "titre": "Départ d'incendie",
+      "temps": "5 min",
+      "difficulte": "intermédiaire",
+      "exercices": [
+        {
+          "titre": "Détection de l'incendie",
+          "description": "Vous sentez de la fumée ou apercevez des flammes. Quelle est votre première action ?",
+          "options": [
+            {
+              "texte": "Évacuer les lieux rapidement.",
+              "correcte": true,
+              "feedback": "Correct. L'évacuation doit être prioritaire pour assurer la sécurité de tous."
+            },
+            {
+              "texte": "Essayer d'éteindre les flammes immédiatement.",
+              "correcte": false,
+              "feedback": "Non. Si l'incendie est trop grand, il est préférable d'évacuer et d'appeler les secours."
+            },
+            {
+              "texte": "Fermer les portes pour limiter la propagation.",
+              "correcte": false,
+              "feedback": "Cela peut être utile mais l'évacuation reste prioritaire."
+            }
+          ]
+        },
+        {
+          "titre": "Appel aux secours",
+          "description": "L'incendie semble grandissant. Que mentionner lors de votre appel au 112 ?",
+          "options": [
+            {
+              "texte": "La localisation précise et la nature de l'incendie.",
+              "correcte": true,
+              "feedback": "Exact. Ces informations permettent aux secours de se préparer adéquatement."
+            },
+            {
+              "texte": "Le nombre de personnes présentes sur place.",
+              "correcte": false,
+              "feedback": "Cela peut être utile, mais la priorité est la localisation et la nature du danger."
+            },
+            {
+              "texte": "La couleur des flammes et la chaleur ressentie.",
+              "correcte": false,
+              "feedback": "Moins important. Concentrez-vous sur l'alerte et les risques immédiats."
+            }
+          ]
+        },
+        {
+          "titre": "Utilisation d'un extincteur",
+          "description": "Si le feu est localisé et vous avez un extincteur, quelle est la première chose à faire ?",
+          "options": [
+            {
+              "texte": "Vérifier le type de feu avant d'agir.",
+              "correcte": true,
+              "feedback": "Correct. Il faut utiliser le bon type d'extincteur pour éviter d'aggraver la situation."
+            },
+            {
+              "texte": "Approcher au plus près du feu et commencer à pulvériser.",
+              "correcte": false,
+              "feedback": "Non. Il faut garder une certaine distance pour votre sécurité."
+            },
+            {
+              "texte": "Couvrir le feu avec des objets pour l'étouffer.",
+              "correcte": false,
+              "feedback": "Cela peut être risqué et inefficace."
+            }
+          ]
+        },
+        {
+          "titre": "Evacuation des personnes",
+          "description": "Des personnes sont coincées à l'étage supérieur. Comment les évacuer ?",
+          "options": [
+            {
+              "texte": "Par les escaliers, si le feu ne bloque pas l'accès.",
+              "correcte": true,
+              "feedback": "Exact. Evitez l'ascenseur et dirigez-vous vers les sorties les plus sûres."
+            },
+            {
+              "texte": "Les faire sortir par la fenêtre si possible.",
+              "correcte": false,
+              "feedback": "Ce n'est pas une solution sûre. L'évacuation par les escaliers est préférable."
+            },
+            {
+              "texte": "Les faire attendre en attendant les secours.",
+              "correcte": false,
+              "feedback": "L'évacuation doit être effectuée dès que possible. Ne laissez pas les personnes attendre."
+            }
+          ]
+        },
+        {
+          "titre": "Sécuriser la zone",
+          "description": "Le feu semble maîtrisé mais il reste de la fumée. Que faire en attendant les secours ?",
+          "options": [
+            {
+              "texte": "Éviter de s'approcher de la zone enfumée et signaler les zones dangereuses.",
+              "correcte": true,
+              "feedback": "Correct. La fumée peut être toxique, il faut éviter d'y pénétrer."
+            },
+            {
+              "texte": "Essayer d'ouvrir les fenêtres pour aérer.",
+              "correcte": false,
+              "feedback": "Cela pourrait raviver le feu. Attendez les secours pour toute intervention."
+            },
+            {
+              "texte": "Utiliser un ventilateur pour expulser la fumée.",
+              "correcte": false,
+              "feedback": "Cela n'est pas recommandé. Concentrez-vous sur l'attente des secours."
             }
           ]
         }
