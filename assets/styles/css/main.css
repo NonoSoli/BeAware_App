@@ -1013,7 +1013,6 @@ html, body {
   border-radius: 100px;
   cursor: pointer;
   font-size: 2vh;
-  position: fixed;
   bottom: 3vh;
   left: 50%;
   transform: translateX(-50%);

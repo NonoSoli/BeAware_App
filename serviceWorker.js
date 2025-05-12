@@ -1,6 +1,6 @@
-const version = "2025-12-05-3"; // <-- à mettre à jour à chaque nouvelle version
+const version = "2025-12-05-7"; // <-- à mettre à jour à chaque nouvelle version
 const staticCacheName = `cache-${version}`;
-const assets = ["/", "/home.html"];
+const assets = ["/", "https://funlab.be/BeAware//home.html"];
 
 // INSTALLATION
 self.addEventListener("install", (event) => {
