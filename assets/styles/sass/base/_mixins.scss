@@ -295,7 +295,7 @@
   }
 
   &.bonne-reponse::before {
-    background-color: #0082ff;
+    background-color: #00c500;
   }
 
   &.bonne-reponse span {
@@ -335,7 +335,7 @@
 // Bouton suivant
 // ==========================
 @mixin next-button {
-  background-color: #0082ff;
+  background-color: #00c500;
   color: white;
   border: none;
   padding: 1.2vh 3vh;
