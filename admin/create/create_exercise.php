@@ -75,6 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create_exercice'])) {
 </head>
 <body>
     <div class="container">
+        <a href="../index.php">Accueil</a>
         <h2>Créer un Exercice</h2>
 
         <?php if ($success): ?><div class="success"><?= $success ?></div><?php endif; ?>

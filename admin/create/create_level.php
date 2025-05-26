@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create'])) {
 </head>
 <body>
     <div class="container">
+        <a href="../index.php">Accueil</a>
         <h2>Créer un Niveau</h2>
 
         <?php if ($successMessage): ?>

@@ -48,6 +48,7 @@ if (isset($_POST['update'])) {
 }
 ?>
 
+<a href="../index.php">Accueil</a>
 <h2>Modifier un domaine</h2>
 
 <!-- Sélection du domaine -->
