@@ -10,11 +10,17 @@ include '../db.php';
 $successMessage = '';
 $errorMessage = '';
 
-// Récupérer les niveaux pour le menu déroulant
+$selectedDomainId = isset($_GET['domain_id']) ? intval($_GET['domain_id']) : null;
+
 $levels = [];
-$result = $conn->query("SELECT id, title FROM levels");
-while ($row = $result->fetch_assoc()) {
-    $levels[] = $row;
+if ($selectedDomainId) {
+    $stmt = $conn->prepare("SELECT id, title FROM levels WHERE fk_domain_id = ?");
+    $stmt->bind_param("i", $selectedDomainId);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    while ($row = $result->fetch_assoc()) {
+        $levels[] = $row;
+    }
 }
 
 // Récupérer les domaines pour le menu déroulant
@@ -77,16 +83,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
         <?php endif; ?>
 
         <form method="get">
-            <label for="id">Sélectionner un niveau :</label>
-            <select name="id" id="id" onchange="this.form.submit()">
-                <option value="">-- Choisir --</option>
-                <?php foreach ($levels as $level): ?>
-                    <option value="<?= $level['id'] ?>" <?= isset($selectedLevel['id']) && $selectedLevel['id'] == $level['id'] ? 'selected' : '' ?>>
-                        <?= htmlspecialchars($level['title']) ?>
+            <label for="domain_id">Filtrer par domaine :</label>
+            <select name="domain_id" id="domain_id" onchange="this.form.submit()">
+                <option value="">-- Choisir un domaine --</option>
+                <?php foreach ($domains as $domain): ?>
+                    <option value="<?= $domain['id'] ?>" <?= $selectedDomainId == $domain['id'] ? 'selected' : '' ?>>
+                        <?= htmlspecialchars($domain['title']) ?>
                     </option>
                 <?php endforeach; ?>
             </select>
+
+            <?php if ($selectedDomainId && !empty($levels)): ?>
+                <label for="id">Sélectionner un niveau :</label>
+                <select name="id" id="id" onchange="this.form.submit()">
+                    <option value="">-- Choisir un niveau --</option>
+                    <?php foreach ($levels as $level): ?>
+                        <option value="<?= $level['id'] ?>" <?= isset($selectedLevel['id']) && $selectedLevel['id'] == $level['id'] ? 'selected' : '' ?>>
+                            <?= htmlspecialchars($level['title']) ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            <?php elseif ($selectedDomainId): ?>
+                <p><em>Aucun niveau actif pour ce domaine.</em></p>
+            <?php endif; ?>
         </form>
+
 
         <?php if ($selectedLevel): ?>
             <form method="post">

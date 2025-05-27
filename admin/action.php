@@ -22,6 +22,7 @@ $actionText = [
     <link rel="stylesheet" href="assets/styles/css/main.css">
 </head>
 <body>
+    <a href="index.php">Accueil</a>
     <div class="container">
         <h2><?= htmlspecialchars($actionText) ?> quoi ?</h2>
         <div class="button-group">

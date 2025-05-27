@@ -21,7 +21,7 @@ html, body {
   font-weight: 500 800;
   font-style: normal;
 }
-.medic-home-button {
+.home-button {
   position: relative;
   width: clamp(60px, 12vw, 120px);
   height: clamp(60px, 12vw, 120px);
@@ -31,7 +31,7 @@ html, body {
   outline: none;
   cursor: pointer;
 }
-.medic-home-button::before, .medic-home-button::after {
+.home-button::before, .home-button::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -41,11 +41,11 @@ html, body {
   top: 0;
   left: 0;
 }
-.medic-home-button::before {
+.home-button::before {
   background-color: #0082ff;
   z-index: 1;
 }
-.medic-home-button::after {
+.home-button::after {
   background-color: #0068cc;
   top: 6px;
   left: -4px;
@@ -53,7 +53,7 @@ html, body {
   height: calc(100% + 8px);
   z-index: 0;
 }
-.medic-home-button img {
+.home-button img {
   position: relative;
   z-index: 2;
   width: 70%;
@@ -61,7 +61,7 @@ html, body {
   display: block;
   margin: auto;
 }
-.medic-home-button span {
+.home-button span {
   position: relative;
   z-index: 2;
   display: flex;
@@ -75,24 +75,24 @@ html, body {
   font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 @media (max-width: 600px) {
-  .medic-home-button {
+  .home-button {
     width: clamp(45px, 18vw, 90px);
     height: clamp(45px, 18vw, 90px);
   }
-  .medic-home-button span {
+  .home-button span {
     font-size: clamp(0.8rem, 4vw, 1.1rem);
   }
 }
 @media (max-width: 360px) {
-  .medic-home-button {
+  .home-button {
     width: clamp(40px, 20vw, 75px);
     height: clamp(40px, 20vw, 75px);
   }
-  .medic-home-button span {
+  .home-button span {
     font-size: clamp(0.75rem, 4.5vw, 1rem);
   }
 }
-.medic-home-button.medic-home-button, .medic-home-button.fire-home-button, .medic-home-button.one-seven-two-two-home-button, .medic-home-button.prevent-home-button {
+.home-button.medic-home-button, .home-button.fire-home-button, .home-button.one-seven-two-two-home-button, .home-button.prevent-home-button {
   width: 25vw;
   height: 25vw;
 }

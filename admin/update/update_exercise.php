@@ -21,6 +21,10 @@ if (isset($_GET['domain_id'])) {
     $levels = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 }
 
+if (isset($_GET['domain_id']) && empty($levels)) {
+    $noLevelsMessage = "Aucun niveau actif pour ce domaine.";
+}
+
 if (isset($_GET['level_id'])) {
     $stmt = $conn->prepare("SELECT * FROM exercices WHERE fk_level_id = ?");
     $stmt->bind_param("i", $_GET['level_id']);
@@ -45,6 +49,10 @@ if (isset($_GET['exercise_id']) && !empty($_GET['exercise_id'])) {
         $result = $stmt->get_result();
         $selected_exercise['options'] = $result->fetch_all(MYSQLI_ASSOC);
     }
+}
+
+if (isset($_GET['level_id']) && empty($exercises)) {
+    $noExercisesMessage = "Aucun exercice actif pour ce niveau.";
 }
 
 // Mise à jour
@@ -110,6 +118,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
 </form>
 <?php endif; ?>
 
+<?php if (!empty($noLevelsMessage)): ?>
+    <p><em><?= htmlspecialchars($noLevelsMessage) ?></em></p>
+<?php endif; ?>
+
+
 <?php if (!empty($exercises)): ?>
 <form method="get">
     <input type="hidden" name="domain_id" value="<?= $_GET['domain_id'] ?>">
@@ -126,6 +139,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
     <button type="submit">Charger</button>
 </form>
 <?php endif; ?>
+
+<?php if (!empty($noExercisesMessage)): ?>
+    <p><em><?= htmlspecialchars($noExercisesMessage) ?></em></p>
+<?php endif; ?>
+
 
 <?php if ($selected_exercise): ?>
 <form method="post">

@@ -4,8 +4,8 @@
 // ==========================
 // BOUTONS DIAMANT
 // ==========================
-.medic-home-button {
-  @include diamond-button($color: $color-primary);
+.home-button {
+  @include diamond-button(var(--domain-color));
 }
 
 .fire-home-button {

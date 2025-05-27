@@ -1,3 +1,10 @@
+<?php
+session_start();
+include 'admin/db.php'; // adapte le chemin si nécessaire
+// Récupération des domaines actifs
+$domains = $conn->query("SELECT * FROM domains WHERE is_active = 1")->fetch_all(MYSQLI_ASSOC);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,34 +53,17 @@
         </div>
     </div>
     <div class="grid-home-buttons">
-        <div class="grid-item">
-            <button class="medic-home-button">
-                <img src="assets/img/icons/caducee-medic.png" alt="AMU"/>
-            </button>
-        </div>
-        <div class="grid-item">
-            <button class="fire-home-button">
-                <img src="assets/img/icons/caducee-pompier.png" alt="incendie"/>
-            </button>
-        </div>
+        <?php foreach ($domains as $domain): ?>
+            <div class="grid-item">
+                <button class="<?= strtolower(str_replace([' ', '-', '_'], '-', $domain['title'])) ?>-home-button">
+                    <img src="<?= htmlspecialchars($domain['icon_path']) ?>" alt="<?= htmlspecialchars($domain['title']) ?>"/>
+                </button>
+            </div>
+        <?php endforeach; ?>
 
-        <div class="grid-item description">Aide médicale</div>
-        <div class="grid-item description">Pompier</div>
-        
-        <div class="grid-item">
-            <button class="one-seven-two-two-home-button">
-                <img src="assets/img/icons/1722.png" alt="1722"/>
-            </button>
-        </div>
-        <div class="grid-item">
-            <button class="prevent-home-button">
-                <img src="assets/img/icons/extincteur.png" alt="prevention"/>
-            </button>
-        </div>
-
-        <div class="grid-item description">1722</div>
-        <div class="grid-item description">Prévention</div>
-
+        <?php foreach ($domains as $domain): ?>
+            <div class="grid-item description"><?= htmlspecialchars($domain['title']) ?></div>
+        <?php endforeach; ?>
     </div>
 </body>
 </html>
