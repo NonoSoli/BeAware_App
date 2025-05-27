@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create'])) {
                 if ($imageInfo === false) {
                     $uploadError = "Le fichier n'est pas une image valide";
                 } else {
-                    $uploadDir = '../assets/img/domains/';
+                    $uploadDir = '../../assets/img/domains/';
                     if (!file_exists($uploadDir)) {
                         mkdir($uploadDir, 0755, true);
                     }

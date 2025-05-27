@@ -1,825 +1,113 @@
 {
-  "medic": {
-    "niveau_1": {
-      "titre": "Accident de voiture",
-      "temps": "5 min",
-      "difficulte": "facile",
-      "exercices": [
-        {
-          "titre": "Premiers réflexes",
-          "description": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
-          "options": [
-            {
-              "texte": "J'appelle immédiatement le 112 pour gagner du temps et avoir des instructions.",
-              "correcte": false,
-              "feedback": "Sécurisez d'abord la zone pour éviter un suraccident et évaluez la situation avant d'appeler les secours."
+    "aide-médicale": {
+        "color": "#0082ff",
+        "icon": "assets\/img\/domains\/domain_6835af77c3404.png",
+        "niveaux": {
+            "niveau_1": {
+                "titre": "Accident de voiture",
+                "temps": "5 min",
+                "difficulte": "facile",
+                "exercices": []
             },
-            {
-              "texte": "Je mets mon gilet, place le triangle et observe l'état des victimes sans les déplacer.",
-              "correcte": true,
-              "feedback": "Correct! Sécurisez d'abord les lieux et évaluez la situation sans vous mettre en danger."
-            },
-            {
-              "texte": "Je vérifie l'état des victimes et les extrait si je vois des signes de fumée ou de feu.",
-              "correcte": false,
-              "feedback": "Sécurisez d'abord la zone. Seul un danger imminent justifie d'extraire une victime sans formation adéquate."
+            "niveau_2": {
+                "titre": "niv aide medicale",
+                "temps": "3 min",
+                "difficulte": "moyen",
+                "exercices": []
             }
-          ]
         },
-        {
-          "titre": "Appel aux secours",
-          "description": "Le conducteur accidenté est conscient mais se plaint de douleurs au cou. Lors de votre appel au 112, que mentionnez-vous en priorité?",
-          "options": [
-            {
-              "texte": "Le nombre de victimes, leur état de conscience et les douleurs signalées, notamment cervicales.",
-              "correcte": true,
-              "feedback": "Exact! Ces informations aident les secours à évaluer la gravité et à envoyer les moyens appropriés."
-            },
-            {
-              "texte": "L'état du véhicule et la violence du choc pour que les pompiers anticipent une désincarcération.",
-              "correcte": false,
-              "feedback": "L'état des victimes prime sur celui du véhicule. Ces détails seront demandés dans un second temps."
-            },
-            {
-              "texte": "La localisation précise avec coordonnées GPS et points de repère visibles aux alentours.",
-              "correcte": false,
-              "feedback": "La nature de l'urgence et l'état des victimes sont prioritaires. La localisation sera précisée ensuite."
-            }
-          ]
+        "niveau_1": {
+            "exercices": [
+                {
+                    "titre": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
+                    "description": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
+                    "options": [
+                        {
+                            "texte": "Je vérifie l'état des victimes et les extrait si je vois des signes de fumée ou de feu.",
+                            "correcte": false,
+                            "feedback": "Sécurisez d'abord la zone. Seul un danger imminent justifie d'extraire une victime sans formation adéquate."
+                        },
+                        {
+                            "texte": "Je mets mon gilet, place le triangle et observe l'état des victimes sans les déplacer.",
+                            "correcte": true,
+                            "feedback": "Correct! Sécurisez d'abord les lieux et évaluez la situation sans vous mettre en danger."
+                        },
+                        {
+                            "texte": "J'appelle immédiatement le 112 pour gagner du temps et avoir des instructions.",
+                            "correcte": false,
+                            "feedback": "Sécurisez d'abord la zone pour éviter un suraccident et évaluez la situation avant d'appeler les secours."
+                        }
+                    ]
+                },
+                {
+                    "titre": "Premiers réflexes",
+                    "description": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
+                    "options": [
+                        {
+                            "texte": "Option 1",
+                            "correcte": false,
+                            "feedback": "Option 1"
+                        },
+                        {
+                            "texte": "Option 1",
+                            "correcte": true,
+                            "feedback": "Option 1"
+                        },
+                        {
+                            "texte": "Option 1",
+                            "correcte": false,
+                            "feedback": "Option 1"
+                        }
+                    ]
+                }
+            ]
         },
-        {
-          "titre": "Position de la victime",
-          "description": "Une personne est inconsciente mais respire après un accident de voiture. Quelle position adopter en attendant les secours?",
-          "options": [
-            {
-              "texte": "La position latérale de sécurité (PLS) si absence de traumatisme apparent du rachis.",
-              "correcte": true,
-              "feedback": "Correct! La PLS maintient les voies aériennes dégagées chez une victime inconsciente qui respire."
-            },
-            {
-              "texte": "Allongée sur le dos avec les jambes surélevées pour favoriser le retour veineux.",
-              "correcte": false,
-              "feedback": "Risque d'obstruction des voies aériennes chez une personne inconsciente. La PLS est préférable."
-            },
-            {
-              "texte": "En position assise adossée contre un support pour faciliter la respiration.",
-              "correcte": false,
-              "feedback": "Pour une victime inconsciente, cette position est instable et dangereuse. La PLS est indiquée."
-            }
-          ]
-        },
-        {
-          "titre": "Blessure hémorragique",
-          "description": "Un passager présente une hémorragie importante au niveau de l'avant-bras. Comment agir?",
-          "options": [
-            {
-              "texte": "Compression directe sur la plaie avec un tissu propre puis pose d'un pansement compressif.",
-              "correcte": true,
-              "feedback": "Exact! La compression directe est le geste de premier secours le plus efficace face à une hémorragie."
-            },
-            {
-              "texte": "Garrot au-dessus de la blessure pour stopper immédiatement le saignement.",
-              "correcte": false,
-              "feedback": "Le garrot est un dernier recours. Essayez d'abord la compression directe qui est moins risquée."
-            },
-            {
-              "texte": "Rincer abondamment à l'eau pour évaluer la gravité puis appliquer un antiseptique.",
-              "correcte": false,
-              "feedback": "Lors d'une hémorragie, arrêter le saignement est prioritaire. Le nettoyage se fait après contrôle du saignement."
-            }
-          ]
-        },
-        {
-          "titre": "Victime en état de choc",
-          "description": "Une victime est pâle, agitée, avec une respiration rapide. Que faites-vous en attendant les secours?",
-          "options": [
-            {
-              "texte": "L'allonger, la couvrir et surélever ses jambes si absence de traumatisme des membres inférieurs.",
-              "correcte": true,
-              "feedback": "Correct! Ces actions limitent les effets du choc en favorisant l'irrigation des organes vitaux."
-            },
-            {
-              "texte": "La mettre en position assise pour faciliter sa respiration et lui donner de l'eau.",
-              "correcte": false,
-              "feedback": "Ne pas donner à boire à une victime en état de choc. La position allongée avec jambes surélevées est préférable."
-            },
-            {
-              "texte": "La faire marcher doucement pour maintenir la circulation sanguine active.",
-              "correcte": false,
-              "feedback": "Dangereux! L'effort aggrave le choc. L'immobilité et la position allongée sont nécessaires."
-            }
-          ]
-        },
-        {
-          "titre": "Victime avec douleur thoracique",
-          "description": "Un conducteur se plaint d'une douleur intense à la poitrine après l'accident. Quelle position privilégier?",
-          "options": [
-            {
-              "texte": "Semi-assise, légèrement inclinée vers l'arrière pour faciliter la respiration.",
-              "correcte": true,
-              "feedback": "Correct! Cette position soulage la respiration et diminue l'effort cardiaque."
-            },
-            {
-              "texte": "Allongée sur le côté gauche pour diminuer la pression sur le cœur.",
-              "correcte": false,
-              "feedback": "La position semi-assise est plus adaptée pour les douleurs thoraciques, surtout si difficulté respiratoire."
-            },
-            {
-              "texte": "Debout ou assise bien droite pour éviter toute compression du thorax.",
-              "correcte": false,
-              "feedback": "Position fatigante qui peut aggraver l'état. La position semi-assise est préférable pour réduire l'effort cardiaque."
-            }
-          ]
-        },
-        {
-          "titre": "Brûlure après accident",
-          "description": "Un passager présente une brûlure au second degré sur l'avant-bras suite à l'accident. Quelle action immédiate?",
-          "options": [
-            {
-              "texte": "Refroidir par ruissellement d'eau tempérée pendant 15-20 minutes sans frotter.",
-              "correcte": true,
-              "feedback": "Correct! Le refroidissement immédiat limite l'aggravation de la brûlure sans risque d'hypothermie."
-            },
-            {
-              "texte": "Appliquer une pommade grasse ou de la glace directement sur la zone brûlée.",
-              "correcte": false,
-              "feedback": "N'appliquez jamais de corps gras ni de glace directe qui peuvent aggraver les lésions."
-            },
-            {
-              "texte": "Percer les cloques et couvrir avec un pansement sec et propre.",
-              "correcte": false,
-              "feedback": "Ne percez jamais les cloques! Elles protègent contre l'infection. Refroidissez d'abord, puis protégez sans compression."
-            }
-          ]
-        },
-        {
-          "titre": "Traumatisme crânien",
-          "description": "Un passager a heurté sa tête contre le pare-brise. Il est conscient mais confus. Que faire en priorité?",
-          "options": [
-            {
-              "texte": "Le maintenir éveillé, l'immobiliser et surveiller son état jusqu'à l'arrivée des secours.",
-              "correcte": true,
-              "feedback": "Correct! Surveillance constante essentielle. Tout traumatisme crânien nécessite un avis médical."
-            },
-            {
-              "texte": "Lui donner un analgésique pour soulager sa douleur et le laisser se reposer.",
-              "correcte": false,
-              "feedback": "Ne jamais donner de médicaments qui masqueraient les symptômes. La surveillance est primordiale."
-            },
-            {
-              "texte": "Le faire marcher pour vérifier son équilibre et évaluer la gravité du choc.",
-              "correcte": false,
-              "feedback": "Dangereux! Tout mouvement peut aggraver des lésions internes. L'immobilisation est nécessaire."
-            }
-          ]
-        },
-        {
-          "titre": "Contact avec les secours",
-          "description": "Les secours vous demandent de vérifier si la victime réagit. Comment procéder correctement?",
-          "options": [
-            {
-              "texte": "Lui poser des questions simples et lui serrer la main en demandant de vous serrer la main en retour.",
-              "correcte": true,
-              "feedback": "Correct! Ces stimulations verbales et physiques permettent d'évaluer la réactivité sans mouvement dangereux."
-            },
-            {
-              "texte": "Secouer doucement ses épaules pour vérifier si elle se réveille.",
-              "correcte": false,
-              "feedback": "Risqué en cas de traumatisme cervical. Privilégiez les stimulations verbales et le serrement de main."
-            },
-            {
-              "texte": "Lui tapoter les joues et lui asperger un peu d'eau sur le visage.",
-              "correcte": false,
-              "feedback": "Gestes inappropriés qui peuvent être dangereux en cas de traumatisme facial ou crânien."
-            }
-          ]
-        },
-        {
-          "titre": "Victime enceinte",
-          "description": "Une femme enceinte (environ 7 mois) est consciente après l'accident mais se plaint de contractions. Quelle position adopter?",
-          "options": [
-            {
-              "texte": "Allongée sur le côté gauche pour favoriser la circulation sanguine vers le fœtus.",
-              "correcte": true,
-              "feedback": "Correct! Cette position évite la compression de la veine cave et améliore l'irrigation du placenta."
-            },
-            {
-              "texte": "Semi-assise pour faciliter sa respiration et réduire les douleurs abdominales.",
-              "correcte": false,
-              "feedback": "La position sur le côté gauche est préférable pour la circulation placentaire et le bien-être du fœtus."
-            },
-            {
-              "texte": "Allongée sur le dos avec les jambes légèrement surélevées pour favoriser le retour veineux.",
-              "correcte": false,
-              "feedback": "Position contre-indiquée! Le poids de l'utérus comprime la veine cave et peut provoquer un malaise hypotensif."
-            }
-          ]
+        "niveau_2": {
+            "exercices": [
+                {
+                    "titre": "titre aide medic",
+                    "description": "Vous arrivez devant",
+                    "options": [
+                        {
+                            "texte": "je m'arrête (correct",
+                            "correcte": true,
+                            "feedback": "c'est juste"
+                        },
+                        {
+                            "texte": "je continue",
+                            "correcte": false,
+                            "feedback": "c'est faux"
+                        },
+                        {
+                            "texte": "",
+                            "correcte": false,
+                            "feedback": ""
+                        }
+                    ]
+                }
+            ]
         }
-      ]
     },
-    "niveau_2": {
-      "titre": "Obstruction respiratoire",
-      "temps": "5 min",
-      "difficulte": "moyen",
-      "exercices": [
-        {
-          "titre": "Signes à observer",
-          "description": "Une personne semble paniquée, met ses mains à la gorge et ne parle plus. Que penser ?",
-          "options": [
-            {
-              "texte": "Elle a une obstruction grave des voies respiratoires.",
-              "correcte": true,
-              "feedback": "Bonne réponse. L'absence de son est un indice important."
-            },
-            {
-              "texte": "Elle fait une crise de panique forte.",
-              "correcte": false,
-              "feedback": "Une personne en panique peut encore parler et respirer."
-            },
-            {
-              "texte": "Elle fait une réaction allergique modérée.",
-              "correcte": false,
-              "feedback": "Ce n’est pas le tableau typique d’une allergie légère."
+    "1722": {
+        "color": "#404040",
+        "icon": "assets\/img\/domains\/domain_6835c44f0fd27.png",
+        "niveaux": {
+            "niveau_1": {
+                "titre": "Connaitre le 1722",
+                "temps": "5 min",
+                "difficulte": "facile",
+                "exercices": []
             }
-          ]
-        },
-        {
-          "titre": "Que faire en premier ?",
-          "description": "La personne semble s’étouffer, elle est debout et ne parle plus. Que faire ?",
-          "options": [
-            {
-              "texte": "Lui donner plusieurs claques entre les omoplates.",
-              "correcte": true,
-              "feedback": "Correct. Ce geste peut suffire à déloger l’objet."
-            },
-            {
-              "texte": "Lui demander de respirer calmement.",
-              "correcte": false,
-              "feedback": "Elle ne peut pas respirer, il faut agir vite."
-            },
-            {
-              "texte": "Appeler les secours sans intervenir.",
-              "correcte": false,
-              "feedback": "Il faut agir immédiatement si la personne ne respire plus."
-            }
-          ]
-        },
-        {
-          "titre": "Si elle tousse ?",
-          "description": "Une personne tousse fort et peut encore parler. Quelle est la bonne attitude ?",
-          "options": [
-            {
-              "texte": "L’observer sans intervenir pour l’instant.",
-              "correcte": true,
-              "feedback": "Exact. La toux efficace est le meilleur moyen d’expulsion."
-            },
-            {
-              "texte": "Faire des claques dans le dos pour aider.",
-              "correcte": false,
-              "feedback": "Tant qu’elle tousse, ne faites rien."
-            },
-            {
-              "texte": "Aller chercher de l’eau pour l’aider à avaler.",
-              "correcte": false,
-              "feedback": "Boire peut aggraver la situation si l’objet est toujours présent."
-            }
-          ]
-        },
-        {
-          "titre": "Si elle s’effondre",
-          "description": "Après plusieurs tentatives, la victime tombe inconsciente. Quelle suite ?",
-          "options": [
-            {
-              "texte": "Commencer une réanimation au plus vite.",
-              "correcte": true,
-              "feedback": "Bonne décision. Même si l’objet est encore là, on commence la RCP."
-            },
-            {
-              "texte": "Attendre qu’elle reprenne connaissance.",
-              "correcte": false,
-              "feedback": "Chaque seconde compte. Agissez sans attendre."
-            },
-            {
-              "texte": "Essayer de retirer l’objet avec les doigts.",
-              "correcte": false,
-              "feedback": "Interdit sans visualisation directe. Risque d’aggraver."
-            }
-          ]
-        },
-        {
-          "titre": "Et pour un nourrisson ?",
-          "description": "Un bébé ne pleure plus et devient bleu. Que faire en priorité ?",
-          "options": [
-            {
-              "texte": "Claques dans le dos puis compressions thoraciques.",
-              "correcte": true,
-              "feedback": "Exact. Ce sont les gestes adaptés pour un bébé."
-            },
-            {
-              "texte": "Faire des compressions abdominales.",
-              "correcte": false,
-              "feedback": "Contre-indiqué avant 1 an. Trop dangereux."
-            },
-            {
-              "texte": "Le secouer doucement pour qu’il réagisse.",
-              "correcte": false,
-              "feedback": "Interdit. Cela ne débloque pas les voies respiratoires."
-            }
-          ]
         }
-      ]
     },
-    "niveau_3": {
-      "titre": "Perte de connaissance",
-      "temps": "5 min",
-      "difficulte": "moyen",
-      "exercices": [
-        {
-          "titre": "Repérer la situation",
-          "description": "Une personne s’effondre soudainement au sol sans réagir. Que devez-vous vérifier en priorité ?",
-          "options": [
-            {
-              "texte": "Sa conscience et sa respiration.",
-              "correcte": true,
-              "feedback": "Exact. Ce sont les deux fonctions vitales à évaluer d'abord."
-            },
-            {
-              "texte": "Si elle a une carte d'identité sur elle.",
-              "correcte": false,
-              "feedback": "L'identité est secondaire face à l'urgence vitale."
-            },
-            {
-              "texte": "Si elle a perdu beaucoup de sang.",
-              "correcte": false,
-              "feedback": "Ce n’est pas le premier réflexe en cas d’effondrement soudain."
-            }
-          ]
-        },
-        {
-          "titre": "Geste en cas de respiration",
-          "description": "La personne est inconsciente mais respire. Quelle est l’action la plus adaptée ?",
-          "options": [
-            {
-              "texte": "La placer en position latérale de sécurité.",
-              "correcte": true,
-              "feedback": "Bonne réponse. Cela évite l’étouffement."
-            },
-            {
-              "texte": "L’asseoir pour l’aider à respirer.",
-              "correcte": false,
-              "feedback": "Mauvais choix : la position assise est instable si inconscient."
-            },
-            {
-              "texte": "La recouvrir et attendre les secours.",
-              "correcte": false,
-              "feedback": "Il faut sécuriser la respiration, pas juste attendre."
-            }
-          ]
-        },
-        {
-          "titre": "Geste en cas d’arrêt respiratoire",
-          "description": "La victime est inconsciente et ne respire plus. Que faire immédiatement ?",
-          "options": [
-            {
-              "texte": "Commencer un massage cardiaque.",
-              "correcte": true,
-              "feedback": "Exact. C’est une urgence vitale absolue."
-            },
-            {
-              "texte": "La mettre en PLS",
-              "correcte": false,
-              "feedback": "Inutile, la PLS doit être mise en place lorsque la victime respire encore."
-            },
-            {
-              "texte": "Trouver un DEA",
-              "correcte": false,
-              "feedback": "La priorité est la RCP."
-            }
-          ]
-        },
-        {
-          "titre": "Surveillance de la victime",
-          "description": "En PLS, que devez-vous faire en attendant les secours ?",
-          "options": [
-            {
-              "texte": "Contrôler sa respiration régulièrement.",
-              "correcte": true,
-              "feedback": "Correct. Il faut surveiller tout changement."
-            },
-            {
-              "texte": "Aller chercher une couverture chaude.",
-              "correcte": false,
-              "feedback": "Couvrir est utile mais la surveillance prime."
-            },
-            {
-              "texte": "Lui parler pour qu’elle se réveille.",
-              "correcte": false,
-              "feedback": "Si elle ne répond pas, elle est inconsciente."
-            }
-          ]
-        },
-        {
-          "titre": "Détection d’un malaise simple",
-          "description": "Une personne dit se sentir faible, voit flou, puis s’assoit. Que faire ?",
-          "options": [
-            {
-              "texte": "La laisser assise et surveiller ses signes.",
-              "correcte": true,
-              "feedback": "Bonne réponse. Ne pas coucher immédiatement sauf aggravation."
-            },
-            {
-              "texte": "La forcer à se lever pour aller à l’ombre.",
-              "correcte": false,
-              "feedback": "Ne jamais forcer un déplacement en cas de malaise."
-            },
-            {
-              "texte": "Lui faire boire un verre d’eau sucrée.",
-              "correcte": false,
-              "feedback": "Inutile tant que le malaise n’est pas clairement identifié."
-            }
-          ]
-        }
-      ]
-    }
-  },
-
-  "fire": {
-    "niveau_1": {
-      "titre": "Incendie de bâtiment",
-      "temps": "5 min",
-      "difficulte": "moyen",
-      "exercices": [
-        {
-          "titre": "Identification du feu",
-          "description": "Vous constatez un début d'incendie dans un immeuble résidentiel. Lors de votre appel aux secours, quelles informations sont prioritaires?",
-          "options": [
-            {
-              "texte": "L'adresse exacte, l'étage concerné et la présence visible de flammes ou uniquement de fumée.",
-              "correcte": true,
-              "feedback": "Exact! Ces informations permettent d'évaluer l'ampleur du feu et d'adapter les moyens d'intervention."
-            },
-            {
-              "texte": "Le nombre d'étages, les matériaux de construction et l'année approximative du bâtiment.",
-              "correcte": false,
-              "feedback": "La localisation précise du feu est prioritaire sur ces détails techniques pour l'intervention immédiate."
-            },
-            {
-              "texte": "Le nombre approximatif d'occupants et si le bâtiment dispose d'extincteurs ou de sprinklers.",
-              "correcte": false,
-              "feedback": "L'emplacement exact du feu prime pour l'intervention immédiate, même si le nombre de personnes est important."
-            }
-          ]
-        },
-        {
-          "titre": "Évacuation",
-          "description": "Vous êtes dans un couloir d'immeuble enfumé suite à un incendie à l'étage inférieur. Comment progresser vers la sortie?",
-          "options": [
-            {
-              "texte": "En me déplaçant courbé ou à quatre pattes, avec un tissu humide sur le nez et la bouche.",
-              "correcte": true,
-              "feedback": "Correct! L'air est moins toxique près du sol et le tissu humide filtre partiellement les particules."
-            },
-            {
-              "texte": "En position debout mais en marchant rapidement pour limiter mon temps d'exposition aux fumées.",
-              "correcte": false,
-              "feedback": "En hauteur, vous inhalez plus de fumées toxiques. La précipitation augmente aussi le risque de chute."
-            },
-            {
-              "texte": "En ouvrant les fenêtres du couloir pour évacuer la fumée et améliorer la visibilité.",
-              "correcte": false,
-              "feedback": "Ouvrir les fenêtres crée un appel d'air qui attise l'incendie et peut accélérer sa propagation."
-            }
-          ]
-        }
-      ]
+    "prévention": {
+        "color": "#ffc800",
+        "icon": "assets\/img\/domains\/domain_6835d4831578f.png",
+        "niveaux": []
     },
-    "niveau_2": {
-      "titre": "Accident de voiture : sécuriser les lieux",
-      "temps": "5 min",
-      "difficulte": "facile",
-      "exercices": [
-        {
-          "titre": "Arrivée sur les lieux",
-          "description": "Vous arrivez sur un accident. Que faites-vous en premier ?",
-          "options": [
-            {
-              "texte": "Allumer les feux de détresse et enfiler le gilet.",
-              "correcte": true,
-              "feedback": "Correct. Ces gestes signalent votre présence et assurent votre sécurité."
-            },
-            {
-              "texte": "Aller directement voir les victimes.",
-              "correcte": false,
-              "feedback": "Non. Il faut d'abord sécuriser la zone pour éviter un suraccident."
-            },
-            {
-              "texte": "Appeler les secours immédiatement.",
-              "correcte": false,
-              "feedback": "Pas encore. Sécurisez d'abord les lieux pour éviter d'autres accidents."
-            }
-          ]
-        },
-        {
-          "titre": "Positionnement du véhicule",
-          "description": "Où stationner votre voiture pour intervenir ?",
-          "options": [
-            {
-              "texte": "Après l'accident, sur le bas-côté.",
-              "correcte": true,
-              "feedback": "Exact. Cela évite de gêner et protège des dangers en amont."
-            },
-            {
-              "texte": "Juste devant les véhicules accidentés.",
-              "correcte": false,
-              "feedback": "Non. Cela peut masquer l'accident et gêner les secours."
-            },
-            {
-              "texte": "En face, de l'autre côté de la route.",
-              "correcte": false,
-              "feedback": "Mauvais choix. Cela vous expose inutilement au danger."
-            }
-          ]
-        },
-        {
-          "titre": "Signalisation de l'accident",
-          "description": "Comment signaler l'accident aux autres usagers ?",
-          "options": [
-            {
-              "texte": "Placer un triangle à 30 mètres en amont.",
-              "correcte": true,
-              "feedback": "Bien joué. Cela avertit les autres conducteurs à temps."
-            },
-            {
-              "texte": "Allumer les feux de route du véhicule accidenté.",
-              "correcte": false,
-              "feedback": "Insuffisant. Un triangle est plus visible et réglementaire."
-            },
-            {
-              "texte": "Faire des signes avec les bras au milieu de la route.",
-              "correcte": false,
-              "feedback": "Dangereux. Ne vous exposez pas inutilement."
-            }
-          ]
-        },
-        {
-          "titre": "Sécurité des passagers",
-          "description": "Que faire des passagers indemnes ?",
-          "options": [
-            {
-              "texte": "Les éloigner de la route, derrière la barrière.",
-              "correcte": true,
-              "feedback": "Parfait. Cela les met à l'abri d'un éventuel suraccident."
-            },
-            {
-              "texte": "Les laisser dans la voiture avec les ceintures.",
-              "correcte": false,
-              "feedback": "Non. Ils pourraient être en danger si un autre véhicule percute."
-            },
-            {
-              "texte": "Les regrouper près du véhicule accidenté.",
-              "correcte": false,
-              "feedback": "Mauvais choix. Il faut les éloigner de la zone dangereuse."
-            }
-          ]
-        },
-        {
-          "titre": "Couper le contact",
-          "description": "Pourquoi couper le contact des véhicules accidentés ?",
-          "options": [
-            {
-              "texte": "Pour éviter un incendie ou des courts-circuits.",
-              "correcte": true,
-              "feedback": "Exact. Cela réduit les risques d'incendie."
-            },
-            {
-              "texte": "Pour économiser la batterie du véhicule.",
-              "correcte": false,
-              "feedback": "Ce n'est pas la priorité en cas d'accident."
-            },
-            {
-              "texte": "Pour désactiver les airbags restants.",
-              "correcte": false,
-              "feedback": "Les airbags peuvent se déclencher même sans contact."
-            }
-          ]
-        }
-      ]
-    },
-    "niveau_3": {
-      "titre": "Départ d'incendie",
-      "temps": "5 min",
-      "difficulte": "intermédiaire",
-      "exercices": [
-        {
-          "titre": "Détection de l'incendie",
-          "description": "Vous sentez de la fumée ou apercevez des flammes. Quelle est votre première action ?",
-          "options": [
-            {
-              "texte": "Évacuer les lieux rapidement.",
-              "correcte": true,
-              "feedback": "Correct. L'évacuation doit être prioritaire pour assurer la sécurité de tous."
-            },
-            {
-              "texte": "Essayer d'éteindre les flammes immédiatement.",
-              "correcte": false,
-              "feedback": "Non. Si l'incendie est trop grand, il est préférable d'évacuer et d'appeler les secours."
-            },
-            {
-              "texte": "Fermer les portes pour limiter la propagation.",
-              "correcte": false,
-              "feedback": "Cela peut être utile mais l'évacuation reste prioritaire."
-            }
-          ]
-        },
-        {
-          "titre": "Appel aux secours",
-          "description": "L'incendie semble grandissant. Que mentionner lors de votre appel au 112 ?",
-          "options": [
-            {
-              "texte": "La localisation précise et la nature de l'incendie.",
-              "correcte": true,
-              "feedback": "Exact. Ces informations permettent aux secours de se préparer adéquatement."
-            },
-            {
-              "texte": "Le nombre de personnes présentes sur place.",
-              "correcte": false,
-              "feedback": "Cela peut être utile, mais la priorité est la localisation et la nature du danger."
-            },
-            {
-              "texte": "La couleur des flammes et la chaleur ressentie.",
-              "correcte": false,
-              "feedback": "Moins important. Concentrez-vous sur l'alerte et les risques immédiats."
-            }
-          ]
-        },
-        {
-          "titre": "Utilisation d'un extincteur",
-          "description": "Si le feu est localisé et vous avez un extincteur, quelle est la première chose à faire ?",
-          "options": [
-            {
-              "texte": "Vérifier le type de feu avant d'agir.",
-              "correcte": true,
-              "feedback": "Correct. Il faut utiliser le bon type d'extincteur pour éviter d'aggraver la situation."
-            },
-            {
-              "texte": "Approcher au plus près du feu et commencer à pulvériser.",
-              "correcte": false,
-              "feedback": "Non. Il faut garder une certaine distance pour votre sécurité."
-            },
-            {
-              "texte": "Couvrir le feu avec des objets pour l'étouffer.",
-              "correcte": false,
-              "feedback": "Cela peut être risqué et inefficace."
-            }
-          ]
-        },
-        {
-          "titre": "Evacuation des personnes",
-          "description": "Des personnes sont coincées à l'étage supérieur. Comment les évacuer ?",
-          "options": [
-            {
-              "texte": "Par les escaliers, si le feu ne bloque pas l'accès.",
-              "correcte": true,
-              "feedback": "Exact. Evitez l'ascenseur et dirigez-vous vers les sorties les plus sûres."
-            },
-            {
-              "texte": "Les faire sortir par la fenêtre si possible.",
-              "correcte": false,
-              "feedback": "Ce n'est pas une solution sûre. L'évacuation par les escaliers est préférable."
-            },
-            {
-              "texte": "Les faire attendre en attendant les secours.",
-              "correcte": false,
-              "feedback": "L'évacuation doit être effectuée dès que possible. Ne laissez pas les personnes attendre."
-            }
-          ]
-        },
-        {
-          "titre": "Sécuriser la zone",
-          "description": "Le feu semble maîtrisé mais il reste de la fumée. Que faire en attendant les secours ?",
-          "options": [
-            {
-              "texte": "Éviter de s'approcher de la zone enfumée et signaler les zones dangereuses.",
-              "correcte": true,
-              "feedback": "Correct. La fumée peut être toxique, il faut éviter d'y pénétrer."
-            },
-            {
-              "texte": "Essayer d'ouvrir les fenêtres pour aérer.",
-              "correcte": false,
-              "feedback": "Cela pourrait raviver le feu. Attendez les secours pour toute intervention."
-            },
-            {
-              "texte": "Utiliser un ventilateur pour expulser la fumée.",
-              "correcte": false,
-              "feedback": "Cela n'est pas recommandé. Concentrez-vous sur l'attente des secours."
-            }
-          ]
-        }
-      ]
+    "pompier": {
+        "color": "#ff0f00",
+        "icon": "assets\/img\/domains\/domain_6835af2c4b878.png",
+        "niveaux": []
     }
-  },
-
-  "prevent": {
-    "niveau_1": {
-      "titre": "Détecteurs de fumée et sécurité",
-      "temps": "6 min",
-      "difficulte": "difficile",
-      "exercices": [
-        {
-          "titre": "Emplacement optimal",
-          "description": "Dans une maison à deux étages avec 2 détecteurs de fumée seulement, où les installer en priorité?",
-          "options": [
-            {
-              "texte": "Dans le couloir à l'étage près des chambres et au sommet de l'escalier.",
-              "correcte": true,
-              "feedback": "Correct! Ces positions protègent les occupants endormis et les voies d'évacuation."
-            },
-            {
-              "texte": "Dans la cuisine et le salon où se trouvent la plupart des appareils électriques.",
-              "correcte": false,
-              "feedback": "La cuisine génère des fausses alertes. Protégez d'abord les voies d'évacuation et les zones de sommeil."
-            },
-            {
-              "texte": "Dans les deux pièces contenant le plus d'appareils électroniques et multimédia.",
-              "correcte": false,
-              "feedback": "La protection des occupants prime sur la surveillance des sources potentielles d'incendie."
-            }
-          ]
-        },
-        {
-          "titre": "Maintenance des détecteurs",
-          "description": "Votre détecteur de fumée émet un bip court toutes les minutes environ. Que faire?",
-          "options": [
-            {
-              "texte": "Remplacer la pile puis tester le détecteur avec le bouton de test.",
-              "correcte": true,
-              "feedback": "Exact! Ce bip signale une pile faible. Le test après remplacement vérifie le bon fonctionnement."
-            },
-            {
-              "texte": "Retirer la pile, nettoyer l'intérieur du détecteur puis remettre la même pile.",
-              "correcte": false,
-              "feedback": "Le bip indique une pile faible à remplacer, pas seulement un besoin de nettoyage."
-            },
-            {
-              "texte": "Remplacer directement le détecteur car ce signal indique sa fin de vie après 10 ans.",
-              "correcte": false,
-              "feedback": "Ce signal indique une pile faible, pas forcément la fin de vie de l'appareil."
-            }
-          ]
-        }
-      ]
-    }
-  },
-  
-  "one-seven-two-two": {
-    "niveau_1": {
-      "titre": "Connaître le 1722",
-      "temps": "6 min",
-      "difficulte": "moyen",
-      "exercices": [
-        {
-          "titre": "Usage du 1722",
-          "description": "Suite à un orage, vous constatez les dégâts suivants. Dans quel cas appeler le 1722 plutôt que le 112?",
-          "options": [
-            {
-              "texte": "Une branche bloque votre porte d'entrée sans blessé ni risque immédiat.",
-              "correcte": true,
-              "feedback": "Correct! Situation non urgente typique du 1722: assistance nécessaire mais sans danger immédiat."
-            },
-            {
-              "texte": "Une ligne électrique tombée produit des étincelles près d'une haie sèche.",
-              "correcte": false,
-              "feedback": "C'est une urgence! Risque d'électrocution et d'incendie imminent. Appelez le 112."
-            },
-            {
-              "texte": "Votre cave inondée avec 30cm d'eau approchant du tableau électrique.",
-              "correcte": false,
-              "feedback": "Danger d'électrocution avec le tableau électrique menacé. C'est une urgence pour le 112."
-            }
-          ]
-        },
-        {
-          "titre": "Activation du 1722",
-          "description": "Vous voulez signaler un arbre menaçant de tomber sur la voie publique après une tempête. Quelle démarche est correcte?",
-          "options": [
-            {
-              "texte": "Vérifier si le 1722 est activé pour cet événement météo avant d'appeler.",
-              "correcte": true,
-              "feedback": "Exact! Le 1722 est activé temporairement lors d'événements météorologiques spécifiques."
-            },
-            {
-              "texte": "Appeler directement le 1722, disponible 24h/24 pour les problèmes liés aux intempéries.",
-              "correcte": false,
-              "feedback": "Le 1722 n'est pas permanent mais activé temporairement lors de certains événements météo."
-            },
-            {
-              "texte": "Appeler le 112 en précisant que c'est non urgent pour être redirigé vers le 1722.",
-              "correcte": false,
-              "feedback": "N'encombrez pas le 112 avec des appels non urgents. Vérifiez si le 1722 est activé."
-            }
-          ]
-        }
-      ]
-    }
-  }
 }

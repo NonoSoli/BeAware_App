@@ -2,44 +2,6 @@
 @use '../base/mixins' as *;
 
 // ==========================
-// BOUTONS DIAMANT
-// ==========================
-.home-button {
-  @include diamond-button(var(--domain-color));
-}
-
-.fire-home-button {
-  @include diamond-button($color: $color-fire);
-}
-
-.one-seven-two-two-home-button {
-  @include diamond-button($color: $color-one-seven-two-two);
-}
-
-.prevent-home-button {
-  @include diamond-button($color: $color-prevent);
-}
-
-// ==========================
-// BOUTONS RECTANGLES
-// ==========================
-.rectangular-button {
-  @include rectangular-button();
-}
-
-.rectangular-button-fire {
-  @include rectangular-button($color: $color-fire);
-}
-
-.rectangular-button-prevent {
-  @include rectangular-button($color: $color-prevent);
-}
-
-.rectangular-button-one-seven-two-two {
-  @include rectangular-button($color: $color-one-seven-two-two);
-}
-
-// ==========================
 // BOUTONS DE NIVEAU
 // ==========================
 .non-activ-level-button {

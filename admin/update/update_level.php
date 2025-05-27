@@ -25,7 +25,7 @@ if ($selectedDomainId) {
 
 // Récupérer les domaines pour le menu déroulant
 $domains = [];
-$result = $conn->query("SELECT id, title FROM domains");
+$result = $conn->query("SELECT id, title FROM domains WHERE is_active = 1");
 while ($row = $result->fetch_assoc()) {
     $domains[] = $row;
 }

@@ -11,7 +11,7 @@ $uploadError = '';
 $successMessage = '';
 
 // Récupération des domaines
-$domaines = $conn->query("SELECT * FROM domains");
+$domaines = $conn->query("SELECT * FROM domains WHERE is_active = 1");
 
 $selected_domain = null;
 if (isset($_GET['id'])) {

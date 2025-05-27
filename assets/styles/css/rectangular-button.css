@@ -1,0 +1,49 @@
+.rectangular-button {
+  position: relative;
+  width: 15vw; /* remplace par ta valeur $rectangular-button-width */
+  height: 15vw; /* remplace par ta valeur $rectangular-button-height */
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rectangular-button::before,
+.rectangular-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 3vw; /* remplace par ta valeur $button-radius */
+  top: 0;
+  left: 0;
+}
+
+.rectangular-button::before {
+  background-color: var(--domain-color);
+  z-index: 1;
+}
+
+.rectangular-button::after {
+  background-color: rgba(0, 0, 0, 0.2); /* approximation de $shadow */
+  z-index: 0;
+  top: -2px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  border-radius: 3vw;
+}
+
+.rectangular-button img {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: 0;
+}

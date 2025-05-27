@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 // Récupération des domaines
-$domaines = $conn->query("SELECT * FROM domains")->fetch_all(MYSQLI_ASSOC);
+$domaines = $conn->query("SELECT * FROM domains WHERE is_active = 1")->fetch_all(MYSQLI_ASSOC);
 
 $levels = [];
 $exercises = [];

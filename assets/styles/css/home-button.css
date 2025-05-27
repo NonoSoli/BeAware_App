@@ -1,0 +1,83 @@
+.home-button {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.home-button::before,
+.home-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+}
+
+.home-button::before {
+  background-color: var(--domain-color);
+  z-index: 1;
+}
+
+.home-button::after {
+  background-color: var(--domain-color);
+  filter: brightness(0.7);
+  top: 6px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  z-index: 0;
+}
+
+.home-button img {
+  position: relative;
+  z-index: 2;
+  width: 70%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.home-button span {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+/* Responsive : tu peux garder ces valeurs ou les adapter */
+@media (max-width: 768px) {
+  .home-button {
+    width: clamp(45px, 30vw, 90px);
+    height: clamp(45px, 30vw, 90px);
+  }
+
+  .home-button span {
+    font-size: clamp(0.8rem, 4vw, 1.1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .home-button {
+    width: clamp(40px, 40vw, 75px);
+    height: clamp(40px, 40vw, 75px);
+  }
+
+  .home-button span {
+    font-size: clamp(0.75rem, 4.5vw, 1rem);
+  }
+}

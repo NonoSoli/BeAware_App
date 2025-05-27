@@ -11,7 +11,7 @@ $success = '';
 $error = '';
 
 // Récupérer les domaines
-$domaines = $conn->query("SELECT id, title FROM domains")->fetch_all(MYSQLI_ASSOC);
+$domaines = $conn->query("SELECT id, title FROM domains WHERE is_active = 1")->fetch_all(MYSQLI_ASSOC);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create_exercice'])) {
     $title = $_POST['ex_title'] ?? '';
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create_exercice'])) {
     <link rel="stylesheet" href="assets/styles/css/main.css">
     <script>
         function fetchLevels(domainId) {
-            fetch('fetch_levels.php?domain_id=' + domainId)
+            fetch('../fetch_levels.php?domain_id=' + domainId)
                 .then(response => response.json())
                 .then(data => {
                     const select = document.getElementById('fk_level_id');
