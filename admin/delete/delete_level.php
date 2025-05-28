@@ -37,7 +37,7 @@ if ($selected_domain) {
 <head>
     <meta charset="UTF-8">
     <title>Supprimer un niveau</title>
-    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <link rel="stylesheet" href="../../assets/styles/css/admin.css">
     <script>
         function confirmDelete(id, name) {
             if (confirm("Supprimer le niveau : " + name + " ?")) {

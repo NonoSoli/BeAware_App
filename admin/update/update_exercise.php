@@ -87,7 +87,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
     exit();
 }
 ?>
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Modifier un Exercice</title>
+    <link rel="stylesheet" href="../../assets/styles/css/admin.css">
+</head>
+<body>
 <a href="../index.php">Accueil</a>
 <h2>Modifier un Exercice</h2>
 

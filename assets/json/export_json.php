@@ -14,9 +14,9 @@ function slugify($text) {
 
 function mapDifficulty($value) {
     return match((int)$value) {
-        1 => 'facile',
-        2 => 'moyen',
-        3 => 'difficile',
+        1 => 'Facile',
+        2 => 'Intermédiaire',
+        3 => 'Expert',
         default => 'non défini'
     };
 }
@@ -47,6 +47,7 @@ while ($domain = $domainResult->fetch_assoc()) {
     while ($level = $levelResult->fetch_assoc()) {
         $niveauKey = "niveau_$i";
 
+        // Initialisation du niveau avec ses infos de base
         $json[$domainKey]["niveaux"][$niveauKey] = [
             "titre" => $level['title'],
             "temps" => $level['time'] . " min",
@@ -54,6 +55,7 @@ while ($domain = $domainResult->fetch_assoc()) {
             "exercices" => []
         ];
 
+        // Récupération des exercices
         $exoQuery = $conn->prepare("SELECT * FROM exercices WHERE fk_level_id = ? AND is_active = 1");
         $exoQuery->bind_param("i", $level['id']);
         $exoQuery->execute();
@@ -74,7 +76,8 @@ while ($domain = $domainResult->fetch_assoc()) {
                 ];
             }
 
-            $json[$domainKey][$niveauKey]["exercices"][] = [
+            // AJOUT à la bonne place
+            $json[$domainKey]["niveaux"][$niveauKey]["exercices"][] = [
                 "titre" => $exo['title'],
                 "description" => $exo['situation'],
                 "options" => $options

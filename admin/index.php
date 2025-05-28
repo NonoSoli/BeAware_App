@@ -11,7 +11,7 @@ if (!isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>BE Aware - Admin</title>
-    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <link rel="stylesheet" href="../assets/styles/css/admin.css">
     <style>
         .message-success {
             color: green;
@@ -22,6 +22,7 @@ if (!isset($_SESSION['user_id'])) {
 </head>
 <body>
     <div class="container">
+        <a href="logout.php">Se déconnecter</a>
         <a href="../home.php">Vers l'application</a>
         <h2>Bonjour <?php echo htmlspecialchars($_SESSION['username']); ?></h2>
         <h2>Vous souhaitez :</h2>
@@ -32,12 +33,14 @@ if (!isset($_SESSION['user_id'])) {
         <?php endif; ?>
 
         <div class="button-group">
-            <form action="action.php" method="get">
-                <button type="submit" name="action" value="create">Créer</button>
-                <button type="submit" name="action" value="update">Modifier</button>
-                <button type="submit" name="action" value="delete">Supprimer</button>
+            <form action="action.php" method="get" class="main-actions">
+                <button type="submit" name="action" value="create">➕ Créer</button>
+                <button type="submit" name="action" value="update">✏️ Modifier</button>
+                <button type="submit" name="action" value="delete">🗑️ Supprimer</button>
             </form>
+        </div>
 
+        <div class="export-button">
             <form method="post" action="../assets/json/export_json.php">
                 <button type="submit">🛠 Mettre à jour les données</button>
             </form>

@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create'])) {
 <head>
     <meta charset="UTF-8">
     <title>Créer un Niveau</title>
-    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <link rel="stylesheet" href="../../assets/styles/css/admin.css">
 </head>
 <body>
     <div class="container">

@@ -21,12 +21,13 @@ if (!$domaine || !$niveau) {
             --domain-color: #ccc;
         }
         .header {
-            background-color: var(--domain-color, #ff0f00);
+            background-color: var(--domain-color);
         }
         .rectangular-button {
-            background-color: var(--domain-color, #ff0f00);
+            background-color: var(--domain-color);
         }
     </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body class="page-exercice">
     <div class="header">
@@ -56,7 +57,6 @@ if (!$domaine || !$niveau) {
         <button class="next-button" style="display: none;">Suivant</button>
     </div>
 
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script>
         const domaine = "<?= htmlspecialchars($domaine) ?>";
         const niveau = "<?= htmlspecialchars($niveau) ?>";
@@ -78,20 +78,19 @@ if (!$domaine || !$niveau) {
 
         function afficherExercice(index) {
             const exercice = exercicesData[index];
-
             $('.exercice-title').text(exercice.titre);
             $('.exercice-description').text(exercice.description);
             $('.exercice-options').empty();
             $('.feedback').empty();
             $('.next-button').hide();
 
-            shuffleArray(exercice.options);
+            // Créer une copie des options pour ne pas modifier l'original
+            const optionsShuffled = [...exercice.options];
+            shuffleArray(optionsShuffled);
 
-            exercice.options.forEach(option => {
+            optionsShuffled.forEach(option => {
                 const btn = $('<button class="option-button">')
-                    .append(
-                        $('<div class="rectangular-choice">').append($('<span>').text(option.texte))
-                    )
+                    .append($('<div class="rectangular-choice">').append($('<span>').text(option.texte)))
                     .on('click', function () {
                         if ($(this).hasClass('clicked')) return;
                         $(this).addClass('clicked');
@@ -102,7 +101,6 @@ if (!$domaine || !$niveau) {
                             $('.next-button').fadeIn();
                         }
                     });
-
                 $('.exercice-options').append(btn);
             });
 
@@ -110,25 +108,74 @@ if (!$domaine || !$niveau) {
         }
 
         $(document).ready(function () {
-            fetch('assets/json/exercices_data.json')
-                .then(res => res.json())
-                .then(data => {
-                    console.log('Données chargées :', data);
-                    const domaineData = data[domaine];
-                    console.log('Domaine extrait :', domaine);
-                    console.log('Domaine trouvé :', domaineData);
+            console.log('Domaine reçu:', domaine);
+            console.log('Niveau reçu:', niveau);
 
-                    if (!domaineData || !domaineData.niveaux || !domaineData.niveaux[niveau]) {
-                        alert("Ce domaine ou niveau n'existe pas dans le fichier JSON.");
+            fetch('assets/json/exercices_data.json?v=' + Date.now())
+                .then(res => {
+                    if (!res.ok) {
+                        throw new Error('Erreur lors du chargement du fichier JSON');
+                    }
+                    return res.json();
+                })
+                .then(data => {
+                    console.log('Données JSON chargées:', data);
+                    console.log('Domaines disponibles:', Object.keys(data));
+
+                    // Utiliser directement le domaine sans transformation
+                    let domaineData = data[domaine];
+                    
+                    // Si le domaine exact n'est pas trouvé, essayer avec une recherche flexible
+                    if (!domaineData) {
+                        console.log('Domaine exact non trouvé, recherche flexible...');
+                        for (const key in data) {
+                            if (key.toLowerCase() === domaine.toLowerCase()) {
+                                domaineData = data[key];
+                                console.log('Domaine trouvé avec recherche flexible:', key);
+                                break;
+                            }
+                        }
+                    }
+
+                    if (!domaineData) {
+                        console.error('Domaine non trouvé:', domaine);
+                        alert(`Le domaine "${domaine}" n'existe pas dans le fichier JSON.\nDomaines disponibles: ${Object.keys(data).join(', ')}`);
                         return;
                     }
 
+                    if (!domaineData.niveaux) {
+                        console.error('Pas de niveaux pour ce domaine:', domaine);
+                        alert(`Aucun niveau défini pour le domaine "${domaine}".`);
+                        return;
+                    }
+
+                    if (!domaineData.niveaux[niveau]) {
+                        console.error('Niveau non trouvé:', niveau);
+                        console.log('Niveaux disponibles:', Object.keys(domaineData.niveaux));
+                        alert(`Le niveau "${niveau}" n'existe pas pour le domaine "${domaine}".\nNiveaux disponibles: ${Object.keys(domaineData.niveaux).join(', ')}`);
+                        return;
+                    }
+
+                    // Appliquer la couleur du domaine
                     const color = domaineData.color || '#ff0f00';
                     document.documentElement.style.setProperty('--domain-color', color);
                     document.getElementById('header-title').textContent = domaine.charAt(0).toUpperCase() + domaine.slice(1);
 
+                    // Récupérer les exercices
                     exercicesData = domaineData.niveaux[niveau].exercices;
+                    console.log('Exercices trouvés:', exercicesData);
+
+                    if (!exercicesData || exercicesData.length === 0) {
+                        $('.main-container').html('<p style="text-align:center">Aucun exercice disponible pour ce niveau.</p>');
+                        return;
+                    }
+
+                    // Commencer le premier exercice
                     afficherExercice(currentIndex);
+                })
+                .catch(error => {
+                    console.error('Erreur lors du chargement des données:', error);
+                    alert('Erreur lors du chargement des exercices. Vérifiez la console pour plus de détails.');
                 });
 
             $('.next-button').on('click', function () {
@@ -136,6 +183,7 @@ if (!$domaine || !$niveau) {
                 if (currentIndex < exercicesData.length) {
                     afficherExercice(currentIndex);
                 } else {
+                    alert('Exercices terminés !');
                     window.location.href = 'home.php';
                 }
             });

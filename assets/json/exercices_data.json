@@ -6,108 +6,137 @@
             "niveau_1": {
                 "titre": "Accident de voiture",
                 "temps": "5 min",
-                "difficulte": "facile",
-                "exercices": []
+                "difficulte": "Facile",
+                "exercices": [
+                    {
+                        "titre": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
+                        "description": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
+                        "options": [
+                            {
+                                "texte": "Je vérifie l'état des victimes et les extrait si je vois des signes de fumée ou de feu.",
+                                "correcte": false,
+                                "feedback": "Sécurisez d'abord la zone. Seul un danger imminent justifie d'extraire une victime sans formation adéquate."
+                            },
+                            {
+                                "texte": "Je mets mon gilet, place le triangle et observe l'état des victimes sans les déplacer.",
+                                "correcte": true,
+                                "feedback": "Correct! Sécurisez d'abord les lieux et évaluez la situation sans vous mettre en danger."
+                            },
+                            {
+                                "texte": "J'appelle immédiatement le 112 pour gagner du temps et avoir des instructions.",
+                                "correcte": false,
+                                "feedback": "Sécurisez d'abord la zone pour éviter un suraccident et évaluez la situation avant d'appeler les secours."
+                            }
+                        ]
+                    },
+                    {
+                        "titre": "Premiers réflexes",
+                        "description": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
+                        "options": [
+                            {
+                                "texte": "Option 1",
+                                "correcte": false,
+                                "feedback": "Option 1"
+                            },
+                            {
+                                "texte": "Option 1",
+                                "correcte": true,
+                                "feedback": "Option 1"
+                            },
+                            {
+                                "texte": "Option 1",
+                                "correcte": false,
+                                "feedback": "Option 1"
+                            }
+                        ]
+                    }
+                ]
             },
             "niveau_2": {
                 "titre": "niv aide medicale",
                 "temps": "3 min",
-                "difficulte": "moyen",
-                "exercices": []
+                "difficulte": "Intermédiaire",
+                "exercices": [
+                    {
+                        "titre": "titre aide medic",
+                        "description": "Vous arrivez devant",
+                        "options": [
+                            {
+                                "texte": "je m'arrête (correct",
+                                "correcte": true,
+                                "feedback": "c'est juste"
+                            },
+                            {
+                                "texte": "je continue",
+                                "correcte": false,
+                                "feedback": "c'est faux"
+                            },
+                            {
+                                "texte": "",
+                                "correcte": false,
+                                "feedback": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            "niveau_3": {
+                "titre": "Niveau 3 difficile",
+                "temps": "5 min",
+                "difficulte": "Expert",
+                "exercices": [
+                    {
+                        "titre": "test",
+                        "description": "test",
+                        "options": [
+                            {
+                                "texte": "test",
+                                "correcte": false,
+                                "feedback": "test"
+                            },
+                            {
+                                "texte": "test",
+                                "correcte": true,
+                                "feedback": "test"
+                            },
+                            {
+                                "texte": "test",
+                                "correcte": false,
+                                "feedback": "test"
+                            }
+                        ]
+                    }
+                ]
             }
-        },
-        "niveau_1": {
-            "exercices": [
-                {
-                    "titre": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
-                    "description": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
-                    "options": [
-                        {
-                            "texte": "Je vérifie l'état des victimes et les extrait si je vois des signes de fumée ou de feu.",
-                            "correcte": false,
-                            "feedback": "Sécurisez d'abord la zone. Seul un danger imminent justifie d'extraire une victime sans formation adéquate."
-                        },
-                        {
-                            "texte": "Je mets mon gilet, place le triangle et observe l'état des victimes sans les déplacer.",
-                            "correcte": true,
-                            "feedback": "Correct! Sécurisez d'abord les lieux et évaluez la situation sans vous mettre en danger."
-                        },
-                        {
-                            "texte": "J'appelle immédiatement le 112 pour gagner du temps et avoir des instructions.",
-                            "correcte": false,
-                            "feedback": "Sécurisez d'abord la zone pour éviter un suraccident et évaluez la situation avant d'appeler les secours."
-                        }
-                    ]
-                },
-                {
-                    "titre": "Premiers réflexes",
-                    "description": "Vous êtes témoin d'un accident : une voiture a percuté un arbre sur une route départementale peu fréquentée. Que faites-vous en priorité?",
-                    "options": [
-                        {
-                            "texte": "Option 1",
-                            "correcte": false,
-                            "feedback": "Option 1"
-                        },
-                        {
-                            "texte": "Option 1",
-                            "correcte": true,
-                            "feedback": "Option 1"
-                        },
-                        {
-                            "texte": "Option 1",
-                            "correcte": false,
-                            "feedback": "Option 1"
-                        }
-                    ]
-                }
-            ]
-        },
-        "niveau_2": {
-            "exercices": [
-                {
-                    "titre": "titre aide medic",
-                    "description": "Vous arrivez devant",
-                    "options": [
-                        {
-                            "texte": "je m'arrête (correct",
-                            "correcte": true,
-                            "feedback": "c'est juste"
-                        },
-                        {
-                            "texte": "je continue",
-                            "correcte": false,
-                            "feedback": "c'est faux"
-                        },
-                        {
-                            "texte": "",
-                            "correcte": false,
-                            "feedback": ""
-                        }
-                    ]
-                }
-            ]
         }
     },
     "1722": {
-        "color": "#404040",
+        "color": "#0400ff",
         "icon": "assets\/img\/domains\/domain_6835c44f0fd27.png",
         "niveaux": {
             "niveau_1": {
                 "titre": "Connaitre le 1722",
                 "temps": "5 min",
-                "difficulte": "facile",
+                "difficulte": "Facile",
                 "exercices": []
             }
         }
     },
     "prévention": {
-        "color": "#ffc800",
+        "color": "#ff8800",
         "icon": "assets\/img\/domains\/domain_6835d4831578f.png",
         "niveaux": []
     },
     "pompier": {
         "color": "#ff0f00",
         "icon": "assets\/img\/domains\/domain_6835af2c4b878.png",
-        "niveaux": []
+        "niveaux": {
+            "niveau_1": {
+                "titre": "test",
+                "temps": "5 min",
+                "difficulte": "Facile",
+                "exercices": []
+            }
+        }
     }
 }

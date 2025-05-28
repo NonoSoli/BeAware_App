@@ -55,7 +55,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create_exercice'])) {
 <head>
     <meta charset="UTF-8">
     <title>Créer un Exercice</title>
-    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <link rel="stylesheet" href="../../assets/styles/css/admin.css">
     <script>
         function fetchLevels(domainId) {
             fetch('../fetch_levels.php?domain_id=' + domainId)

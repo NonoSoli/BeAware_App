@@ -19,19 +19,21 @@ $actionText = [
 <head>
     <meta charset="UTF-8">
     <title><?= htmlspecialchars($actionText) ?> un élément</title>
-    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <link rel="stylesheet" href="../assets/styles/css/admin.css">
 </head>
 <body>
-    <a href="index.php">Accueil</a>
     <div class="container">
-        <h2><?= htmlspecialchars($actionText) ?> quoi ?</h2>
-        <div class="button-group">
-            <form action="redirect.php" method="get">
-                <input type="hidden" name="action" value="<?= htmlspecialchars($action) ?>">
-                <button type="submit" name="target" value="domain">Domaine</button>
-                <button type="submit" name="target" value="level">Niveau</button>
-                <button type="submit" name="target" value="exercise">Exercice</button>
-            </form>
+        <a href="index.php">Vers l'accueil</a>
+        <div class="container">
+            <h2><?= htmlspecialchars($actionText) ?> quoi ?</h2>
+            <div class="button-group">
+                <form action="redirect.php" method="get">
+                    <input type="hidden" name="action" value="<?= htmlspecialchars($action) ?>">
+                    <button type="submit" name="target" value="domain">Domaine</button>
+                    <button type="submit" name="target" value="level">Niveau</button>
+                    <button type="submit" name="target" value="exercise">Exercice</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>

@@ -21,14 +21,16 @@ function hexToRgbaShadow($hexColor, $opacityHex = '33') {
     <link rel="stylesheet" href="assets/styles/css/main.css">
     <link rel="stylesheet" href="assets/styles/css/home-button.css">
     <link rel="stylesheet" href="assets/styles/css/header.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="assets/img/icons/icon-96x96.png">
     <meta name="theme-color" content="white">
 </head>
-<script src="js/app.js"></script>
 <script src="js/home-buttons.js"></script>
 <script>
-    if ('serviceWorker' in navigator) {
+    // Désactiver PWA en développement local
+    const isLocal = window.location.hostname === 'localhost' || 
+                   window.location.hostname === '127.0.0.1' || 
+                   window.location.hostname === '';
+    
+    if (!isLocal && 'serviceWorker' in navigator) {
         navigator.serviceWorker.register('serviceWorker.js')
         .then((reg) => {
             console.log("SW enregistré:", reg);
@@ -43,6 +45,8 @@ function hexToRgbaShadow($hexColor, $opacityHex = '33') {
             };
         })
         .catch((err) => console.error("Erreur SW:", err));
+    } else if (isLocal) {
+        console.log("Service Worker désactivé en développement local");
     }
 </script>
 <body>

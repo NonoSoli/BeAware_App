@@ -1,4 +1,4 @@
-const version = "2025-14-05-1"; // <-- à mettre à jour à chaque nouvelle version
+const version = "2025-28-05-4"; // <-- à mettre à jour à chaque nouvelle version
 const staticCacheName = `cache-${version}`;
 const assets = ["/", "https://funlab.be/BeAware//home.html"];
 
