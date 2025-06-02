@@ -70,6 +70,99 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
     <title>Modifier un Niveau</title>
     <link rel="stylesheet" href="../../assets/styles/css/admin.css">
 </head>
+<style>
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .form-group input, .form-group select {
+        width: 100%;
+        max-width: 300px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .color-container {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .color-container input[type="color"] {
+        width: 60px;
+        height: 40px;
+        padding: 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .current-image {
+        max-width: 100px;
+        max-height: 100px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin: 10px 0;
+    }
+    
+    .preview-container {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px dashed #ccc;
+        border-radius: 4px;
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+    }
+    
+    .preview-container img {
+        max-width: 100px;
+        max-height: 100px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .error {
+        background-color: #fee;
+        color: #c00;
+        padding: 10px;
+        border: 1px solid #fcc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    
+    .success {
+        background-color: #efe;
+        color: #060;
+        padding: 10px;
+        border: 1px solid #cfc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+    
+    .btn-primary {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+</style>
 <body>
     <div class="container">
         <a href="../index.php">Accueil</a>

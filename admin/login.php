@@ -39,15 +39,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="../assets/styles/css/admin.css">
 </head>
 <body>
-    <div class="login-container">
-        <h2>Connectez-vous</h2>
+    <div class="container">
+        <h1>Connexion</h1>
+
         <?php if ($error): ?>
             <div class="error"><?= htmlspecialchars($error) ?></div>
         <?php endif; ?>
+
         <form method="post">
-            <input type="text" name="username" placeholder="Utilisateur" required>
-            <input type="password" name="password" placeholder="Mot de passe" required>
-            <button type="submit">Se connecter</button>
+            <label for="username">Utilisateur</label>
+            <input type="text" id="username" name="username" placeholder="Votre nom d'utilisateur" required>
+
+            <label for="password">Mot de passe</label>
+            <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+
+            <input type="submit" value="Se connecter">
         </form>
     </div>
 </body>

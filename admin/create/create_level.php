@@ -59,29 +59,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create'])) {
         <?php endif; ?>
 
         <form method="post">
-            <label for="title">Titre :</label>
-            <input type="text" name="title" id="title" required><br><br>
+            <div class="form-group">
+                <label for="title">Titre :</label>
+                <input type="text" name="title" id="title" required>
+            </div>
 
-            <label for="fk_domain_id">Domaine :</label>
-            <select name="fk_domain_id" id="fk_domain_id" required>
-                <option value="">-- Sélectionnez un domaine --</option>
-                <?php foreach ($domains as $domain): ?>
-                    <option value="<?= $domain['id'] ?>"><?= htmlspecialchars($domain['title']) ?></option>
-                <?php endforeach; ?>
-            </select><br><br>
+            <div class="form-group">
+                <label for="fk_domain_id">Domaine :</label>
+                <select name="fk_domain_id" id="fk_domain_id" required>
+                    <option value="" disabled selected hidden>-- Domaine --</option>
+                    <?php foreach ($domains as $domain): ?>
+                        <option value="<?= $domain['id'] ?>"><?= htmlspecialchars($domain['title']) ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
 
-            <label for="time">Temps (en minutes) :</label>
-            <input type="number" name="time" id="time" min="1" required><br><br>
+            <div class="form-group">
+                <label for="time">Temps (en minutes) :</label>
+                <input type="number" name="time" id="time" min="1" required>
+            </div>
 
-            <label for="difficulty">Difficulté :</label>
-            <select name="difficulty" id="difficulty" required>
-                <option value="1">Facile</option>
-                <option value="2">Moyen</option>
-                <option value="3">Difficile</option>
-            </select><br><br>
+            <div class="form-group">
+                <label for="difficulty">Difficulté :</label>
+                <select name="difficulty" id="difficulty" required>
+                    <option value="1">Facile</option>
+                    <option value="2">Moyen</option>
+                    <option value="3">Difficile</option>
+                </select>
+            </div>
 
-            <button type="submit" name="create">Créer le Niveau</button>
+            <button type="submit" name="create" class="btn-primary">Créer le Niveau</button>
         </form>
+
     </div>
 </body>
 </html>

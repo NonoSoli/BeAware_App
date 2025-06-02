@@ -183,7 +183,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create'])) {
                 
                 const reader = new FileReader();
                 reader.onload = function(e) {
-                    preview.innerHTML = `<img src="${e.target.result}" alt="Prévisualisation">`;
+                    preview.innerHTML = `<img src="${e.target.result}" alt="Prévisualisation"  style="background-color:black;">`;
                 };
                 reader.readAsDataURL(file);
             } else {

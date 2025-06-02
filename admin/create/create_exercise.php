@@ -73,6 +73,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create_exercice'])) {
         }
     </script>
 </head>
+<style>
+    input[type="text"],
+    input[type="password"],
+    input[type="file"],
+    input[type="number"],
+    #color_text,
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+        box-sizing: border-box;
+    }
+</style>
 <body>
     <div class="container">
         <a href="../index.php">Accueil</a>
@@ -82,40 +101,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['create_exercice'])) {
         <?php if ($error): ?><div class="error"><?= $error ?></div><?php endif; ?>
 
         <form method="post">
-            <label for="domain_id">Domaine :</label>
-            <select name="domain_id" id="domain_id" required onchange="fetchLevels(this.value)">
-                <option value="">-- Choisir un domaine --</option>
-                <?php foreach ($domaines as $dom): ?>
-                    <option value="<?= $dom['id'] ?>"><?= htmlspecialchars($dom['title']) ?></option>
-                <?php endforeach; ?>
-            </select><br><br>
+            <div class="form-group">
+                <label for="domain_id">Domaine :</label>
+                <select name="domain_id" id="domain_id" required onchange="fetchLevels(this.value)">
+                    <option value="">-- Choisir un domaine --</option>
+                    <?php foreach ($domaines as $dom): ?>
+                        <option value="<?= $dom['id'] ?>"><?= htmlspecialchars($dom['title']) ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
 
-            <label for="fk_level_id">Niveau :</label>
-            <select name="fk_level_id" id="fk_level_id" required></select><br><br>
+            <div class="form-group">
+                <label for="fk_level_id">Niveau :</label>
+                <select name="fk_level_id" id="fk_level_id" required>
+                    <option value="">-- Choisir un niveau --</option>
+                </select>
+            </div>
 
-            <label for="ex_title">Titre de l'exercice :</label>
-            <input type="text" name="ex_title" id="ex_title" required><br><br>
+            <div class="form-group">
+                <label for="ex_title">Titre de l'exercice :</label>
+                <input type="text" name="ex_title" id="ex_title" required>
+            </div>
 
-            <label for="situation">Mise en situation :</label><br>
-            <textarea name="situation" id="situation" rows="4" cols="50" placeholder="Décrivez la situation..." required></textarea><br><br>
+            <div class="form-group">
+                <label for="situation">Mise en situation :</label>
+                <textarea name="situation" id="situation" rows="5" placeholder="Décrivez la situation..." required></textarea>
+            </div>
 
-
-            <fieldset>
-                <legend>Options (2 à 3)</legend>
+            <fieldset class="form-group">
+                <legend>Options</legend>
                 <?php for ($i = 0; $i < 3; $i++): ?>
-                    <div>
-                        <label>Option <?= $i + 1 ?> :</label>
+                    <div class="option-block">
+                        <label>Option <?= $i + 1 ?> :
+                            <label>
+                                <input type="radio" name="correct" value="<?= $i ?>"> Correcte
+                            </label>
+                        </label>
                         <input type="text" name="option[]" <?= $i < 2 ? 'required' : '' ?> placeholder="Texte de l'option">
                         <input type="text" name="feedback[]" <?= $i < 2 ? 'required' : '' ?> placeholder="Feedback">
-                        <label>
-                            <input type="radio" name="correct" value="<?= $i ?>"> Correcte
-                        </label>
-                    </div><br>
+                    </div>
                 <?php endfor; ?>
             </fieldset>
 
-            <button type="submit" name="create_exercice">Créer l'exercice</button>
+            <button type="submit" name="create_exercice" class="btn-primary">Créer l'exercice</button>
         </form>
+
     </div>
 </body>
 </html>

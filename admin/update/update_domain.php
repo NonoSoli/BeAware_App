@@ -116,99 +116,6 @@ if (isset($_POST['update'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier un domaine</title>
     <link rel="stylesheet" href="../../assets/styles/css/admin.css">
-    <style>
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        
-        .form-group input, .form-group select {
-            width: 100%;
-            max-width: 300px;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        
-        .color-container {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-        
-        .color-container input[type="color"] {
-            width: 60px;
-            height: 40px;
-            padding: 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        
-        .current-image {
-            max-width: 100px;
-            max-height: 100px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            margin: 10px 0;
-        }
-        
-        .preview-container {
-            margin-top: 10px;
-            padding: 10px;
-            border: 1px dashed #ccc;
-            border-radius: 4px;
-            min-height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #f9f9f9;
-        }
-        
-        .preview-container img {
-            max-width: 100px;
-            max-height: 100px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        
-        .error {
-            background-color: #fee;
-            color: #c00;
-            padding: 10px;
-            border: 1px solid #fcc;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-        
-        .success {
-            background-color: #efe;
-            color: #060;
-            padding: 10px;
-            border: 1px solid #cfc;
-            border-radius: 4px;
-            margin-bottom: 20px;
-        }
-        
-        .btn-primary {
-            background-color: #007bff;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        
-        .btn-primary:hover {
-            background-color: #0056b3;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -259,7 +166,7 @@ if (isset($_POST['update'])) {
             <div class="form-group">
                 <label>Icône actuelle :</label>
                 <?php if (!empty($selected_domain['icon_path']) && file_exists('../../' . $selected_domain['icon_path'])): ?>
-                    <img src="../../<?= htmlspecialchars($selected_domain['icon_path']) ?>" alt="Icône actuelle" class="current-image">
+                    <img src="../../<?= htmlspecialchars($selected_domain['icon_path']) ?>" alt="Icône actuelle" class="current-image" style="background-color:black;">
                 <?php else: ?>
                     <p><em>Aucune image enregistrée ou fichier introuvable.</em></p>
                 <?php endif; ?>

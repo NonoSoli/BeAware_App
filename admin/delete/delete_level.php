@@ -55,28 +55,31 @@ if ($selected_domain) {
         <a href="../index.php">Accueil</a>
         <h2>Supprimer un niveau</h2>
 
-        <label for="domain_id">Filtrer par domaine :</label>
-        <select name="domain_id" id="domain_id" onchange="onDomainChange(this)">
-            <option value="">-- Sélectionner --</option>
-            <?php foreach ($domains as $dom): ?>
-                <option value="<?= $dom['id'] ?>" <?= $selected_domain == $dom['id'] ? 'selected' : '' ?>>
-                    <?= htmlspecialchars($dom['title']) ?>
-                </option>
-            <?php endforeach; ?>
-        </select>
+        <div class="form-group">
+            <label for="domain_id">Filtrer par domaine :</label>
+            <select name="domain_id" id="domain_id" onchange="onDomainChange(this)">
+                <option value="">-- Sélectionner --</option>
+                <?php foreach ($domains as $dom): ?>
+                    <option value="<?= $dom['id'] ?>" <?= $selected_domain == $dom['id'] ? 'selected' : '' ?>>
+                        <?= htmlspecialchars($dom['title']) ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
 
         <?php if ($selected_domain && !empty($levels)): ?>
-            <ul>
+            <ul class="delete-list">
                 <?php foreach ($levels as $lvl): ?>
                     <li>
-                        <?= htmlspecialchars($lvl['title']) ?>
-                        <button onclick="confirmDelete(<?= $lvl['id'] ?>, '<?= addslashes($lvl['title']) ?>')">Supprimer</button>
+                        <span><?= htmlspecialchars($lvl['title']) ?></span>
+                        <button class="btn-delete" onclick="confirmDelete(<?= $lvl['id'] ?>, '<?= addslashes($lvl['title']) ?>')">Supprimer</button>
                     </li>
                 <?php endforeach; ?>
             </ul>
         <?php elseif ($selected_domain): ?>
-            <p>Aucun niveau actif pour ce domaine.</p>
+            <p class="empty-message">Aucun niveau actif pour ce domaine.</p>
         <?php endif; ?>
     </div>
+
 </body>
 </html>

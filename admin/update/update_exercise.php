@@ -94,35 +94,68 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
     <title>Modifier un Exercice</title>
     <link rel="stylesheet" href="../../assets/styles/css/admin.css">
 </head>
+<style>
+    input[type="text"],
+    div input[type="text"],
+    #color_text,
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"]{
+        display: block;
+        margin: 30px auto 0;
+        background-color: red;
+        color: yellow;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 14px 28px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+</style>
 <body>
-<a href="../index.php">Accueil</a>
-<h2>Modifier un Exercice</h2>
+    <div class="container">
+        <a href="../index.php">Accueil</a>
+        <h2>Modifier un Exercice</h2>
 
-<form method="get">
-    <label>Domaine :</label>
-    <select name="domain_id" onchange="this.form.submit()">
-        <option value="">--Sélectionner--</option>
-        <?php foreach ($domaines as $d): ?>
-            <option value="<?= $d['id'] ?>" <?= isset($_GET['domain_id']) && $_GET['domain_id'] == $d['id'] ? 'selected' : '' ?>>
-                <?= htmlspecialchars($d['title']) ?>
-            </option>
-        <?php endforeach; ?>
-    </select>
-</form>
+        <form method="get" class="form-group">
+            <label for="domain_id">Domaine :</label>
+            <select name="domain_id" id="domain_id" onchange="this.form.submit()">
+                <option value="">--Sélectionner--</option>
+                <?php foreach ($domaines as $d): ?>
+                    <option value="<?= $d['id'] ?>" <?= isset($_GET['domain_id']) && $_GET['domain_id'] == $d['id'] ? 'selected' : '' ?>>
+                        <?= htmlspecialchars($d['title']) ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </form>
 
-<?php if (!empty($levels)): ?>
-<form method="get">
-    <input type="hidden" name="domain_id" value="<?= $_GET['domain_id'] ?>">
-    <label>Niveau :</label>
-    <select name="level_id" onchange="this.form.submit()">
-        <option value="">--Sélectionner--</option>
-        <?php foreach ($levels as $lvl): ?>
-            <option value="<?= $lvl['id'] ?>" <?= isset($_GET['level_id']) && $_GET['level_id'] == $lvl['id'] ? 'selected' : '' ?>>
-                <?= htmlspecialchars($lvl['title']) ?>
-            </option>
-        <?php endforeach; ?>
-    </select>
-</form>
+        <?php if (!empty($levels)): ?>
+        <form method="get" class="form-group">
+            <input type="hidden" name="domain_id" value="<?= $_GET['domain_id'] ?>">
+            <label for="level_id">Niveau :</label>
+            <select name="level_id" id="level_id" onchange="this.form.submit()">
+                <option value="">--Sélectionner--</option>
+                <?php foreach ($levels as $lvl): ?>
+                    <option value="<?= $lvl['id'] ?>" <?= isset($_GET['level_id']) && $_GET['level_id'] == $lvl['id'] ? 'selected' : '' ?>>
+                        <?= htmlspecialchars($lvl['title']) ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </form>
+    </div>
 <?php endif; ?>
 
 <?php if (!empty($noLevelsMessage)): ?>
@@ -158,7 +191,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
     <input type="hidden" name="domain_id" value="<?= $_GET['domain_id'] ?>">
 
     <label>Titre :</label>
-    <input type="text" name="title" value="<?= htmlspecialchars($selected_exercise['title']) ?>" required><br><br>
+    <input type="text" name="title" value="<?= htmlspecialchars($selected_exercise['title']) ?>" style="
+        width: 100%;
+        padding: 12px 14px;
+        font-size: 16px;
+        font-weight: bold;
+        border: 2px solid #ccc;
+        border-radius: 12px;
+        background-color: white;
+        color: black;
+        box-sizing: border-box;" required><br><br>
 
     <label>Mise en situation :</label><br>
     <textarea name="situation" rows="4" cols="50" required><?= htmlspecialchars($selected_exercise['situation']) ?></textarea><br><br>
@@ -182,14 +224,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update'])) {
             $opt = isset($options[$i]) ? $options[$i] : ['title' => '', 'feedback' => '', 'correct' => 0];
         ?>
             <div>
-                <label>Option <?= $i + 1 ?> :</label>
+                <label>Option <?= $i + 1 ?> :
+                    <label>
+                        <input type="radio" name="correct" value="<?= $i ?>" <?= ($opt['correct'] == 1) ? 'checked' : '' ?> <?= $i < 2 ? 'required' : '' ?>> Correcte
+                    </label>
+                </label>
                 <input type="text" name="option[]" value="<?= htmlspecialchars($opt['title']) ?>" <?= $i < 2 ? 'required' : '' ?> placeholder="Option <?= $i + 1 ?>">
                 
                 <input type="text" name="feedback[]" value="<?= htmlspecialchars($opt['feedback']) ?>" <?= $i < 2 ? 'required' : '' ?> placeholder="Feedback">
-                
-                <label>
-                    <input type="radio" name="correct" value="<?= $i ?>" <?= ($opt['correct'] == 1) ? 'checked' : '' ?> <?= $i < 2 ? 'required' : '' ?>> Correcte
-                </label>
             </div><br>
         <?php endfor; ?>
     </fieldset>
